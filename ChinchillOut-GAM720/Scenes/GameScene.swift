@@ -29,6 +29,11 @@ class GameScene: SKScene {
     var player: Player!
     
     override func didMove(to view: SKView) {
+        
+        physicsWorld.contactDelegate = self
+        // x is 0 as gravity isnt needed left and right, just downwards aka y axis
+        physicsWorld.gravity = CGVector(dx: 0.0, dy: -6.0)
+        
         createLayers()
         
     }
@@ -82,7 +87,8 @@ class GameScene: SKScene {
             tileMap = groundTiles
             // set to entire size of the frame, width is false because it is ongoing
             tileMap.scale(to: frame.size, width: false, multiplier: 1.0)
-            
+            // from physics helper file, ground is named on the tileSet file for ground tiles
+            PhysicsHelper.addPhysicsBody(to: tileMap, and: "ground")
         }
         
         addPlayer()
@@ -95,6 +101,8 @@ class GameScene: SKScene {
         // 0.1 is a tenth of the screen for the size of the chinchilla
         player.scale(to: frame.size, width: false, multiplier: 0.1)
         player.name = GameConstants.StringConstants.playerName
+        // add physics body properties to chinchilla
+        PhysicsHelper.addPhysicsBody(to: player, with: player.name!)
         // Position for the chinchilla is in first quarter of screen, and middle of y axis
         player.position = CGPoint(x: frame.midX/2.0, y: frame.midY)
         player.zPosition = GameConstants.ZPositions.playerZ
@@ -139,4 +147,28 @@ class GameScene: SKScene {
         }
         
     }
+    
+    // physics of ground nodes. override didsimulatephysics
+    
+    override func didSimulatePhysics() {
+        for node in tileMap[GameConstants.StringConstants.groundNodeName] {
+            if let groundNode = node as? GroundNode {
+                // top edge of ground node
+                let groundY = (groundNode.position.y + groundNode.size.height) * tileMap.yScale
+                
+                let playerY = player.position.y - player.size.height/3
+                
+                // if y position of chinchilla is bigger or higher than y position of ground node, physics body is activated aka can stand on it
+                groundNode.isBodyActivated = playerY > groundY
+            }
+        }
+    }
+    
+    
+    
+}
+
+// Added when physics bodies come into contact
+extension GameScene: SKPhysicsContactDelegate {
+    
 }
