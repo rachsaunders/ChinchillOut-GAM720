@@ -11,6 +11,24 @@ import CoreGraphics
 
 struct GameConstants {
     
+    struct PhysicsCategories {
+        // physics bodies with no content to check
+        static let noCategory: UInt32 = 0
+        static let allCategory: UInt32 = UInt32.max
+        
+        // Bit masks
+        static let playerCategory: UInt32 = 0x1
+        // shifts to left by 1, 1 0 in bit numbers
+        static let groundCategory: UInt32 = 0x1 << 1
+        // shifts to left by 2, 1 0 0 in bit numbers
+        static let finishCategory: UInt32 = 0x1 << 2
+          // shifts to left by 3, 1 0 0 0 in bit numbers
+        static let collectibleCategory: UInt32 = 0x1 << 3
+        static let enemyCategory: UInt32 = 0x1 << 4
+        static let frameCategory: UInt32 = 0x1 << 5
+        static let ceilingCategory: UInt32 = 0x1 << 6
+    }
+    
     struct ZPositions {
            static let farBGZ: CGFloat = 0
            static let closeBGZ: CGFloat = 1

@@ -22,6 +22,10 @@ class PhysicsHelper {
             sprite.physicsBody!.restitution = 0.0
             // don't turn the chinchilla
             sprite.physicsBody!.allowsRotation = false
+            
+             sprite.physicsBody!.categoryBitMask = GameConstants.PhysicsCategories.playerCategory
+             sprite.physicsBody!.collisionBitMask = GameConstants.PhysicsCategories.groundCategory | GameConstants.PhysicsCategories.finishCategory
+             sprite.physicsBody!.contactTestBitMask = GameConstants.PhysicsCategories.allCategory
         default:
             sprite.physicsBody = SKPhysicsBody(rectangleOf: sprite.size)
         }

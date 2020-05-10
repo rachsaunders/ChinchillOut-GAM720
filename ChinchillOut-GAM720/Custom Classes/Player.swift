@@ -29,6 +29,8 @@ class Player: SKSpriteNode {
         }
     }
     
+    var airborne = false
+    
     // load all images for frames
     func loadTextures() {
         idleFrames = AnimationHelper.loadTextures(from: SKTextureAtlas(named: GameConstants.StringConstants.playerIdleAtlas), withName: GameConstants.StringConstants.idlePrefixKey)

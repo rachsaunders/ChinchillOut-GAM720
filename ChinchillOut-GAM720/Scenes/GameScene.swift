@@ -37,7 +37,11 @@ class GameScene: SKScene {
         }
     }
     
+    
+    
     var player: Player!
+    
+    var touch = false
     
     override func didMove(to view: SKView) {
         
@@ -139,7 +143,8 @@ class GameScene: SKScene {
     
     
     func jump() {
-        
+        // stops double jump issue
+        player.airborne = true
         // turn off gravity when chinchilla jumps
         player.turnGravity(on: false)
         player.run(player.userData?.value(forKey: GameConstants.StringConstants.jumpUpActionKey) as! SKAction) {
@@ -151,22 +156,27 @@ class GameScene: SKScene {
     // User controls player starting, jumping, moving etc by touch therefore these override functions are needed
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        switch gameState {
-        case .ready:
-            gameState = .ongoing
-        case .ongoing:
-            jump()
-        default:
-            break
-        }
-    }
+         switch gameState {
+         case .ready:
+             gameState = .ongoing
+         case .ongoing:
+            touch = true
+             if !player.airborne {
+                 jump()
+             }
+         default:
+             break
+         }
+     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        touch = false
+        player.turnGravity(on: true)
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        touch = false
+        player.turnGravity(on: true)
     }
     
     
@@ -209,5 +219,27 @@ class GameScene: SKScene {
 
 // Added when physics bodies come into contact
 extension GameScene: SKPhysicsContactDelegate {
+    func didBegin(_ contact: SKPhysicsContact) {
+        let contactMask = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
+        
+        switch contactMask {
+        // contact between chinchilla and ground aka chinchilla landed on the ground
+        case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.groundCategory:
+            player.airborne = false
+        default:
+            break
+        }
+    }
     
+    func didEnd(_ contact: SKPhysicsContact) {
+         let contactMask = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
+        
+        switch contactMask {
+            // contact between chinchilla and ground aka chinchilla fell off the edge
+        case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.groundCategory:
+            player.airborne = true
+        default:
+            break
+        }
+    }
 }
