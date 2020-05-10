@@ -26,6 +26,8 @@ class GameScene: SKScene {
     
     var gameState = GameState.ready
     
+    var player: Player!
+    
     override func didMove(to view: SKView) {
         createLayers()
         
@@ -82,6 +84,23 @@ class GameScene: SKScene {
             tileMap.scale(to: frame.size, width: false, multiplier: 1.0)
             
         }
+        
+        addPlayer()
+    }
+    
+    // called above in loadTileMap
+    func addPlayer() {
+        // Getting this from the Game Constants file
+        player = Player(imageNamed: GameConstants.StringConstants.playerImageName)
+        // 0.1 is a tenth of the screen for the size of the chinchilla
+        player.scale(to: frame.size, width: false, multiplier: 0.1)
+        player.name = GameConstants.StringConstants.playerName
+        // Position for the chinchilla is in first quarter of screen, and middle of y axis
+        player.position = CGPoint(x: frame.midX/2.0, y: frame.midY)
+        player.zPosition = GameConstants.ZPositions.playerZ
+        // add the chinchilla to the game
+        addChild(player)
+        
     }
     
     // User controls player starting, jumping, moving etc by touch therefore these override functions are needed

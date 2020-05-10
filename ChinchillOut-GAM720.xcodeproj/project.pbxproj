@@ -10,6 +10,7 @@
 		181D60742466E14A0058E984 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60732466E14A0058E984 /* Layer.swift */; };
 		181D60762466EA4B0058E984 /* RepeatingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60752466EA4B0058E984 /* RepeatingLayer.swift */; };
 		181D60782466F05F0058E984 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60772466F05F0058E984 /* GameConstants.swift */; };
+		181D607A2466FB260058E984 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60792466FB260058E984 /* Player.swift */; };
 		1821E99E246584FA006BA465 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E99D246584FA006BA465 /* AppDelegate.swift */; };
 		1821E9A4246584FA006BA465 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E9A3246584FA006BA465 /* GameScene.swift */; };
 		1821E9A6246584FA006BA465 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821E9A5246584FA006BA465 /* GameViewController.swift */; };
@@ -25,6 +26,7 @@
 		181D60732466E14A0058E984 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		181D60752466EA4B0058E984 /* RepeatingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingLayer.swift; sourceTree = "<group>"; };
 		181D60772466F05F0058E984 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
+		181D60792466FB260058E984 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1821E99A246584FA006BA465 /* ChinchillOut-GAM720.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChinchillOut-GAM720.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1821E99D246584FA006BA465 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1821E9A3246584FA006BA465 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		18DDC8D124658A6400503A6B /* Custom Classes */ = {
 			isa = PBXGroup;
 			children = (
+				181D60792466FB260058E984 /* Player.swift */,
 			);
 			path = "Custom Classes";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				18D894B72465AA180003EE8C /* SKNode+Extensions.swift in Sources */,
 				181D60742466E14A0058E984 /* Layer.swift in Sources */,
 				1821E9A6246584FA006BA465 /* GameViewController.swift in Sources */,
+				181D607A2466FB260058E984 /* Player.swift in Sources */,
 				181D60782466F05F0058E984 /* GameConstants.swift in Sources */,
 				1821E99E246584FA006BA465 /* AppDelegate.swift in Sources */,
 				181D60762466EA4B0058E984 /* RepeatingLayer.swift in Sources */,
