@@ -24,7 +24,18 @@ class GameScene: SKScene {
     var lastTime: TimeInterval = 0
     var dt: TimeInterval = 0
     
-    var gameState = GameState.ready
+    var gameState = GameState.ready {
+        willSet {
+            switch newValue {
+            case .ongoing:
+                player.state = .running
+            case .finished:
+                player.state = .idle
+            default:
+                break
+            }
+        }
+    }
     
     var player: Player!
     
@@ -106,9 +117,35 @@ class GameScene: SKScene {
         // Position for the chinchilla is in first quarter of screen, and middle of y axis
         player.position = CGPoint(x: frame.midX/2.0, y: frame.midY)
         player.zPosition = GameConstants.ZPositions.playerZ
+        // load frames
+        player.loadTextures()
+        player.state = .idle
         // add the chinchilla to the game
         addChild(player)
         
+        addPlayerActions()
+        
+    }
+    
+    func addPlayerActions() {
+        // y is dependant on screen height, quaeter of screen size
+        let up = SKAction.moveBy(x: 0.0, y: frame.size.height/4, duration: 0.4)
+        // slows down action at the end like after jumping
+        up.timingMode = .easeOut
+        
+        player.createUserData(entry: up, forKey: GameConstants.StringConstants.jumpUpActionKey)
+    }
+    
+    
+    
+    func jump() {
+        
+        // turn off gravity when chinchilla jumps
+        player.turnGravity(on: false)
+        player.run(player.userData?.value(forKey: GameConstants.StringConstants.jumpUpActionKey) as! SKAction) {
+            // turn gravity back on when user is back on the ground after jumping
+            self.player.turnGravity(on: true)
+        }
     }
     
     // User controls player starting, jumping, moving etc by touch therefore these override functions are needed
@@ -117,6 +154,8 @@ class GameScene: SKScene {
         switch gameState {
         case .ready:
             gameState = .ongoing
+        case .ongoing:
+            jump()
         default:
             break
         }
