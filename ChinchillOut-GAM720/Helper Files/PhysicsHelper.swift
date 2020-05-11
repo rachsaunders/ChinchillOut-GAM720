@@ -26,8 +26,26 @@ class PhysicsHelper {
              sprite.physicsBody!.categoryBitMask = GameConstants.PhysicsCategories.playerCategory
              sprite.physicsBody!.collisionBitMask = GameConstants.PhysicsCategories.groundCategory | GameConstants.PhysicsCategories.finishCategory
              sprite.physicsBody!.contactTestBitMask = GameConstants.PhysicsCategories.allCategory
+            
+            // Finish Line
+        case GameConstants.StringConstants.finishLineName:
+            sprite.physicsBody = SKPhysicsBody(rectangleOf: sprite.size)
+            sprite.physicsBody!.categoryBitMask = GameConstants.PhysicsCategories.finishCategory
+            
+            // Enemy/Bird Still
+        case GameConstants.StringConstants.enemyName:
+            sprite.physicsBody = SKPhysicsBody(rectangleOf: sprite.size)
+            sprite.physicsBody!.categoryBitMask = GameConstants.PhysicsCategories.enemyCategory
+            
         default:
             sprite.physicsBody = SKPhysicsBody(rectangleOf: sprite.size)
+        }
+        
+        // Apply to all sprites but player
+        if name != GameConstants.StringConstants.playerName {
+            sprite.physicsBody?.contactTestBitMask = GameConstants.PhysicsCategories.playerCategory
+            // stops objects pushed back via player contact
+            sprite.physicsBody!.isDynamic = false
         }
         
         

@@ -20,6 +20,7 @@
 		18902BCB2468312D0053771E /* PhysicsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCA2468312D0053771E /* PhysicsHelper.swift */; };
 		18902BCD2468373F0053771E /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCC2468373F0053771E /* GroundNode.swift */; };
 		18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCE24683E1E0053771E /* AnimationHelper.swift */; };
+		18902BD1246887880053771E /* ObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BD0246887880053771E /* ObjectHelper.swift */; };
 		18D894B72465AA180003EE8C /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D894B62465AA180003EE8C /* SKNode+Extensions.swift */; };
 		18DDC8DE2465928A00503A6B /* Level_0-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC8DD2465928A00503A6B /* Level_0-1.sks */; };
 		18DDC8E02465936B00503A6B /* TileSets.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC8DF2465936B00503A6B /* TileSets.sks */; };
@@ -41,6 +42,7 @@
 		18902BCA2468312D0053771E /* PhysicsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsHelper.swift; sourceTree = "<group>"; };
 		18902BCC2468373F0053771E /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
 		18902BCE24683E1E0053771E /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
+		18902BD0246887880053771E /* ObjectHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectHelper.swift; sourceTree = "<group>"; };
 		18D894B62465AA180003EE8C /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
 		18DDC8DD2465928A00503A6B /* Level_0-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level_0-1.sks"; sourceTree = "<group>"; };
 		18DDC8DF2465936B00503A6B /* TileSets.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSets.sks; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				18902BCA2468312D0053771E /* PhysicsHelper.swift */,
 				18902BCE24683E1E0053771E /* AnimationHelper.swift */,
+				18902BD0246887880053771E /* ObjectHelper.swift */,
 			);
 			path = "Helper Files";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				18D894B72465AA180003EE8C /* SKNode+Extensions.swift in Sources */,
 				181D60742466E14A0058E984 /* Layer.swift in Sources */,
 				1821E9A6246584FA006BA465 /* GameViewController.swift in Sources */,
+				18902BD1246887880053771E /* ObjectHelper.swift in Sources */,
 				181D607A2466FB260058E984 /* Player.swift in Sources */,
 				181D60782466F05F0058E984 /* GameConstants.swift in Sources */,
 				18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */,
