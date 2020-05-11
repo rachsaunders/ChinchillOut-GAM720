@@ -57,6 +57,10 @@ class GameScene: SKScene {
         
         createLayers()
         
+        // ADDED TO FIX A BUG ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        isPaused = true
+        isPaused = false
+        
     }
     
     func createLayers() {
