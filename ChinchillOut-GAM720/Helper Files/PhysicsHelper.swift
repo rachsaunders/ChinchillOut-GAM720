@@ -37,6 +37,11 @@ class PhysicsHelper {
             sprite.physicsBody = SKPhysicsBody(rectangleOf: sprite.size)
             sprite.physicsBody!.categoryBitMask = GameConstants.PhysicsCategories.enemyCategory
             
+            // Collectable fruit
+        case GameConstants.StringConstants.fruitName:
+            sprite.physicsBody = SKPhysicsBody(circleOfRadius: sprite.size.width/2)
+            sprite.physicsBody!.categoryBitMask = GameConstants.PhysicsCategories.collectibleCategory
+            
         default:
             sprite.physicsBody = SKPhysicsBody(rectangleOf: sprite.size)
         }
