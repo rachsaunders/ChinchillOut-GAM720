@@ -29,8 +29,10 @@ class GameScene: SKScene {
             switch newValue {
             case .ongoing:
                 player.state = .running
+                pauseEnemies(bool: false)
             case .finished:
                 player.state = .idle
+                pauseEnemies(bool: true)
             default:
                 break
             }
@@ -196,6 +198,12 @@ class GameScene: SKScene {
         die(reason: 0)
     }
     
+    func pauseEnemies(bool: Bool) {
+        for enemy in tileMap[GameConstants.StringConstants.enemyName] {
+            enemy.isPaused = bool
+        }
+    }
+    
     // two ways player can die - obstacle or falling off the edge
     func die(reason: Int) {
         gameState = .finished
@@ -261,7 +269,7 @@ class GameScene: SKScene {
             dt = 0
         }
         lastTime = currentTime
-        
+         
         
         if gameState == .ongoing {
             worldLayer.update(dt)
