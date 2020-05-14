@@ -27,6 +27,8 @@ class ObjectHelper {
     
     // Grid of fruit
     static func calculateGridWidth(rows: Int, columns: Int, parent: SKSpriteNode) {
+        // Hides the red box
+        parent.color = UIColor.clear
         for x in 0..<columns {
             for y in 0..<rows {
                 let position = CGPoint(x: x, y: y)
@@ -43,8 +45,7 @@ class ObjectHelper {
         fruit.size = CGSize(width: parent.size.width/CGFloat(columns), height: parent.size.width/CGFloat(columns))
         fruit.name = GameConstants.StringConstants.fruitName
         
-        // Hides the red box
-        parent.color = UIColor.clear
+ 
         fruit.position = CGPoint(x: position.x * fruit.size.width + fruit.size.width/2, y: position.y * fruit.size.height + fruit.size.height/2)
         
         let fruitFrames = AnimationHelper.loadTextures(from: SKTextureAtlas(named: GameConstants.StringConstants.fruitRotateAtlas), withName: GameConstants.StringConstants.fruitPrefixKey)

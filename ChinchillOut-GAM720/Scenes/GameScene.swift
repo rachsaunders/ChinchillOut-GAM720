@@ -46,6 +46,9 @@ class GameScene: SKScene {
     // help the double jump
     var brake = false
     
+    // count collected coins
+    var fruits = 0
+    
     override func didMove(to view: SKView) {
         
         physicsWorld.contactDelegate = self
@@ -204,6 +207,25 @@ class GameScene: SKScene {
         }
     }
     
+    // FOR ALL COLLETABLES
+    func handleCollectable(sprite: SKSpriteNode) {
+        switch sprite.name! {
+        case GameConstants.StringConstants.fruitName:
+            collectFruit(sprite: sprite)
+        default:
+            break
+        }
+
+    }
+    
+    // FOR FRUIT ONLY
+    func collectFruit(sprite: SKSpriteNode) {
+        fruits += 1
+        
+        // check
+        print("collected a coin yay")
+    }
+    
     // two ways player can die - obstacle or falling off the edge
     func die(reason: Int) {
         gameState = .finished
@@ -315,10 +337,16 @@ extension GameScene: SKPhysicsContactDelegate {
             
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.enemyCategory:
             handleEnemyContact()
-            // Falling off the ledge
+           
+        // Falling off the ledge
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.frameCategory:
             physicsBody = nil
             die(reason: 1)
+          
+        // Collectables
+        case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.collectibleCategory:
+            let collectible = contact.bodyA.node?.name == player.name ? contact.bodyB.node as! SKSpriteNode : contact.bodyA.node as! SKSpriteNode
+            handleCollectable(sprite: collectible)
             
         default:
             break
