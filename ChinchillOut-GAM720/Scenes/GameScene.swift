@@ -222,9 +222,18 @@ class GameScene: SKScene {
     func collectFruit(sprite: SKSpriteNode) {
         fruits += 1
         
-        // check
-        print("collected a coin yay")
+        if let fruitDust = ParticleHelper.addParticleEffect(name: GameConstants.StringConstants.fruitDustEmitterKey, particlePositionRange: CGVector(dx: 5.0, dy: 5.0), position: CGPoint.zero) {
+            fruitDust.zPosition = GameConstants.ZPositions.objectZ
+            sprite.addChild(fruitDust)
+            sprite.run(SKAction.fadeOut(withDuration: 0.4), completion: {
+                // remove effect and the fruit
+                fruitDust.removeFromParent()
+                sprite.removeFromParent()
+            })
+            
+        }
     }
+        
     
     // two ways player can die - obstacle or falling off the edge
     func die(reason: Int) {

@@ -21,6 +21,9 @@
 		18902BCD2468373F0053771E /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCC2468373F0053771E /* GroundNode.swift */; };
 		18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCE24683E1E0053771E /* AnimationHelper.swift */; };
 		18902BD1246887880053771E /* ObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BD0246887880053771E /* ObjectHelper.swift */; };
+		18A1D431246D7CFD005425C1 /* ParticleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1D430246D7CFD005425C1 /* ParticleHelper.swift */; };
+		18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A1D434246D7EA5005425C1 /* Assets.xcassets */; };
+		18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18A1D437246D8185005425C1 /* FruitDustEmitter.sks */; };
 		18D894B72465AA180003EE8C /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D894B62465AA180003EE8C /* SKNode+Extensions.swift */; };
 		18DDC8DE2465928A00503A6B /* Level_0-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC8DD2465928A00503A6B /* Level_0-1.sks */; };
 		18DDC8E02465936B00503A6B /* TileSets.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC8DF2465936B00503A6B /* TileSets.sks */; };
@@ -43,6 +46,9 @@
 		18902BCC2468373F0053771E /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
 		18902BCE24683E1E0053771E /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		18902BD0246887880053771E /* ObjectHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectHelper.swift; sourceTree = "<group>"; };
+		18A1D430246D7CFD005425C1 /* ParticleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleHelper.swift; sourceTree = "<group>"; };
+		18A1D434246D7EA5005425C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A1D437246D8185005425C1 /* FruitDustEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FruitDustEmitter.sks; sourceTree = "<group>"; };
 		18D894B62465AA180003EE8C /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
 		18DDC8DD2465928A00503A6B /* Level_0-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level_0-1.sks"; sourceTree = "<group>"; };
 		18DDC8DF2465936B00503A6B /* TileSets.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSets.sks; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 		1821E99C246584FA006BA465 /* ChinchillOut-GAM720 */ = {
 			isa = PBXGroup;
 			children = (
+				18A1D432246D7E40005425C1 /* Particle Emitters */,
 				1821E9AA246584FB006BA465 /* Assets.xcassets */,
 				18DDC8DB24658AD000503A6B /* Template */,
 				18DDC8DA24658ACB00503A6B /* Controller */,
@@ -109,12 +116,22 @@
 			path = "Other Files";
 			sourceTree = "<group>";
 		};
+		18A1D432246D7E40005425C1 /* Particle Emitters */ = {
+			isa = PBXGroup;
+			children = (
+				18A1D434246D7EA5005425C1 /* Assets.xcassets */,
+				18A1D437246D8185005425C1 /* FruitDustEmitter.sks */,
+			);
+			path = "Particle Emitters";
+			sourceTree = "<group>";
+		};
 		18DDC8CF24658A3A00503A6B /* Helper Files */ = {
 			isa = PBXGroup;
 			children = (
 				18902BCA2468312D0053771E /* PhysicsHelper.swift */,
 				18902BCE24683E1E0053771E /* AnimationHelper.swift */,
 				18902BD0246887880053771E /* ObjectHelper.swift */,
+				18A1D430246D7CFD005425C1 /* ParticleHelper.swift */,
 			);
 			path = "Helper Files";
 			sourceTree = "<group>";
@@ -262,10 +279,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */,
 				1821E9A9246584FA006BA465 /* Main.storyboard in Resources */,
 				18DDC8DE2465928A00503A6B /* Level_0-1.sks in Resources */,
 				18DDC8E02465936B00503A6B /* TileSets.sks in Resources */,
 				1821E9AB246584FB006BA465 /* Assets.xcassets in Resources */,
+				18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */,
 				1821E9AE246584FB006BA465 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +303,7 @@
 				18902BD1246887880053771E /* ObjectHelper.swift in Sources */,
 				181D607A2466FB260058E984 /* Player.swift in Sources */,
 				181D60782466F05F0058E984 /* GameConstants.swift in Sources */,
+				18A1D431246D7CFD005425C1 /* ParticleHelper.swift in Sources */,
 				18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */,
 				1821E99E246584FA006BA465 /* AppDelegate.swift in Sources */,
 				181D60762466EA4B0058E984 /* RepeatingLayer.swift in Sources */,
