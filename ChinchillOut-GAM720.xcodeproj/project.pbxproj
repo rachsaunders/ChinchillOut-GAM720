@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18029745246EB88400371085 /* BrakeSparkEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18029744246EB88400371085 /* BrakeSparkEmitter.sks */; };
 		181D60742466E14A0058E984 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60732466E14A0058E984 /* Layer.swift */; };
 		181D60762466EA4B0058E984 /* RepeatingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60752466EA4B0058E984 /* RepeatingLayer.swift */; };
 		181D60782466F05F0058E984 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60772466F05F0058E984 /* GameConstants.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18029744246EB88400371085 /* BrakeSparkEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BrakeSparkEmitter.sks; sourceTree = "<group>"; };
 		181D60732466E14A0058E984 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		181D60752466EA4B0058E984 /* RepeatingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingLayer.swift; sourceTree = "<group>"; };
 		181D60772466F05F0058E984 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				18A1D434246D7EA5005425C1 /* Assets.xcassets */,
 				18A1D437246D8185005425C1 /* FruitDustEmitter.sks */,
+				18029744246EB88400371085 /* BrakeSparkEmitter.sks */,
 			);
 			path = "Particle Emitters";
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				1821E9A9246584FA006BA465 /* Main.storyboard in Resources */,
 				18DDC8DE2465928A00503A6B /* Level_0-1.sks in Resources */,
 				18DDC8E02465936B00503A6B /* TileSets.sks in Resources */,
+				18029745246EB88400371085 /* BrakeSparkEmitter.sks in Resources */,
 				1821E9AB246584FB006BA465 /* Assets.xcassets in Resources */,
 				18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */,
 				1821E9AE246584FB006BA465 /* LaunchScreen.storyboard in Resources */,

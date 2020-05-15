@@ -54,6 +54,9 @@ struct GameConstants {
         static let fruitName = "Fruit"
         static let fruitImageName = "rosehip0"
         
+        static let superFruitImageName = "superRosehip"
+        static let superFruitNames = ["SuperRosehip1","SuperRosehip2","SuperRosehip3"]
+        
         static let playerIdleAtlas = "Player Idle Atlas"
         static let playerRunAtlas = "Player Run Atlas"
         static let playerJumpAtlas = "Player Jump Atlas"
@@ -71,6 +74,7 @@ struct GameConstants {
         static let brakeDescendActionKey = "BrakeDescend"
         
         static let fruitDustEmitterKey = "FruitDustEmitter"
+        static let brakeSparkEmitterKey = "BrakeSparkEmitterKey"
     }
     
 }

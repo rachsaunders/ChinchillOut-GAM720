@@ -46,8 +46,10 @@ class GameScene: SKScene {
     // help the double jump
     var brake = false
     
-    // count collected coins
+    // count collected fruit
     var fruits = 0
+    
+    var superFruits = 0
     
     override func didMove(to view: SKView) {
         
@@ -194,7 +196,17 @@ class GameScene: SKScene {
         // speed in y direction for braking
         player.physicsBody!.velocity.dy = 0.0
         
-        player.run(player.userData?.value(forKey: GameConstants.StringConstants.brakeDescendActionKey) as! SKAction)
+        // spark animation
+        if let sparky = ParticleHelper.addParticleEffect(name: GameConstants.StringConstants.brakeSparkEmitterKey, particlePositionRange: CGVector(dx: 30.0, dy: 30.0), position: CGPoint(x: player.position.x, y: player.position.y - player.size.height/2)) {
+            sparky.zPosition = GameConstants.ZPositions.objectZ
+            addChild(sparky)
+        }
+        
+        player.run(player.userData?.value(forKey: GameConstants.StringConstants.brakeDescendActionKey) as! SKAction) {
+            
+            // remove particle affect
+            ParticleHelper.removeParticleEffect(name: GameConstants.StringConstants.brakeSparkEmitterKey, from: self)
+        }
     }
     
     func handleEnemyContact() {
@@ -210,7 +222,8 @@ class GameScene: SKScene {
     // FOR ALL COLLETABLES
     func handleCollectable(sprite: SKSpriteNode) {
         switch sprite.name! {
-        case GameConstants.StringConstants.fruitName:
+        case GameConstants.StringConstants.fruitName,
+             _ where GameConstants.StringConstants.superFruitNames.contains(sprite.name!):
             collectFruit(sprite: sprite)
         default:
             break
@@ -220,7 +233,14 @@ class GameScene: SKScene {
     
     // FOR FRUIT ONLY
     func collectFruit(sprite: SKSpriteNode) {
-        fruits += 1
+        
+        // tell the difference between SuperFruit and Fruit
+        if GameConstants.StringConstants.superFruitNames.contains(sprite.name!) {
+            superFruits += 1
+        } else {
+            fruits += 1
+        }
+            
         
         if let fruitDust = ParticleHelper.addParticleEffect(name: GameConstants.StringConstants.fruitDustEmitterKey, particlePositionRange: CGVector(dx: 5.0, dy: 5.0), position: CGPoint.zero) {
             fruitDust.zPosition = GameConstants.ZPositions.objectZ
