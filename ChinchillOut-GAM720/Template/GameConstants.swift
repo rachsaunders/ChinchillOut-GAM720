@@ -54,7 +54,7 @@ struct GameConstants {
         static let fruitName = "Fruit"
         static let fruitImageName = "rosehip0"
         
-        static let superFruitImageName = "superRosehip"
+        static let superFruitImageName = "SuperRosehip"
         static let superFruitNames = ["SuperRosehip1","SuperRosehip2","SuperRosehip3"]
         
         static let gameFontName = "CHICKEN Pie"

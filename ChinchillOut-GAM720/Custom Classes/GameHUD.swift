@@ -36,7 +36,8 @@ class GameHUD: SKSpriteNode, HUDDelegate {
             emptySlot.name = String(i)
             emptySlot.alpha = 0.5
             emptySlot.scale(to: superFruitCounter.size, width: true, multiplier: 0.3)
-            emptySlot.position = CGPoint(x: -superFruitCounter.size.width/2 + CGFloat(i)*superFruitCounter.size.width/3 + superFruitCounter.size.width*0.05, y: superFruitCounter.frame.midY)
+            // changed to fix error of position of the Super Fruit Counter
+            emptySlot.position = CGPoint(x: -superFruitCounter.size.width/2 + emptySlot.size.width/2 + CGFloat(i)*superFruitCounter.size.width/3 + superFruitCounter.size.width*0.05, y: superFruitCounter.frame.midY)
             emptySlot.zPosition = GameConstants.ZPositions.hudZ
             superFruitCounter.addChild(emptySlot)
         }
