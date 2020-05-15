@@ -57,6 +57,8 @@ struct GameConstants {
         static let superFruitImageName = "superRosehip"
         static let superFruitNames = ["SuperRosehip1","SuperRosehip2","SuperRosehip3"]
         
+        static let gameFontName = "CHICKEN Pie"
+        
         static let playerIdleAtlas = "Player Idle Atlas"
         static let playerRunAtlas = "Player Run Atlas"
         static let playerJumpAtlas = "Player Jump Atlas"

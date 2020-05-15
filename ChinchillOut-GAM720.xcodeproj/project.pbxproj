@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		18029745246EB88400371085 /* BrakeSparkEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18029744246EB88400371085 /* BrakeSparkEmitter.sks */; };
+		18029748246ECA4F00371085 /* HUDDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18029747246ECA4F00371085 /* HUDDelegate.swift */; };
+		1802974A246ECAA200371085 /* GameHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18029749246ECAA200371085 /* GameHUD.swift */; };
+		18029750246ECE4300371085 /* chinchillOut-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1802974F246ECE3C00371085 /* chinchillOut-Font.ttf */; };
 		181D60742466E14A0058E984 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60732466E14A0058E984 /* Layer.swift */; };
 		181D60762466EA4B0058E984 /* RepeatingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60752466EA4B0058E984 /* RepeatingLayer.swift */; };
 		181D60782466F05F0058E984 /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60772466F05F0058E984 /* GameConstants.swift */; };
@@ -32,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		18029744246EB88400371085 /* BrakeSparkEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BrakeSparkEmitter.sks; sourceTree = "<group>"; };
+		18029747246ECA4F00371085 /* HUDDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDDelegate.swift; sourceTree = "<group>"; };
+		18029749246ECAA200371085 /* GameHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHUD.swift; sourceTree = "<group>"; };
+		1802974F246ECE3C00371085 /* chinchillOut-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chinchillOut-Font.ttf"; sourceTree = "<group>"; };
 		181D60732466E14A0058E984 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		181D60752466EA4B0058E984 /* RepeatingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingLayer.swift; sourceTree = "<group>"; };
 		181D60772466F05F0058E984 /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
@@ -67,6 +73,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18029746246ECA2500371085 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				18029747246ECA4F00371085 /* HUDDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1802974B246ECAE100371085 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1802974C246ECAFD00371085 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1802974C246ECAFD00371085 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1802974F246ECE3C00371085 /* chinchillOut-Font.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		1821E991246584F9006BA465 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +116,8 @@
 		1821E99C246584FA006BA465 /* ChinchillOut-GAM720 */ = {
 			isa = PBXGroup;
 			children = (
+				1802974B246ECAE100371085 /* Resources */,
+				18029746246ECA2500371085 /* Protocols */,
 				18A1D432246D7E40005425C1 /* Particle Emitters */,
 				1821E9AA246584FB006BA465 /* Assets.xcassets */,
 				18DDC8DB24658AD000503A6B /* Template */,
@@ -144,6 +176,7 @@
 			children = (
 				181D60792466FB260058E984 /* Player.swift */,
 				18902BCC2468373F0053771E /* GroundNode.swift */,
+				18029749246ECAA200371085 /* GameHUD.swift */,
 			);
 			path = "Custom Classes";
 			sourceTree = "<group>";
@@ -282,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18029750246ECE4300371085 /* chinchillOut-Font.ttf in Resources */,
 				18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */,
 				1821E9A9246584FA006BA465 /* Main.storyboard in Resources */,
 				18DDC8DE2465928A00503A6B /* Level_0-1.sks in Resources */,
@@ -302,7 +336,9 @@
 			files = (
 				1821E9A4246584FA006BA465 /* GameScene.swift in Sources */,
 				18D894B72465AA180003EE8C /* SKNode+Extensions.swift in Sources */,
+				18029748246ECA4F00371085 /* HUDDelegate.swift in Sources */,
 				181D60742466E14A0058E984 /* Layer.swift in Sources */,
+				1802974A246ECAA200371085 /* GameHUD.swift in Sources */,
 				1821E9A6246584FA006BA465 /* GameViewController.swift in Sources */,
 				18902BD1246887880053771E /* ObjectHelper.swift in Sources */,
 				181D607A2466FB260058E984 /* Player.swift in Sources */,
