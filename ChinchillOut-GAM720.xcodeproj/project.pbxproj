@@ -28,6 +28,12 @@
 		18A1D431246D7CFD005425C1 /* ParticleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1D430246D7CFD005425C1 /* ParticleHelper.swift */; };
 		18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A1D434246D7EA5005425C1 /* Assets.xcassets */; };
 		18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18A1D437246D8185005425C1 /* FruitDustEmitter.sks */; };
+		18C614FC24702533009A1554 /* PopupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C614FB24702533009A1554 /* PopupNode.swift */; };
+		18C614FE24702564009A1554 /* ScorePopupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C614FD24702564009A1554 /* ScorePopupNode.swift */; };
+		18C61500247025C7009A1554 /* BannerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C614FF247025C7009A1554 /* BannerLabel.swift */; };
+		18C6150224702601009A1554 /* PopupButtonHandlerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6150124702601009A1554 /* PopupButtonHandlerDelegate.swift */; };
+		18C6150424702669009A1554 /* SpriteKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6150324702669009A1554 /* SpriteKitButton.swift */; };
+		18C615062470430E009A1554 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C615052470430E009A1554 /* ScoreManager.swift */; };
 		18D894B72465AA180003EE8C /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D894B62465AA180003EE8C /* SKNode+Extensions.swift */; };
 		18DDC8DE2465928A00503A6B /* Level_0-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC8DD2465928A00503A6B /* Level_0-1.sks */; };
 		18DDC8E02465936B00503A6B /* TileSets.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC8DF2465936B00503A6B /* TileSets.sks */; };
@@ -57,6 +63,12 @@
 		18A1D430246D7CFD005425C1 /* ParticleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleHelper.swift; sourceTree = "<group>"; };
 		18A1D434246D7EA5005425C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A1D437246D8185005425C1 /* FruitDustEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FruitDustEmitter.sks; sourceTree = "<group>"; };
+		18C614FB24702533009A1554 /* PopupNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupNode.swift; sourceTree = "<group>"; };
+		18C614FD24702564009A1554 /* ScorePopupNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePopupNode.swift; sourceTree = "<group>"; };
+		18C614FF247025C7009A1554 /* BannerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerLabel.swift; sourceTree = "<group>"; };
+		18C6150124702601009A1554 /* PopupButtonHandlerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupButtonHandlerDelegate.swift; sourceTree = "<group>"; };
+		18C6150324702669009A1554 /* SpriteKitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitButton.swift; sourceTree = "<group>"; };
+		18C615052470430E009A1554 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
 		18D894B62465AA180003EE8C /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
 		18DDC8DD2465928A00503A6B /* Level_0-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level_0-1.sks"; sourceTree = "<group>"; };
 		18DDC8DF2465936B00503A6B /* TileSets.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSets.sks; sourceTree = "<group>"; };
@@ -77,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				18029747246ECA4F00371085 /* HUDDelegate.swift */,
+				18C6150124702601009A1554 /* PopupButtonHandlerDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -167,6 +180,7 @@
 				18902BCE24683E1E0053771E /* AnimationHelper.swift */,
 				18902BD0246887880053771E /* ObjectHelper.swift */,
 				18A1D430246D7CFD005425C1 /* ParticleHelper.swift */,
+				18C615052470430E009A1554 /* ScoreManager.swift */,
 			);
 			path = "Helper Files";
 			sourceTree = "<group>";
@@ -177,6 +191,10 @@
 				181D60792466FB260058E984 /* Player.swift */,
 				18902BCC2468373F0053771E /* GroundNode.swift */,
 				18029749246ECAA200371085 /* GameHUD.swift */,
+				18C614FB24702533009A1554 /* PopupNode.swift */,
+				18C614FD24702564009A1554 /* ScorePopupNode.swift */,
+				18C614FF247025C7009A1554 /* BannerLabel.swift */,
+				18C6150324702669009A1554 /* SpriteKitButton.swift */,
 			);
 			path = "Custom Classes";
 			sourceTree = "<group>";
@@ -338,16 +356,22 @@
 				18D894B72465AA180003EE8C /* SKNode+Extensions.swift in Sources */,
 				18029748246ECA4F00371085 /* HUDDelegate.swift in Sources */,
 				181D60742466E14A0058E984 /* Layer.swift in Sources */,
+				18C614FC24702533009A1554 /* PopupNode.swift in Sources */,
 				1802974A246ECAA200371085 /* GameHUD.swift in Sources */,
+				18C615062470430E009A1554 /* ScoreManager.swift in Sources */,
 				1821E9A6246584FA006BA465 /* GameViewController.swift in Sources */,
 				18902BD1246887880053771E /* ObjectHelper.swift in Sources */,
+				18C6150224702601009A1554 /* PopupButtonHandlerDelegate.swift in Sources */,
 				181D607A2466FB260058E984 /* Player.swift in Sources */,
+				18C614FE24702564009A1554 /* ScorePopupNode.swift in Sources */,
 				181D60782466F05F0058E984 /* GameConstants.swift in Sources */,
 				18A1D431246D7CFD005425C1 /* ParticleHelper.swift in Sources */,
 				18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */,
 				1821E99E246584FA006BA465 /* AppDelegate.swift in Sources */,
+				18C6150424702669009A1554 /* SpriteKitButton.swift in Sources */,
 				181D60762466EA4B0058E984 /* RepeatingLayer.swift in Sources */,
 				18902BCD2468373F0053771E /* GroundNode.swift in Sources */,
+				18C61500247025C7009A1554 /* BannerLabel.swift in Sources */,
 				18902BCB2468312D0053771E /* PhysicsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

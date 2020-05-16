@@ -51,11 +51,13 @@ class GameHUD: SKSpriteNode, HUDDelegate {
     
     func updateFruitLabel(fruits: Int) {
         
-        
+        fruitLabel.text = "\(fruits)"
     }
     
     func addSuperFruit(index: Int) {
         
+        let emptySlot = superFruitCounter[String(index)].first as! SKSpriteNode
+        emptySlot.alpha = 1.0
         
     }
     

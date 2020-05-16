@@ -59,6 +59,38 @@ struct GameConstants {
         
         static let gameFontName = "CHICKEN Pie"
         
+        static let playButton = "PlayButton"
+        static let retryButton = "RetryButton"
+        static let menuButton = "MenuButton"
+        static let pauseButton = "PauseButton"
+        static let emptyButton = "EmptyButton"
+        static let cancelButton = "CancelButton"
+        
+        static let largePopup = "PopupLarge"
+        static let smallPopup = "PopupSmall"
+        
+        // CHANGED TO STARS BECAUSE TWO FRUITS IS CONFUSING - CHANGE IMAGES!
+        //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////
+        
+        static let fullStarName = "StarsFull"
+        static let emptyStarName = "StarsEmpty"
+        
+        static let bannerName = "Banner"
+        
+        static let popupButtonNames = ["MenuButton", "PlayButton", "RetryButton", "CancelButton"]
+        
+        static let scoreScoreKey = "score"
+        static let scoreFruitsKey = "fruits"
+        // CHANGED TO STARS BECAUSE TWO FRUITS IS CONFUSING - CHANGE IMAGES!
+             //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////
+        static let scoreStarsKey = "stars"
+       
+        static let pausedKey = "Paused"
+        static let completedKey = "Completed"
+        static let failedKey = "Failed"
+        
+        
+        
         static let playerIdleAtlas = "Player Idle Atlas"
         static let playerRunAtlas = "Player Run Atlas"
         static let playerJumpAtlas = "Player Jump Atlas"

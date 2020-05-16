@@ -30,6 +30,9 @@ class GameScene: SKScene {
             case .ongoing:
                 player.state = .running
                 pauseEnemies(bool: false)
+            case .paused:
+                player.state = .idle
+                pauseEnemies(bool: true)
             case .finished:
                 player.state = .idle
                 pauseEnemies(bool: true)
@@ -50,6 +53,8 @@ class GameScene: SKScene {
     var fruits = 0
     
     var superFruits = 0
+    
+    var popup: PopupNode?
     
     var hudDelegate: HUDDelegate?
     
@@ -241,8 +246,15 @@ class GameScene: SKScene {
         // tell the difference between SuperFruit and Fruit
         if GameConstants.StringConstants.superFruitNames.contains(sprite.name!) {
             superFruits += 1
+            for index in 0..<3 {
+                if GameConstants.StringConstants.superFruitNames[index] == sprite.name! {
+                    hudDelegate?.addSuperFruit(index: index)
+                }
+            }
         } else {
             fruits += 1
+            // update
+            hudDelegate?.updateFruitLabel(fruits: fruits)
         }
             
         
@@ -258,6 +270,13 @@ class GameScene: SKScene {
         }
     }
     
+    func buttonHandler(index: Int) {
+        if gameState == .ongoing {
+            gameState = .paused
+            createAndShowPopup(type: 0, title: GameConstants.StringConstants.pausedKey)
+        }
+    }
+    
     
     func addHUD() {
         let hud = GameHUD(with: CGSize(width: frame.width, height: frame.height*0.1))
@@ -265,6 +284,30 @@ class GameScene: SKScene {
         hud.zPosition = GameConstants.ZPositions.hudZ
         hudDelegate = hud
         addChild(hud)
+        
+        let pauseButton = SpriteKitButton(defaultButtonImage: GameConstants.StringConstants.pauseButton, action: buttonHandler, index: 0)
+        pauseButton.scale(to: frame.size, width: false, multiplier: 0.1)
+        pauseButton.position = CGPoint(x: frame.midX, y: frame.maxY - pauseButton.size.height/1.9)
+        pauseButton.zPosition = GameConstants.ZPositions.hudZ
+        
+        addChild(pauseButton)
+    }
+    
+    func createAndShowPopup(type: Int, title: String) {
+        switch type {
+        case 0:
+            popup = PopupNode(withTitle: title, and: SKTexture(imageNamed: GameConstants.StringConstants.smallPopup), buttonHandlerDelegate: self)
+            popup!.add(buttons: [0,3,2])
+        default:
+            popup = ScorePopupNode(buttonHandlerDelegate: self, title: title, level: "Level_0-1", texture: SKTexture(imageNamed: GameConstants.StringConstants.largePopup), score: fruits, fruits: superFruits, animated: true)
+            popup!.add(buttons: [2,0])
+        }
+        
+        popup!.position = CGPoint(x: frame.midX, y: frame.midY)
+        popup!.zPosition = GameConstants.ZPositions.hudZ
+        popup!.scale(to: frame.size, width: true, multiplier: 0.8)
+        
+        addChild(popup!)
     }
         
     
@@ -293,7 +336,35 @@ class GameScene: SKScene {
         player.run(deathAnimation) {
             // remove player sprite from screen when dead
             self.player.removeFromParent()
+            
+            // pop up
+            self.createAndShowPopup(type: 1, title: GameConstants.StringConstants.failedKey)
         }
+    }
+    
+    func finishGame() {
+        gameState = .finished
+        var stars = 0
+        let percentage = CGFloat(fruits)/100.0
+        
+        if percentage >= 0.8 {
+            stars = 3
+        } else if percentage >= 0.4 {
+            stars = 2
+        } else if fruits >= 1 {
+            stars = 1
+        }
+        let scores = [
+        
+            GameConstants.StringConstants.scoreScoreKey: fruits,
+            GameConstants.StringConstants.scoreStarsKey: stars,
+            GameConstants.StringConstants.scoreFruitsKey: superFruits
+        
+        
+        ]
+        
+        ScoreManager.compare(scores: [scores], in: "Level_0-1")
+        createAndShowPopup(type: 1, title: GameConstants.StringConstants.completedKey)
     }
     
     // User controls player starting, jumping, moving etc by touch therefore these override functions are needed
@@ -375,7 +446,8 @@ extension GameScene: SKPhysicsContactDelegate {
             brake = false
             
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.finishCategory:
-            gameState = .finished
+            // gameState = .finished
+            finishGame()
             
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.enemyCategory:
             handleEnemyContact()
@@ -406,4 +478,31 @@ extension GameScene: SKPhysicsContactDelegate {
             break
         }
     }
+}
+
+extension GameScene: PopupButtonHandlerDelegate {
+    
+    func popupButtonHandler(index: Int) {
+        
+        switch index {
+         // Menu
+        case 0:
+            break
+         // Play
+        case 1:
+            break
+        // Retry
+        case 2:
+            break
+        case 3:
+            popup!.run(SKAction.fadeOut(withDuration: 0.2)) {
+                self.popup!.removeFromParent()
+                self.gameState = .ongoing
+            }
+        default:
+            break
+        }
+        
+    }
+    
 }
