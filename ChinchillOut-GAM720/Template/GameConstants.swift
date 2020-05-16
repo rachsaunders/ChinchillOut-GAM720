@@ -60,7 +60,7 @@ struct GameConstants {
         static let gameFontName = "CHICKEN Pie"
         
         static let playButton = "PlayButton"
-        static let retryButton = "RetryButton"
+        static let resetButton = "ResetButton"
         static let menuButton = "MenuButton"
         static let pauseButton = "PauseButton"
         static let emptyButton = "EmptyButton"
@@ -77,7 +77,7 @@ struct GameConstants {
         
         static let bannerName = "Banner"
         
-        static let popupButtonNames = ["MenuButton", "PlayButton", "RetryButton", "CancelButton"]
+        static let popupButtonNames = ["MenuButton", "PlayButton", "ResetButton", "CancelButton"]
         
         static let scoreScoreKey = "score"
         static let scoreFruitsKey = "fruits"

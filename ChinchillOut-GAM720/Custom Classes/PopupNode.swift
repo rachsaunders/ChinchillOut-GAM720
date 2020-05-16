@@ -21,6 +21,8 @@ class PopupNode: SKSpriteNode {
         let bannerLabel = BannerLabel(withTitle: title)
         // makes banner wider than the pop up width
         bannerLabel.scale(to: size, width: true, multiplier: 1.1)
+        // ERROR FIX - BANNER APPEARED BEHIND POPUP BEFORE THIS LINE WAS ADDED BELOW
+        bannerLabel.zPosition = GameConstants.ZPositions.hudZ
         bannerLabel.position = CGPoint(x: frame.midX, y: frame.maxY)
         
         addChild(bannerLabel)
