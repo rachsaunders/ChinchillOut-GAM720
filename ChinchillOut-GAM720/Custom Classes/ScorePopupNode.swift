@@ -126,7 +126,8 @@ class ScorePopupNode: PopupNode {
     
     func animateStar(number: Int) {
         
-        let star = self[GameConstants.StringConstants.fullStarName + "\(number)"].first!
+        // ERROR FIX - ADDED UNDERSCORE
+        let star = self[GameConstants.StringConstants.fullStarName + "_\(number)"].first!
         let fadeIn = SKAction.fadeIn(withDuration: 0.1)
         let scaleUp = SKAction.scale(by: 1.2, duration: 0.2)
         let scaleBack = SKAction.scale(by: 1.0, duration: 0.1)
