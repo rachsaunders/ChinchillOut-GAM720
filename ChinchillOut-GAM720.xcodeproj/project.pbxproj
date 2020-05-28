@@ -41,6 +41,15 @@
 		18EC52A02472B184008D7E16 /* SceneManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC529F2472B184008D7E16 /* SceneManagerDelegate.swift */; };
 		18EC52A22472BBAF008D7E16 /* CutsceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52A12472BBAF008D7E16 /* CutsceneController.swift */; };
 		18EC52A42472BBC0008D7E16 /* World1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52A32472BBC0008D7E16 /* World1Controller.swift */; };
+		18EC52AA2472D021008D7E16 /* SecondCutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52A92472D021008D7E16 /* SecondCutsceneViewController.swift */; };
+		18EC52AC2472D03D008D7E16 /* ThirdCutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52AB2472D03D008D7E16 /* ThirdCutsceneViewController.swift */; };
+		18EC52AE2472D04A008D7E16 /* ForthCutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52AD2472D04A008D7E16 /* ForthCutsceneViewController.swift */; };
+		18EC52B02472D05A008D7E16 /* FifthCutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52AF2472D05A008D7E16 /* FifthCutsceneViewController.swift */; };
+		18EC52B22472D079008D7E16 /* SixthCutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52B12472D079008D7E16 /* SixthCutsceneViewController.swift */; };
+		18EC52B42472D084008D7E16 /* SeventhCutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52B32472D084008D7E16 /* SeventhCutsceneViewController.swift */; };
+		18EC52B62472D0E8008D7E16 /* EighthCutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52B52472D0E8008D7E16 /* EighthCutsceneViewController.swift */; };
+		18EC52B82472D113008D7E16 /* NinthCutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52B72472D113008D7E16 /* NinthCutsceneViewController.swift */; };
+		18F1FB2224801E8F00DD71FB /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1FB2124801E8F00DD71FB /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +89,15 @@
 		18EC529F2472B184008D7E16 /* SceneManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManagerDelegate.swift; sourceTree = "<group>"; };
 		18EC52A12472BBAF008D7E16 /* CutsceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutsceneController.swift; sourceTree = "<group>"; };
 		18EC52A32472BBC0008D7E16 /* World1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World1Controller.swift; sourceTree = "<group>"; };
+		18EC52A92472D021008D7E16 /* SecondCutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCutsceneViewController.swift; sourceTree = "<group>"; };
+		18EC52AB2472D03D008D7E16 /* ThirdCutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCutsceneViewController.swift; sourceTree = "<group>"; };
+		18EC52AD2472D04A008D7E16 /* ForthCutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthCutsceneViewController.swift; sourceTree = "<group>"; };
+		18EC52AF2472D05A008D7E16 /* FifthCutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthCutsceneViewController.swift; sourceTree = "<group>"; };
+		18EC52B12472D079008D7E16 /* SixthCutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthCutsceneViewController.swift; sourceTree = "<group>"; };
+		18EC52B32472D084008D7E16 /* SeventhCutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhCutsceneViewController.swift; sourceTree = "<group>"; };
+		18EC52B52472D0E8008D7E16 /* EighthCutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthCutsceneViewController.swift; sourceTree = "<group>"; };
+		18EC52B72472D113008D7E16 /* NinthCutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinthCutsceneViewController.swift; sourceTree = "<group>"; };
+		18F1FB2124801E8F00DD71FB /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +124,7 @@
 		1802974B246ECAE100371085 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18F1FB2024801CE700DD71FB /* Sounds */,
 				1802974C246ECAFD00371085 /* Fonts */,
 			);
 			path = Resources;
@@ -144,6 +163,7 @@
 				18A1D432246D7E40005425C1 /* Particle Emitters */,
 				18DDC8DB24658AD000503A6B /* Template */,
 				18DDC8DA24658ACB00503A6B /* Controller */,
+				1821E9B524658510006BA465 /* Controller Cutscene */,
 				18DDC8D924658AC300503A6B /* Scenes */,
 				18DDC8D824658AB400503A6B /* UI */,
 				18DDC8D624658A9300503A6B /* Scene Editor Files */,
@@ -153,16 +173,23 @@
 				18DDC8D124658A6400503A6B /* Custom Classes */,
 				18DDC8CF24658A3A00503A6B /* Helper Files */,
 				1821E9B624658551006BA465 /* Other Files */,
-				1821E9B524658510006BA465 /* Cutscene Files */,
 			);
 			path = "ChinchillOut-GAM720";
 			sourceTree = "<group>";
 		};
-		1821E9B524658510006BA465 /* Cutscene Files */ = {
+		1821E9B524658510006BA465 /* Controller Cutscene */ = {
 			isa = PBXGroup;
 			children = (
+				18EC52A92472D021008D7E16 /* SecondCutsceneViewController.swift */,
+				18EC52AB2472D03D008D7E16 /* ThirdCutsceneViewController.swift */,
+				18EC52AD2472D04A008D7E16 /* ForthCutsceneViewController.swift */,
+				18EC52AF2472D05A008D7E16 /* FifthCutsceneViewController.swift */,
+				18EC52B12472D079008D7E16 /* SixthCutsceneViewController.swift */,
+				18EC52B32472D084008D7E16 /* SeventhCutsceneViewController.swift */,
+				18EC52B52472D0E8008D7E16 /* EighthCutsceneViewController.swift */,
+				18EC52B72472D113008D7E16 /* NinthCutsceneViewController.swift */,
 			);
-			path = "Cutscene Files";
+			path = "Controller Cutscene";
 			sourceTree = "<group>";
 		};
 		1821E9B624658551006BA465 /* Other Files */ = {
@@ -204,6 +231,7 @@
 				18C614FD24702564009A1554 /* ScorePopupNode.swift */,
 				18C614FF247025C7009A1554 /* BannerLabel.swift */,
 				18C6150324702669009A1554 /* SpriteKitButton.swift */,
+				18F1FB2124801E8F00DD71FB /* SoundPlayer.swift */,
 			);
 			path = "Custom Classes";
 			sourceTree = "<group>";
@@ -271,8 +299,8 @@
 			children = (
 				1821E9A5246584FA006BA465 /* GameViewController.swift */,
 				18EC529D2472B015008D7E16 /* MenuViewController.swift */,
-				18EC52A12472BBAF008D7E16 /* CutsceneController.swift */,
 				18EC52A32472BBC0008D7E16 /* World1Controller.swift */,
+				18EC52A12472BBAF008D7E16 /* CutsceneController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +313,13 @@
 				181D60772466F05F0058E984 /* GameConstants.swift */,
 			);
 			path = Template;
+			sourceTree = "<group>";
+		};
+		18F1FB2024801CE700DD71FB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,28 +401,37 @@
 			files = (
 				1821E9A4246584FA006BA465 /* GameScene.swift in Sources */,
 				18D894B72465AA180003EE8C /* SKNode+Extensions.swift in Sources */,
+				18EC52B02472D05A008D7E16 /* FifthCutsceneViewController.swift in Sources */,
 				18029748246ECA4F00371085 /* HUDDelegate.swift in Sources */,
+				18EC52B82472D113008D7E16 /* NinthCutsceneViewController.swift in Sources */,
 				181D60742466E14A0058E984 /* Layer.swift in Sources */,
 				18C614FC24702533009A1554 /* PopupNode.swift in Sources */,
 				1802974A246ECAA200371085 /* GameHUD.swift in Sources */,
 				18C615062470430E009A1554 /* ScoreManager.swift in Sources */,
+				18EC52AC2472D03D008D7E16 /* ThirdCutsceneViewController.swift in Sources */,
 				1821E9A6246584FA006BA465 /* GameViewController.swift in Sources */,
 				18902BD1246887880053771E /* ObjectHelper.swift in Sources */,
+				18EC52B62472D0E8008D7E16 /* EighthCutsceneViewController.swift in Sources */,
 				18EC52A02472B184008D7E16 /* SceneManagerDelegate.swift in Sources */,
 				18C6150224702601009A1554 /* PopupButtonHandlerDelegate.swift in Sources */,
+				18EC52AA2472D021008D7E16 /* SecondCutsceneViewController.swift in Sources */,
 				181D607A2466FB260058E984 /* Player.swift in Sources */,
 				18C614FE24702564009A1554 /* ScorePopupNode.swift in Sources */,
 				181D60782466F05F0058E984 /* GameConstants.swift in Sources */,
+				18EC52AE2472D04A008D7E16 /* ForthCutsceneViewController.swift in Sources */,
 				18A1D431246D7CFD005425C1 /* ParticleHelper.swift in Sources */,
+				18EC52B42472D084008D7E16 /* SeventhCutsceneViewController.swift in Sources */,
 				18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */,
 				18EC52A42472BBC0008D7E16 /* World1Controller.swift in Sources */,
 				1821E99E246584FA006BA465 /* AppDelegate.swift in Sources */,
 				18EC52A22472BBAF008D7E16 /* CutsceneController.swift in Sources */,
 				18C6150424702669009A1554 /* SpriteKitButton.swift in Sources */,
+				18EC52B22472D079008D7E16 /* SixthCutsceneViewController.swift in Sources */,
 				181D60762466EA4B0058E984 /* RepeatingLayer.swift in Sources */,
 				18902BCD2468373F0053771E /* GroundNode.swift in Sources */,
 				18C61500247025C7009A1554 /* BannerLabel.swift in Sources */,
 				18902BCB2468312D0053771E /* PhysicsHelper.swift in Sources */,
+				18F1FB2224801E8F00DD71FB /* SoundPlayer.swift in Sources */,
 				18EC529E2472B015008D7E16 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

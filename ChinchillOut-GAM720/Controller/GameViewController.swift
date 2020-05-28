@@ -8,15 +8,19 @@
 
 import UIKit
 import SpriteKit
-import GameplayKit
+import AVFoundation
+// import GameplayKit
 
 // NOTES
 // I've set the landscape mode to be disabled. iOS is targeted at iOS11+. Test builds have been used on my phone which runs 13.4.1 on an iPhone 8 model.
+
+var backgroundMusicPlayer: AVAudioPlayer!
 
 class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        startbackgroundMusic()
         
         if let view = self.view as! SKView? {
             
@@ -38,6 +42,15 @@ class GameViewController: UIViewController {
             
         }
         
+    }
+    
+    func startbackgroundMusic() {
+        let path = Bundle.main.path(forResource: "forestBackground", ofType: "wav")
+        let url = URL(fileURLWithPath: path!)
+        backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
+        // constant loop
+        backgroundMusicPlayer.numberOfLoops = -1
+        backgroundMusicPlayer.play()
     }
 }
 
