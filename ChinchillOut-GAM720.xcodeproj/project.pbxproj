@@ -21,6 +21,11 @@
 		1821E9A9246584FA006BA465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821E9A7246584FA006BA465 /* Main.storyboard */; };
 		1821E9AB246584FB006BA465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1821E9AA246584FB006BA465 /* Assets.xcassets */; };
 		1821E9AE246584FB006BA465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821E9AC246584FB006BA465 /* LaunchScreen.storyboard */; };
+		182EBF2024813517009C95A8 /* dieSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF1E24813517009C95A8 /* dieSound.mp3 */; };
+		182EBF2124813517009C95A8 /* completedSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF1F24813517009C95A8 /* completedSound.mp3 */; };
+		182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF242481411E009C95A8 /* chinchilla1.mp3 */; };
+		182EBF272481471B009C95A8 /* forestBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF262481471A009C95A8 /* forestBackground.mp3 */; };
+		182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */; };
 		18902BCB2468312D0053771E /* PhysicsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCA2468312D0053771E /* PhysicsHelper.swift */; };
 		18902BCD2468373F0053771E /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCC2468373F0053771E /* GroundNode.swift */; };
 		18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCE24683E1E0053771E /* AnimationHelper.swift */; };
@@ -69,6 +74,11 @@
 		1821E9AA246584FB006BA465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1821E9AD246584FB006BA465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1821E9AF246584FB006BA465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182EBF1E24813517009C95A8 /* dieSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dieSound.mp3; sourceTree = "<group>"; };
+		182EBF1F24813517009C95A8 /* completedSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = completedSound.mp3; sourceTree = "<group>"; };
+		182EBF242481411E009C95A8 /* chinchilla1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chinchilla1.mp3; sourceTree = "<group>"; };
+		182EBF262481471A009C95A8 /* forestBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forestBackground.mp3; sourceTree = "<group>"; };
+		182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fruitCollection.mp3; sourceTree = "<group>"; };
 		18902BCA2468312D0053771E /* PhysicsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsHelper.swift; sourceTree = "<group>"; };
 		18902BCC2468373F0053771E /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
 		18902BCE24683E1E0053771E /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
@@ -318,6 +328,11 @@
 		18F1FB2024801CE700DD71FB /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				182EBF262481471A009C95A8 /* forestBackground.mp3 */,
+				182EBF1F24813517009C95A8 /* completedSound.mp3 */,
+				182EBF1E24813517009C95A8 /* dieSound.mp3 */,
+				182EBF242481411E009C95A8 /* chinchilla1.mp3 */,
+				182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -381,12 +396,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				18029750246ECE4300371085 /* chinchillOut-Font.ttf in Resources */,
+				182EBF272481471B009C95A8 /* forestBackground.mp3 in Resources */,
+				182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */,
 				18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */,
 				1821E9A9246584FA006BA465 /* Main.storyboard in Resources */,
+				182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */,
 				18DDC8DE2465928A00503A6B /* Level_0-1.sks in Resources */,
 				18DDC8E02465936B00503A6B /* TileSets.sks in Resources */,
+				182EBF2024813517009C95A8 /* dieSound.mp3 in Resources */,
 				18029745246EB88400371085 /* BrakeSparkEmitter.sks in Resources */,
 				1821E9AB246584FB006BA465 /* Assets.xcassets in Resources */,
+				182EBF2124813517009C95A8 /* completedSound.mp3 in Resources */,
 				18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */,
 				1821E9AE246584FB006BA465 /* LaunchScreen.storyboard in Resources */,
 			);

@@ -10,10 +10,10 @@ import SpriteKit
 
 class SoundPlayer {
     
-    let buttonSound = SKAction.playSoundFileNamed("button", waitForCompletion: false)
-    let fruitSound = SKAction.playSoundFileNamed("fruit", waitForCompletion: false)
-    let deathSound = SKAction.playSoundFileNamed("gameover", waitForCompletion: false)
-    let completedSound = SKAction.playSoundFileNamed("completed", waitForCompletion: false)
-    let powerUpSound = SKAction.playSoundFileNamed("powerup", waitForCompletion: false)
+    let buttonSound = SKAction.playSoundFileNamed("buttonSound", waitForCompletion: false)
+    let fruitSound = SKAction.playSoundFileNamed("fruitCollection", waitForCompletion: false)
+    let dieSound = SKAction.playSoundFileNamed("dieSound", waitForCompletion: false)
+    let completedSound = SKAction.playSoundFileNamed("completedSound", waitForCompletion: false)
+    let powerUpSound = SKAction.playSoundFileNamed("powerupSound", waitForCompletion: false)
     
 }

@@ -45,7 +45,7 @@ class GameViewController: UIViewController {
     }
     
     func startbackgroundMusic() {
-        let path = Bundle.main.path(forResource: "forestBackground", ofType: "wav")
+        let path = Bundle.main.path(forResource: "forestBackground", ofType: "mp3")
         let url = URL(fileURLWithPath: path!)
         backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
         // constant loop

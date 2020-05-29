@@ -56,6 +56,8 @@ class GameScene: SKScene {
     
     var popup: PopupNode?
     
+    let soundPlayer = SoundPlayer()
+    
     var hudDelegate: HUDDelegate?
     
     override func didMove(to view: SKView) {
@@ -233,6 +235,7 @@ class GameScene: SKScene {
         switch sprite.name! {
         case GameConstants.StringConstants.fruitName,
              _ where GameConstants.StringConstants.superFruitNames.contains(sprite.name!):
+            run(soundPlayer.fruitSound)
             collectFruit(sprite: sprite)
         default:
             break
@@ -313,6 +316,7 @@ class GameScene: SKScene {
     
     // two ways player can die - obstacle or falling off the edge
     func die(reason: Int) {
+        run(soundPlayer.dieSound)
         gameState = .finished
         player.turnGravity(on: false)
         
@@ -343,6 +347,7 @@ class GameScene: SKScene {
     }
     
     func finishGame() {
+        run(soundPlayer.completedSound)
         gameState = .finished
         var stars = 0
         let percentage = CGFloat(fruits)/100.0
