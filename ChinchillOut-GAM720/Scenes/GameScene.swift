@@ -14,6 +14,7 @@ enum GameState {
 
 class GameScene: SKScene {
     
+    
     var worldLayer: Layer!
     
     var backgroundLayer: RepeatingLayer!
@@ -58,8 +59,30 @@ class GameScene: SKScene {
     
     let soundPlayer = SoundPlayer()
     
+    /////////////
+       var levelKey: String
+    //////////////
+    
     var hudDelegate: HUDDelegate?
     
+    // TESTING OUT THE BELOW !
+     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+     var sceneManagerDelegate: SceneManagerDelegate?
+    
+      init(size: CGSize, sceneManagerDelegate: SceneManagerDelegate) {
+//             self.world = world
+//             self.level = level
+             self.levelKey = "Level_0-1"
+             self.sceneManagerDelegate = sceneManagerDelegate
+             super.init(size: size)
+         }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     override func didMove(to view: SKView) {
         
         physicsWorld.contactDelegate = self
@@ -498,12 +521,25 @@ extension GameScene: PopupButtonHandlerDelegate {
          // Menu
         case 0:
             break
+            
          // Play
         case 1:
-            break
+           break
+            
         // Retry
         case 2:
-            break
+            
+           popup!.run(SKAction.fadeOut(withDuration: 0.2)) {
+               self.popup!.removeFromParent()
+           
+           
+            
+            self.sceneManagerDelegate?.presentMenuScene()
+    // just an idea below
+            // self.presentGameScene()
+            
+           
+            }
         // Cancel
         case 3:
             popup!.run(SKAction.fadeOut(withDuration: 0.2)) {

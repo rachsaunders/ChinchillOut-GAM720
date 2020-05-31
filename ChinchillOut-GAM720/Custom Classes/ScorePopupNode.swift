@@ -69,7 +69,7 @@ class ScorePopupNode: PopupNode {
             star.size = empty.size
             star.position = empty.position
             star.zRotation = empty.zRotation
-            star.zPosition = GameConstants.ZPositions.hudZ
+            star.zPosition = GameConstants.ZPositions.hudZ + 1
             star.name = GameConstants.StringConstants.fullStarName + "_\(i)"
             star.alpha = 0.0
             

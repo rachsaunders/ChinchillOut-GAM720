@@ -35,6 +35,9 @@
                                         <state key="normal" title="ABOUT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="bhT-5e-shu" kind="show" id="uzf-ZR-o2F"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qw-T9-Zq9">
                                         <rect key="frame" x="0.0" y="94" width="96" height="47"/>
@@ -42,6 +45,9 @@
                                         <state key="normal" title="HELP">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="qxY-PX-6nb" kind="show" id="zHg-Un-wEc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -61,6 +67,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF6-b7-hA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3826.0869565217395" y="113.83928571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L2r-fV-fd5">
+            <objects>
+                <viewController id="bhT-5e-shu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wqA-DU-BIg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the about page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPi-d1-Zov">
+                                <rect key="frame" x="166" y="134" width="170" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tdt-GO-W9P"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rMd-Er-ZVO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D0M-Yk-q6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3009" y="114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j2z-0X-n1J">
+            <objects>
+                <viewController id="qxY-PX-6nb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Thv-s9-5I4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the help page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzd-YT-KMU">
+                                <rect key="frame" x="166" y="160" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3jj-mb-NrY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ril-qN-zYd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djl-7Q-Gos" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2242" y="114"/>
         </scene>
         <!--Cutscene View Controller-->
         <scene sceneID="rko-S5-hyc">

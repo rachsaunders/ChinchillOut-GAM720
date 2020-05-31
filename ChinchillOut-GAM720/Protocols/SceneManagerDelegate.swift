@@ -1,18 +1,18 @@
-////
-////  SceneManagerDelegate.swift
-////  ChinchillOut-GAM720
-////
-////  Created by Rachel Saunders on 18/05/2020.
-////  Copyright © 2020 Rachel Saunders. All rights reserved.
-////
 //
-//import Foundation
+//  SceneManagerDelegate.swift
+//  ChinchillOut-GAM720
 //
-//protocol SceneManagerDelegate {
+//  Created by Rachel Saunders on 18/05/2020.
+//  Copyright © 2020 Rachel Saunders. All rights reserved.
 //
-//    func presentLevelScene(for world: Int)
-//    func presentGameScene(for level: Int, in world: Int)
-//    func presentMenuScene()
-//
-//
-//}
+
+import Foundation
+
+protocol SceneManagerDelegate {
+
+
+    
+    func presentMenuScene()
+
+
+}

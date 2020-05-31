@@ -20,27 +20,31 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startbackgroundMusic()
+       // startbackgroundMusic()
         
-        if let view = self.view as! SKView? {
-            
-            // Scene is visable within view of device, entire screen used
-            let scene = GameScene(size: view.bounds.size)
-            scene.scaleMode = .aspectFill
-            
-            // Present the scene (constant was named scene above)
-            view.presentScene(scene)
-            
-            // child nodes won't follow an order
-            view.ignoresSiblingOrder = true
-//            
+//        if let view = self.view as! SKView? {
+//
+//            // Scene is visable within view of device, entire screen used
+//            let scene = GameScene(size: view.bounds.size)
+//            scene.scaleMode = .aspectFill
+//
+//            // Present the scene (constant was named scene above)
+//            view.presentScene(scene)
+//
+//            // child nodes won't follow an order
+//            view.ignoresSiblingOrder = true
+//
 //            // **Do not include in actual game** //
 //            view.showsFPS = true
 //            view.showsNodeCount = true
 //            view.showsPhysics = true
 //            ////////////////////////////////////////////////////////////////////////////////////
-            
-        }
+//
+//        }
+        
+        presentMenuScene()
+        
+        
         
     }
     
@@ -55,25 +59,40 @@ class GameViewController: UIViewController {
 }
 
 
-//extension GameViewController: SceneManagerDelegate {
-//    
-//    func presentMenuScene() {
-//        
-//        
-//    }
-//    
-//    func presentLevelScene(for world: Int) {
-//        
-//        
-//        }
-//    
-//    func presentGameScene(for level: Int, in world: Int) {
-//        
-//        
-//    }
-//    
-//    func present(scene: SKScene) {
-//        
-//    }
-//    
-//}
+extension GameViewController: SceneManagerDelegate {
+    
+    func presentMenuScene() {
+        let scene = GameScene(size: view.bounds.size, sceneManagerDelegate: self)
+        scene.scaleMode = .aspectFill
+        scene.sceneManagerDelegate = self
+        present(scene: scene)
+        
+        if let view = self.view as! SKView? {
+            view.presentScene(scene)
+            
+            view.ignoresSiblingOrder = true
+            
+            view.showsFPS = true
+            view.showsNodeCount = true
+            view.showsPhysics = true
+        }
+        
+    }
+    
+   
+    
+    
+    
+    func present(scene: SKScene) {
+//        if let view = self.view as! SKView? {
+//                   view.presentScene(scene)
+//                   
+//                   view.ignoresSiblingOrder = true
+//                   
+//                   view.showsFPS = true
+//                   view.showsNodeCount = true
+//                   view.showsPhysics = true
+//               }
+    }
+    
+}
