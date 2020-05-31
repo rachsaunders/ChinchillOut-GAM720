@@ -44,7 +44,7 @@
 		18DDC8E02465936B00503A6B /* TileSets.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC8DF2465936B00503A6B /* TileSets.sks */; };
 		18EC529E2472B015008D7E16 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC529D2472B015008D7E16 /* MenuViewController.swift */; };
 		18EC52A02472B184008D7E16 /* SceneManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC529F2472B184008D7E16 /* SceneManagerDelegate.swift */; };
-		18EC52A22472BBAF008D7E16 /* CutsceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52A12472BBAF008D7E16 /* CutsceneController.swift */; };
+		18EC52A22472BBAF008D7E16 /* CutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52A12472BBAF008D7E16 /* CutsceneViewController.swift */; };
 		18EC52A42472BBC0008D7E16 /* World1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52A32472BBC0008D7E16 /* World1Controller.swift */; };
 		18EC52AA2472D021008D7E16 /* SecondCutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52A92472D021008D7E16 /* SecondCutsceneViewController.swift */; };
 		18EC52AC2472D03D008D7E16 /* ThirdCutsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC52AB2472D03D008D7E16 /* ThirdCutsceneViewController.swift */; };
@@ -97,7 +97,7 @@
 		18DDC8DF2465936B00503A6B /* TileSets.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSets.sks; sourceTree = "<group>"; };
 		18EC529D2472B015008D7E16 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		18EC529F2472B184008D7E16 /* SceneManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManagerDelegate.swift; sourceTree = "<group>"; };
-		18EC52A12472BBAF008D7E16 /* CutsceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutsceneController.swift; sourceTree = "<group>"; };
+		18EC52A12472BBAF008D7E16 /* CutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutsceneViewController.swift; sourceTree = "<group>"; };
 		18EC52A32472BBC0008D7E16 /* World1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World1Controller.swift; sourceTree = "<group>"; };
 		18EC52A92472D021008D7E16 /* SecondCutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCutsceneViewController.swift; sourceTree = "<group>"; };
 		18EC52AB2472D03D008D7E16 /* ThirdCutsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCutsceneViewController.swift; sourceTree = "<group>"; };
@@ -310,7 +310,7 @@
 				1821E9A5246584FA006BA465 /* GameViewController.swift */,
 				18EC529D2472B015008D7E16 /* MenuViewController.swift */,
 				18EC52A32472BBC0008D7E16 /* World1Controller.swift */,
-				18EC52A12472BBAF008D7E16 /* CutsceneController.swift */,
+				18EC52A12472BBAF008D7E16 /* CutsceneViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -444,7 +444,7 @@
 				18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */,
 				18EC52A42472BBC0008D7E16 /* World1Controller.swift in Sources */,
 				1821E99E246584FA006BA465 /* AppDelegate.swift in Sources */,
-				18EC52A22472BBAF008D7E16 /* CutsceneController.swift in Sources */,
+				18EC52A22472BBAF008D7E16 /* CutsceneViewController.swift in Sources */,
 				18C6150424702669009A1554 /* SpriteKitButton.swift in Sources */,
 				18EC52B22472D079008D7E16 /* SixthCutsceneViewController.swift in Sources */,
 				181D60762466EA4B0058E984 /* RepeatingLayer.swift in Sources */,

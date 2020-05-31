@@ -8,6 +8,15 @@
 
 import UIKit
 
+
 class CutsceneViewController: UIViewController {
+
+    override func viewDidLoad() {
+          super.viewDidLoad()
+        
+       
+        
+    }
+    
 
 }

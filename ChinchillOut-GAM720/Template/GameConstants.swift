@@ -29,6 +29,7 @@ struct GameConstants {
         static let ceilingCategory: UInt32 = 0x1 << 6
     }
     
+    // order of the layers e.g. Background is right at the back, player is more towards the front
     struct ZPositions {
            static let farBGZ: CGFloat = 0
            static let closeBGZ: CGFloat = 1
@@ -72,13 +73,12 @@ struct GameConstants {
         static let largePopup = "PopupLarge"
         static let smallPopup = "PopupSmall"
         
-        // CHANGED TO STARS BECAUSE TWO FRUITS IS CONFUSING - CHANGE IMAGES!
-        //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////     //////////////////////
+        // Changed to stars due to confusion
         
         static let fullStarName = "StarsFull"
         static let emptyStarName = "StarsEmpty"
         
-        static let bannerName = "Banner"
+        static let bannerName = "BannerFixed"
         
         static let popupButtonNames = ["MenuButton", "PlayButton", "ResetButton", "CancelButton"]
         
@@ -91,8 +91,6 @@ struct GameConstants {
         static let pausedKey = "Paused"
         static let completedKey = "Completed"
         static let failedKey = "Failed"
-        
-        
         
         static let playerIdleAtlas = "Player Idle Atlas"
         static let playerRunAtlas = "Player Run Atlas"

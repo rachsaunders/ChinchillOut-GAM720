@@ -299,9 +299,14 @@ class GameScene: SKScene {
     func createAndShowPopup(type: Int, title: String) {
         switch type {
         case 0:
+            
+            // PAUSED
             popup = PopupNode(withTitle: title, and: SKTexture(imageNamed: GameConstants.StringConstants.smallPopup), buttonHandlerDelegate: self)
             popup!.add(buttons: [0,3,2])
+       
         default:
+            
+            // FAILED, COMPLETED
             popup = ScorePopupNode(buttonHandlerDelegate: self, title: title, level: "Level_0-1", texture: SKTexture(imageNamed: GameConstants.StringConstants.largePopup), score: fruits, fruits: superFruits, animated: true)
             popup!.add(buttons: [2,0])
         }
@@ -499,6 +504,7 @@ extension GameScene: PopupButtonHandlerDelegate {
         // Retry
         case 2:
             break
+        // Cancel
         case 3:
             popup!.run(SKAction.fadeOut(withDuration: 0.2)) {
                 self.popup!.removeFromParent()

@@ -20,26 +20,24 @@ class PopupNode: SKSpriteNode {
         
         let bannerLabel = BannerLabel(withTitle: title)
         // makes banner wider than the pop up width
+        // Changing the below changes the size of both the banner and banner text
         bannerLabel.scale(to: size, width: true, multiplier: 1.1)
         // ERROR FIX - BANNER APPEARED BEHIND POPUP BEFORE THIS LINE WAS ADDED BELOW
         bannerLabel.zPosition = GameConstants.ZPositions.hudZ
-        bannerLabel.position = CGPoint(x: frame.midX, y: frame.maxY)
+         bannerLabel.position = CGPoint(x: frame.midX, y: frame.maxY)
         
         addChild(bannerLabel)
     }
     
     // The array of buttons is in GameConstants
+    
     func add(buttons: [Int]) {
-        
         let scalar = 1.0/CGFloat(buttons.count-1)
-        
         for (index,button) in buttons.enumerated() {
-            let buttonToAdd = SpriteKitButton(defaultButtonImage: GameConstants.StringConstants.popupButtonNames[index], action: buttonHandlerDelegate.popupButtonHandler, index: button)
-            // buttons will look great no matter how many
+            let buttonToAdd = SpriteKitButton(defaultButtonImage: GameConstants.StringConstants.popupButtonNames[button], action: buttonHandlerDelegate.popupButtonHandler, index: button)
             buttonToAdd.position = CGPoint(x: -frame.maxX/2 + CGFloat(index) * scalar * (frame.size.width*0.5), y: frame.minY)
             buttonToAdd.zPosition = GameConstants.ZPositions.hudZ
             buttonToAdd.scale(to: frame.size, width: true, multiplier: 0.25)
-            
             addChild(buttonToAdd)
         }
     }

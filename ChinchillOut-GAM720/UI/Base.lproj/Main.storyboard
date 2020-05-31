@@ -73,10 +73,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_0" translatesAutoresizingMaskIntoConstraints="NO" id="Vlg-lI-vai">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nG-Uc-ZUQ">
-                                <rect key="frame" x="164" y="491" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nG-Uc-ZUQ">
+                                <rect key="frame" x="313" y="607" width="32" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="qCm-v1-TWj" kind="show" animates="NO" id="EMw-jR-zH8"/>
                                 </connections>
@@ -86,7 +88,9 @@
                         <constraints>
                             <constraint firstItem="4Ni-oI-kYL" firstAttribute="trailing" secondItem="Vlg-lI-vai" secondAttribute="trailing" id="AZN-1n-SPp"/>
                             <constraint firstItem="4Ni-oI-kYL" firstAttribute="bottom" secondItem="Vlg-lI-vai" secondAttribute="bottom" id="D0v-iA-Lcs"/>
+                            <constraint firstItem="4Ni-oI-kYL" firstAttribute="bottom" secondItem="0nG-Uc-ZUQ" secondAttribute="bottom" constant="30" id="GtB-aT-0gT"/>
                             <constraint firstItem="Vlg-lI-vai" firstAttribute="leading" secondItem="4Ni-oI-kYL" secondAttribute="leading" id="NKr-U4-RIc"/>
+                            <constraint firstItem="4Ni-oI-kYL" firstAttribute="trailing" secondItem="0nG-Uc-ZUQ" secondAttribute="trailing" constant="30" id="PPB-KW-A6B"/>
                             <constraint firstItem="Vlg-lI-vai" firstAttribute="top" secondItem="4Ni-oI-kYL" secondAttribute="top" id="oph-hf-fJy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Ni-oI-kYL"/>
@@ -108,20 +112,32 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_1" translatesAutoresizingMaskIntoConstraints="NO" id="VTl-4p-xpv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swp-ln-yvH">
-                                <rect key="frame" x="10" y="10" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swp-ln-yvH">
+                                <rect key="frame" x="313" y="607" width="32" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="nAA-te-gWO" kind="show" animates="NO" id="MOz-6s-txA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh no!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPa-b4-9zU">
+                                <rect key="frame" x="144" y="150" width="87" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="NPJ-Xz-EhI" firstAttribute="bottom" secondItem="Swp-ln-yvH" secondAttribute="bottom" constant="30" id="0wb-XE-Oft"/>
                             <constraint firstItem="VTl-4p-xpv" firstAttribute="leading" secondItem="NPJ-Xz-EhI" secondAttribute="leading" id="8q0-y4-BRX"/>
                             <constraint firstItem="NPJ-Xz-EhI" firstAttribute="bottom" secondItem="VTl-4p-xpv" secondAttribute="bottom" id="Ihv-1H-84I"/>
+                            <constraint firstItem="xPa-b4-9zU" firstAttribute="centerX" secondItem="D08-i4-oCy" secondAttribute="centerX" id="NkN-9U-zAd"/>
                             <constraint firstItem="NPJ-Xz-EhI" firstAttribute="trailing" secondItem="VTl-4p-xpv" secondAttribute="trailing" id="WYL-zF-3Gh"/>
+                            <constraint firstItem="xPa-b4-9zU" firstAttribute="top" secondItem="NPJ-Xz-EhI" secondAttribute="top" constant="150" id="ffn-r4-R1e"/>
+                            <constraint firstItem="NPJ-Xz-EhI" firstAttribute="trailing" secondItem="Swp-ln-yvH" secondAttribute="trailing" constant="30" id="ptu-d1-XE0"/>
                             <constraint firstItem="VTl-4p-xpv" firstAttribute="top" secondItem="NPJ-Xz-EhI" secondAttribute="top" id="wqv-Rx-tqz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NPJ-Xz-EhI"/>
@@ -143,9 +159,19 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="World1LevelSelection" translatesAutoresizingMaskIntoConstraints="NO" id="whg-y8-uG0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL7-Fg-r9K">
-                                <rect key="frame" x="7" y="248" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORLD 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO8-lW-gYk">
+                                <rect key="frame" x="50" y="50" width="275" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL7-Fg-r9K">
+                                <rect key="frame" x="150" y="567" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y4c-fA-z6C"/>
+                                    <constraint firstAttribute="width" constant="50" id="Ze9-Fn-Vbr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="1" backgroundImage="EmptyButton">
                                     <color key="titleColor" red="0.15000000599999999" green="0.15000000599999999" blue="0.15000000599999999" alpha="1" colorSpace="deviceRGB"/>
@@ -157,8 +183,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="GL7-Fg-r9K" firstAttribute="leading" secondItem="Oop-5W-aIk" secondAttribute="leading" constant="150" id="1rd-Sp-x3D"/>
                             <constraint firstItem="Oop-5W-aIk" firstAttribute="bottom" secondItem="whg-y8-uG0" secondAttribute="bottom" id="2CU-Yk-huc"/>
+                            <constraint firstItem="nO8-lW-gYk" firstAttribute="centerX" secondItem="ZC7-lq-emi" secondAttribute="centerX" id="7O2-Sc-KIU"/>
+                            <constraint firstItem="nO8-lW-gYk" firstAttribute="top" secondItem="Oop-5W-aIk" secondAttribute="top" constant="50" id="Evi-Jv-Lu3"/>
+                            <constraint firstItem="Oop-5W-aIk" firstAttribute="trailing" secondItem="nO8-lW-gYk" secondAttribute="trailing" constant="50" id="Oe7-75-ezL"/>
                             <constraint firstItem="Oop-5W-aIk" firstAttribute="trailing" secondItem="whg-y8-uG0" secondAttribute="trailing" id="UQY-yI-swO"/>
+                            <constraint firstItem="Oop-5W-aIk" firstAttribute="bottom" secondItem="GL7-Fg-r9K" secondAttribute="bottom" constant="50" id="aKR-OD-PDD"/>
                             <constraint firstItem="whg-y8-uG0" firstAttribute="top" secondItem="Oop-5W-aIk" secondAttribute="top" id="mEo-j6-Y1M"/>
                             <constraint firstItem="whg-y8-uG0" firstAttribute="leading" secondItem="Oop-5W-aIk" secondAttribute="leading" id="zLa-eX-Wen"/>
                         </constraints>
@@ -197,19 +228,33 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_2" translatesAutoresizingMaskIntoConstraints="NO" id="msY-u3-C38">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBr-ty-7jd">
-                                <rect key="frame" x="10" y="10" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It appears your chinchilla is stuck in the game!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-Vg-WCO">
+                                <rect key="frame" x="35" y="100" width="305" height="107.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l20-gK-bSs">
+                                <rect key="frame" x="313" y="607" width="32" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="hmo-sF-PF2" kind="show" animates="NO" id="y0N-ff-2YA"/>
+                                    <segue destination="hmo-sF-PF2" kind="show" animates="NO" id="fNu-iw-h6r"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="msY-u3-C38" firstAttribute="top" secondItem="RBs-66-UaK" secondAttribute="top" id="24a-DD-3cN"/>
+                            <constraint firstAttribute="trailing" secondItem="Z8N-Vg-WCO" secondAttribute="trailing" constant="35" id="C6L-8p-J6O"/>
+                            <constraint firstItem="Z8N-Vg-WCO" firstAttribute="leading" secondItem="oDZ-OO-G3A" secondAttribute="leading" constant="35" id="KkS-2S-z7w"/>
+                            <constraint firstItem="Z8N-Vg-WCO" firstAttribute="centerX" secondItem="oDZ-OO-G3A" secondAttribute="centerX" id="UTa-lJ-PKp"/>
+                            <constraint firstItem="Z8N-Vg-WCO" firstAttribute="top" secondItem="RBs-66-UaK" secondAttribute="top" constant="100" id="Vfc-wJ-1CU"/>
                             <constraint firstItem="RBs-66-UaK" firstAttribute="bottom" secondItem="msY-u3-C38" secondAttribute="bottom" id="XEz-l5-BnC"/>
+                            <constraint firstItem="RBs-66-UaK" firstAttribute="bottom" secondItem="l20-gK-bSs" secondAttribute="bottom" constant="30" id="ZRL-Wn-cz6"/>
+                            <constraint firstItem="RBs-66-UaK" firstAttribute="trailing" secondItem="l20-gK-bSs" secondAttribute="trailing" constant="30" id="az2-Qv-Us0"/>
                             <constraint firstItem="RBs-66-UaK" firstAttribute="trailing" secondItem="msY-u3-C38" secondAttribute="trailing" id="hu6-ZF-73e"/>
                             <constraint firstItem="msY-u3-C38" firstAttribute="leading" secondItem="RBs-66-UaK" secondAttribute="leading" id="nfa-8Y-iSH"/>
                         </constraints>
@@ -219,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTu-ap-gYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1569" y="-772"/>
+            <point key="canvasLocation" x="-1570.4000000000001" y="-772.26386806596713"/>
         </scene>
         <!--Forth Cutscene View Controller-->
         <scene sceneID="f17-0d-eCf">
@@ -232,17 +277,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_3" translatesAutoresizingMaskIntoConstraints="NO" id="UmN-Fo-d1a">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9k-k4-Joc">
-                                <rect key="frame" x="10" y="10" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvb-O8-xTl">
+                                <rect key="frame" x="313" y="607" width="32" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="Edi-gb-zKV" kind="show" animates="NO" id="shY-nq-zLJ"/>
+                                    <segue destination="Edi-gb-zKV" kind="show" animates="NO" id="hjV-0L-WPf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="fXe-Op-JBL" firstAttribute="trailing" secondItem="Gvb-O8-xTl" secondAttribute="trailing" constant="30" id="N7C-w7-ULf"/>
+                            <constraint firstItem="fXe-Op-JBL" firstAttribute="bottom" secondItem="Gvb-O8-xTl" secondAttribute="bottom" constant="30" id="X8M-WU-RTn"/>
                             <constraint firstItem="UmN-Fo-d1a" firstAttribute="leading" secondItem="fXe-Op-JBL" secondAttribute="leading" id="Y2b-25-UBL"/>
                             <constraint firstItem="fXe-Op-JBL" firstAttribute="trailing" secondItem="UmN-Fo-d1a" secondAttribute="trailing" id="YcZ-ew-WlM"/>
                             <constraint firstItem="fXe-Op-JBL" firstAttribute="bottom" secondItem="UmN-Fo-d1a" secondAttribute="bottom" id="uvJ-y3-ESM"/>

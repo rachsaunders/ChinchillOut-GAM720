@@ -7,13 +7,26 @@
 //
 
 import UIKit
+import AVFoundation
+
+var backgroundSoundEffect2: AVAudioPlayer!
 
 class SecondCutsceneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        startbackgroundSoundEffect2()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func startbackgroundSoundEffect2() {
+        let path = Bundle.main.path(forResource: "chinchilla1", ofType: "mp3")
+        let url = URL(fileURLWithPath: path!)
+        backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
+       
+        backgroundMusicPlayer.play()
     }
     
 

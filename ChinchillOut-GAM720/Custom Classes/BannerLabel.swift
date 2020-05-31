@@ -16,14 +16,16 @@ class BannerLabel: SKSpriteNode {
         super.init(texture: texture, color: UIColor.clear, size: texture.size())
         
         let label = SKLabelNode(fontNamed: GameConstants.StringConstants.gameFontName)
-        // SLIGHT ERROR/DESIGN FIX - CHANGED SIZE SO IT FITS BETTER
+
         label.fontSize = 100.0
-        // SLIGHT ERROR/DESIGN FIX - CHANGED COLOUR SO IT CAN BE SEEN ON A WHITE BANNER BACKGROUND
-        label.fontColor = UIColor.red
+        label.fontColor = UIColor.blue
         label.verticalAlignmentMode = .center
         label.text = title
-        label.scale(to: size, width: false, multiplier: 0.3)
+        label.scale(to: CGSize(width: 400, height: 500), width: false, multiplier: 0.5)
+        // THE BELOW MAKES IT APPEAR TERRIBLE ON SCREEN SO IT HAS BEEN REWRITTEN ABOVE!
+      //  label.scale(to: size, width: false, multiplier: 0.3)
         label.zPosition = GameConstants.ZPositions.hudZ
+        
         addChild(label)
     }
     

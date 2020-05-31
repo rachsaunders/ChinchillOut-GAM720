@@ -33,12 +33,12 @@ class GameViewController: UIViewController {
             
             // child nodes won't follow an order
             view.ignoresSiblingOrder = true
-            
-            // **Do not include in actual game** //
-            view.showsFPS = true
-            view.showsNodeCount = true
-            view.showsPhysics = true
-            ////////////////////////////////////////////////////////////////////////////////////
+//            
+//            // **Do not include in actual game** //
+//            view.showsFPS = true
+//            view.showsNodeCount = true
+//            view.showsPhysics = true
+//            ////////////////////////////////////////////////////////////////////////////////////
             
         }
         
