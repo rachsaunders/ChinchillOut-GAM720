@@ -20,7 +20,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // startbackgroundMusic()
+        startbackgroundMusic()
         
 //        if let view = self.view as! SKView? {
 //
@@ -71,10 +71,12 @@ extension GameViewController: SceneManagerDelegate {
             view.presentScene(scene)
             
             view.ignoresSiblingOrder = true
+          
             
-            view.showsFPS = true
-            view.showsNodeCount = true
-            view.showsPhysics = true
+            // TESTING PURPOSES
+//            view.showsFPS = true
+//            view.showsNodeCount = true
+//            view.showsPhysics = true
         }
         
     }

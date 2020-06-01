@@ -17,11 +17,11 @@ class BannerLabel: SKSpriteNode {
         
         let label = SKLabelNode(fontNamed: GameConstants.StringConstants.gameFontName)
 
-        label.fontSize = 100.0
+        label.fontSize = 80.0
         label.fontColor = UIColor.blue
         label.verticalAlignmentMode = .center
         label.text = title
-        label.scale(to: CGSize(width: 400, height: 500), width: false, multiplier: 0.5)
+        label.scale(to: CGSize(width: 300, height: 400), width: false, multiplier: 0.5)
         // THE BELOW MAKES IT APPEAR TERRIBLE ON SCREEN SO IT HAS BEEN REWRITTEN ABOVE!
       //  label.scale(to: size, width: false, multiplier: 0.3)
         label.zPosition = GameConstants.ZPositions.hudZ
