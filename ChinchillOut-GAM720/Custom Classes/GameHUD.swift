@@ -15,10 +15,14 @@ class GameHUD: SKSpriteNode, HUDDelegate {
     
     init(with size: CGSize) {
         fruitLabel = SKLabelNode(fontNamed: GameConstants.StringConstants.gameFontName)
+        
+        // Top left Super fruit Counter
         superFruitCounter = SKSpriteNode(texture: nil, color: UIColor.clear, size: CGSize(width: size.width*0.3, height: size.height*0.8))
         
+        // Complete top banner of Superfruit, Pause button and fruit counter
         super.init(texture: nil, color: UIColor.clear, size: size)
         
+        // Top right fruit counter
         fruitLabel.verticalAlignmentMode = .center
         fruitLabel.text = "0"
         fruitLabel.fontSize = 200.0

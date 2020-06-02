@@ -26,6 +26,7 @@
 		182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF242481411E009C95A8 /* chinchilla1.mp3 */; };
 		182EBF272481471B009C95A8 /* forestBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF262481471A009C95A8 /* forestBackground.mp3 */; };
 		182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */; };
+		1875DF9B2486CA2000D1AB69 /* Level_0-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1875DF9A2486CA2000D1AB69 /* Level_0-1.sks */; };
 		18902BCB2468312D0053771E /* PhysicsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCA2468312D0053771E /* PhysicsHelper.swift */; };
 		18902BCD2468373F0053771E /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCC2468373F0053771E /* GroundNode.swift */; };
 		18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCE24683E1E0053771E /* AnimationHelper.swift */; };
@@ -40,7 +41,6 @@
 		18C6150424702669009A1554 /* SpriteKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6150324702669009A1554 /* SpriteKitButton.swift */; };
 		18C615062470430E009A1554 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C615052470430E009A1554 /* ScoreManager.swift */; };
 		18D894B72465AA180003EE8C /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D894B62465AA180003EE8C /* SKNode+Extensions.swift */; };
-		18DDC8DE2465928A00503A6B /* Level_0-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC8DD2465928A00503A6B /* Level_0-1.sks */; };
 		18DDC8E02465936B00503A6B /* TileSets.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC8DF2465936B00503A6B /* TileSets.sks */; };
 		18EC529E2472B015008D7E16 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC529D2472B015008D7E16 /* MenuViewController.swift */; };
 		18EC52A02472B184008D7E16 /* SceneManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC529F2472B184008D7E16 /* SceneManagerDelegate.swift */; };
@@ -79,6 +79,7 @@
 		182EBF242481411E009C95A8 /* chinchilla1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chinchilla1.mp3; sourceTree = "<group>"; };
 		182EBF262481471A009C95A8 /* forestBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forestBackground.mp3; sourceTree = "<group>"; };
 		182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fruitCollection.mp3; sourceTree = "<group>"; };
+		1875DF9A2486CA2000D1AB69 /* Level_0-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = "Level_0-1.sks"; path = "../../../../../../Downloads/ChinchillOut-GAM720-master/ChinchillOut-GAM720/Scene Editor Files/Levels/Level_0-1.sks"; sourceTree = "<group>"; };
 		18902BCA2468312D0053771E /* PhysicsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsHelper.swift; sourceTree = "<group>"; };
 		18902BCC2468373F0053771E /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
 		18902BCE24683E1E0053771E /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		18C6150324702669009A1554 /* SpriteKitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitButton.swift; sourceTree = "<group>"; };
 		18C615052470430E009A1554 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
 		18D894B62465AA180003EE8C /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
-		18DDC8DD2465928A00503A6B /* Level_0-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level_0-1.sks"; sourceTree = "<group>"; };
 		18DDC8DF2465936B00503A6B /* TileSets.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSets.sks; sourceTree = "<group>"; };
 		18EC529D2472B015008D7E16 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		18EC529F2472B184008D7E16 /* SceneManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManagerDelegate.swift; sourceTree = "<group>"; };
@@ -282,7 +282,7 @@
 		18DDC8D724658A9E00503A6B /* Levels */ = {
 			isa = PBXGroup;
 			children = (
-				18DDC8DD2465928A00503A6B /* Level_0-1.sks */,
+				1875DF9A2486CA2000D1AB69 /* Level_0-1.sks */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -397,11 +397,11 @@
 			files = (
 				18029750246ECE4300371085 /* chinchillOut-Font.ttf in Resources */,
 				182EBF272481471B009C95A8 /* forestBackground.mp3 in Resources */,
+				1875DF9B2486CA2000D1AB69 /* Level_0-1.sks in Resources */,
 				182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */,
 				18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */,
 				1821E9A9246584FA006BA465 /* Main.storyboard in Resources */,
 				182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */,
-				18DDC8DE2465928A00503A6B /* Level_0-1.sks in Resources */,
 				18DDC8E02465936B00503A6B /* TileSets.sks in Resources */,
 				182EBF2024813517009C95A8 /* dieSound.mp3 in Resources */,
 				18029745246EB88400371085 /* BrakeSparkEmitter.sks in Resources */,
