@@ -1,5 +1,5 @@
 //
-//  GameViewController.swift
+//  L1W1ViewController.swift
 //  ChinchillOut-GAM720
 //
 //  Created by Rachel Saunders on 08/05/2020.
@@ -16,33 +16,14 @@ import AVFoundation
 
 var backgroundMusicPlayer: AVAudioPlayer!
 
-class GameViewController: UIViewController {
+class L1W1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         startbackgroundMusic()
         
-//        if let view = self.view as! SKView? {
-//
-//            // Scene is visable within view of device, entire screen used
-//            let scene = GameScene(size: view.bounds.size)
-//            scene.scaleMode = .aspectFill
-//
-//            // Present the scene (constant was named scene above)
-//            view.presentScene(scene)
-//
-//            // child nodes won't follow an order
-//            view.ignoresSiblingOrder = true
-//
-//            // **Do not include in actual game** //
-//            view.showsFPS = true
-//            view.showsNodeCount = true
-//            view.showsPhysics = true
-//            ////////////////////////////////////////////////////////////////////////////////////
-//
-//        }
         
-        presentMenuScene()
+        presentW1L1Scene()
         
         
         
@@ -59,10 +40,10 @@ class GameViewController: UIViewController {
 }
 
 
-extension GameViewController: SceneManagerDelegate {
+extension L1W1ViewController: SceneManagerDelegate {
     
-    func presentMenuScene() {
-        let scene = GameScene(size: view.bounds.size, sceneManagerDelegate: self)
+    func presentW1L1Scene() {
+        let scene = GameSceneL1W1(size: view.bounds.size, sceneManagerDelegate: self)
         scene.scaleMode = .aspectFill
         scene.sceneManagerDelegate = self
         present(scene: scene)
@@ -79,6 +60,10 @@ extension GameViewController: SceneManagerDelegate {
 //            view.showsPhysics = true
         }
         
+    }
+    
+    func presentMenuViewController() {
+        performSegue(withIdentifier: "backToMenu", sender: nil)
     }
     
    

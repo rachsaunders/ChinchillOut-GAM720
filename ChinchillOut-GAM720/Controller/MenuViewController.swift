@@ -18,26 +18,7 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // IF CHANGING IT TO AN SKVIEW UNCOMMENT THE FOLLOWING OTHERWISE STICK TO STORYBOARD DESIGNING
-//        if let view = self.view as! SKView? {
-//            
-//            // Scene is visable within view of device, entire screen used
-//            let scene = MenuScene(size: view.bounds.size)
-//            scene.scaleMode = .aspectFill
-//
-//            // Present the scene (constant was named scene above)
-//            view.presentScene(scene)
-//
-//            // child nodes won't follow an order
-//            view.ignoresSiblingOrder = true
-//
-//            // **Do not include in actual game** //
-//            view.showsFPS = true
-//            view.showsNodeCount = true
-//            view.showsPhysics = true
-//            ////////////////////////////////////////////////////////////////////////////////////
-//
-//        }
+
         
     }
 }

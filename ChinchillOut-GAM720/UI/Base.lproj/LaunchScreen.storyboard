@@ -15,7 +15,27 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Run_2" translatesAutoresizingMaskIntoConstraints="NO" id="3Ez-Oh-DJW">
+                                <rect key="frame" x="107" y="344" width="200" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="rzD-Uv-I7c"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOADING..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1S-fh-b1w">
+                                <rect key="frame" x="114" y="486" width="186" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Ez-Oh-DJW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dgt-8r-Rml"/>
+                            <constraint firstItem="3Ez-Oh-DJW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="Krs-Kz-nv8"/>
+                            <constraint firstItem="H1S-fh-b1w" firstAttribute="top" secondItem="3Ez-Oh-DJW" secondAttribute="bottom" constant="25" id="eCn-Pp-OJ5"/>
+                            <constraint firstItem="H1S-fh-b1w" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="y3W-QN-mmb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -24,4 +44,7 @@
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Run_2" width="400" height="117"/>
+    </resources>
 </document>

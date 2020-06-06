@@ -12,7 +12,7 @@ protocol SceneManagerDelegate {
 
 
     
-    func presentMenuScene()
-
+    func presentW1L1Scene()
+    func presentMenuViewController()
 
 }

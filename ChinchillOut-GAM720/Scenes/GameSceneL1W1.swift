@@ -1,5 +1,5 @@
 //
-//  GameScene.swift
+//  GameSceneL1W1.swift
 //  ChinchillOut-GAM720
 //
 //  Created by Rachel Saunders on 08/05/2020.
@@ -12,13 +12,12 @@ enum GameState {
     case ready, ongoing, paused, finished
 }
 
-class GameScene: SKScene {
-    
+class GameSceneL1W1: SKScene {
     
     var worldLayer: Layer!
     
     var backgroundLayer: RepeatingLayer!
-
+    
     var mapNode: SKNode!
     var tileMap: SKTileMapNode!
     
@@ -60,23 +59,25 @@ class GameScene: SKScene {
     let soundPlayer = SoundPlayer()
     
     /////////////
-       var levelKey: String
+    var levelKey: String
     //////////////
     
     var hudDelegate: HUDDelegate?
     
+    
+    
     // TESTING OUT THE BELOW !
-     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
-     var sceneManagerDelegate: SceneManagerDelegate?
+    var sceneManagerDelegate: SceneManagerDelegate?
     
-      init(size: CGSize, sceneManagerDelegate: SceneManagerDelegate) {
-//             self.world = world
-//             self.level = level
-             self.levelKey = "Level_0-1"
-             self.sceneManagerDelegate = sceneManagerDelegate
-             super.init(size: size)
-         }
+    init(size: CGSize, sceneManagerDelegate: SceneManagerDelegate) {
+        //             self.world = world
+        //             self.level = level
+        self.levelKey = "Level_0-1"
+        self.sceneManagerDelegate = sceneManagerDelegate
+        super.init(size: size)
+    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -101,6 +102,7 @@ class GameScene: SKScene {
         isPaused = false
         
     }
+    
     
     func createLayers() {
         worldLayer = Layer()
@@ -156,7 +158,7 @@ class GameScene: SKScene {
             
             for child in groundTiles.children {
                 if let sprite = child as? SKSpriteNode, sprite.name != nil {
-                   
+                    
                     ObjectHelper.handleChild(sprite: sprite, with: sprite.name!)
                 }
             }
@@ -215,7 +217,7 @@ class GameScene: SKScene {
         // turn off gravity when chinchilla jumps
         player.turnGravity(on: false)
         player.run(player.userData?.value(forKey: GameConstants.StringConstants.jumpUpActionKey) as! SKAction) {
-        
+            
             if self.touch {
                 self.player.run(self.player.userData?.value(forKey: GameConstants.StringConstants.jumpUpActionKey) as! SKAction) {
                     // chinchilla gravity back on
@@ -263,7 +265,7 @@ class GameScene: SKScene {
         default:
             break
         }
-
+        
     }
     
     // FOR FRUIT ONLY
@@ -282,7 +284,7 @@ class GameScene: SKScene {
             // update
             hudDelegate?.updateFruitLabel(fruits: fruits)
         }
-            
+        
         
         if let fruitDust = ParticleHelper.addParticleEffect(name: GameConstants.StringConstants.fruitDustEmitterKey, particlePositionRange: CGVector(dx: 5.0, dy: 5.0), position: CGPoint.zero) {
             fruitDust.zPosition = GameConstants.ZPositions.objectZ
@@ -326,7 +328,7 @@ class GameScene: SKScene {
             // PAUSED
             popup = PopupNode(withTitle: title, and: SKTexture(imageNamed: GameConstants.StringConstants.smallPopup), buttonHandlerDelegate: self)
             popup!.add(buttons: [0,3,2])
-       
+            
         default:
             
             // FAILED, COMPLETED
@@ -340,7 +342,7 @@ class GameScene: SKScene {
         
         addChild(popup!)
     }
-        
+    
     
     // two ways player can die - obstacle or falling off the edge
     func die(reason: Int) {
@@ -355,7 +357,7 @@ class GameScene: SKScene {
         case 0:
             deathAnimation = SKAction.animate(with: player.dieFrames, timePerFrame: 0.1, resize: true, restore: true)
         case 1:
-        // when falling off a ledge chinchilla will move a bit upwards for die animation
+            // when falling off a ledge chinchilla will move a bit upwards for die animation
             let up = SKAction.moveTo(y: frame.midY, duration: 0.25)
             let wait = SKAction.wait(forDuration: 0.1)
             let down = SKAction.moveTo(y: -player.size.height, duration: 0.2)
@@ -388,12 +390,12 @@ class GameScene: SKScene {
             stars = 1
         }
         let scores = [
-        
+            
             GameConstants.StringConstants.scoreScoreKey: fruits,
             GameConstants.StringConstants.scoreStarsKey: stars,
             GameConstants.StringConstants.scoreFruitsKey: superFruits
-        
-        
+            
+            
         ]
         
         ScoreManager.compare(scores: [scores], in: "Level_0-1")
@@ -403,20 +405,20 @@ class GameScene: SKScene {
     // User controls player starting, jumping, moving etc by touch therefore these override functions are needed
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-         switch gameState {
-         case .ready:
-             gameState = .ongoing
-         case .ongoing:
+        switch gameState {
+        case .ready:
+            gameState = .ongoing
+        case .ongoing:
             touch = true
-             if !player.airborne {
-                 jump()
-             } else if !brake {
+            if !player.airborne {
+                jump()
+            } else if !brake {
                 brakeDecend()
             }
-         default:
-             break
-         }
-     }
+        default:
+            break
+        }
+    }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         touch = false
@@ -430,14 +432,14 @@ class GameScene: SKScene {
     
     
     override func update(_ currentTime: TimeInterval) {
-    
+        
         if lastTime > 0 {
             dt = currentTime - lastTime
         } else {
             dt = 0
         }
         lastTime = currentTime
-         
+        
         
         if gameState == .ongoing {
             worldLayer.update(dt)
@@ -467,7 +469,7 @@ class GameScene: SKScene {
 }
 
 // Added when physics bodies come into contact
-extension GameScene: SKPhysicsContactDelegate {
+extension GameSceneL1W1: SKPhysicsContactDelegate {
     
     func didBegin(_ contact: SKPhysicsContact) {
         let contactMask = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
@@ -484,12 +486,12 @@ extension GameScene: SKPhysicsContactDelegate {
             
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.enemyCategory:
             handleEnemyContact()
-           
+            
         // Falling off the ledge
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.frameCategory:
             physicsBody = nil
             die(reason: 1)
-          
+            
         // Collectables
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.collectibleCategory:
             let collectible = contact.bodyA.node?.name == player.name ? contact.bodyB.node as! SKSpriteNode : contact.bodyA.node as! SKSpriteNode
@@ -501,44 +503,54 @@ extension GameScene: SKPhysicsContactDelegate {
     }
     
     func didEnd(_ contact: SKPhysicsContact) {
-         let contactMask = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
+        let contactMask = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
         
         switch contactMask {
-            // contact between chinchilla and ground aka chinchilla fell off the edge
+        // contact between chinchilla and ground aka chinchilla fell off the edge
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.groundCategory:
             player.airborne = true
         default:
             break
         }
     }
+    
 }
 
-extension GameScene: PopupButtonHandlerDelegate {
+extension GameSceneL1W1: PopupButtonHandlerDelegate {
     
     func popupButtonHandler(index: Int) {
         
         switch index {
-         // Menu
+        // Menu
         case 0:
+            popup!.run(SKAction.fadeOut(withDuration: 0.2)) {
+                self.popup!.removeFromParent()
+                
+                self.sceneManagerDelegate?.presentMenuViewController()
+                
+            }
+            
+            
+            // // // // // // // // // // // // //
+            
+            // Play
+        // Only needed on the Level Selection
+        case 1:
             break
             
-         // Play
-        case 1:
-           break
+            // // // // // // // // // // // // //
+            
             
         // Retry
         case 2:
             
-           popup!.run(SKAction.fadeOut(withDuration: 0.2)) {
-               self.popup!.removeFromParent()
-           
-           
-            
-            self.sceneManagerDelegate?.presentMenuScene()
-    // just an idea below
-            // self.presentGameScene()
-            
-           
+            popup!.run(SKAction.fadeOut(withDuration: 0.2)) {
+                self.popup!.removeFromParent()
+                
+                self.sceneManagerDelegate?.presentW1L1Scene()
+                // just an idea below
+                // self.presentGameSceneL1W1()
+                
             }
         // Cancel
         case 3:
