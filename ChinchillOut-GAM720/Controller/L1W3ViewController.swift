@@ -29,7 +29,7 @@ func startbackgroundXmasMusic() {
     let path = Bundle.main.path(forResource: "xmasBackground", ofType: "mp3")
     let url = URL(fileURLWithPath: path!)
     xmasMusicPlayer = try! AVAudioPlayer(contentsOf: url)
-   xmasMusicPlayer.numberOfLoops = -1
+    xmasMusicPlayer.numberOfLoops = -1
     xmasMusicPlayer.play()
 }
 

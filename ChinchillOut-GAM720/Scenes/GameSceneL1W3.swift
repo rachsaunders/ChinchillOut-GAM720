@@ -5,7 +5,7 @@
 //  Created by Rachel Saunders on 08/05/2020.
 //  Copyright © 2020 Rachel Saunders. All rights reserved.
 //
-
+//
 import SpriteKit
 
 enum XmasGameState {
@@ -330,8 +330,6 @@ class GameSceneL1W3: SKScene {
         
         addChild(popup!)
     }
-    
-    
     
     func die(reason: Int) {
         run(soundPlayer.dieSound)
