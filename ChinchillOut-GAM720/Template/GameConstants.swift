@@ -44,7 +44,9 @@ struct GameConstants {
         static let gameName = "ChinchillOut"
         
         static let groundTilesName = "Ground Tiles"
-        static let worldBackgroundNames = ["ForestBackground", "GrassBackground"]
+        static let world1BackgroundName = "ForestBackground"
+        static let world2BackgroundName = "HalloweenBackground"
+        static let world3BackgroundName = "XmasBackground"
         
         static let playerName = "Player"
         static let playerImageName = "Idle_0"

@@ -11,6 +11,6 @@ import UIKit
 class WorldXmasController: UIViewController {
 
     override func viewDidLoad() {
-      
+      xmasMusicPlayer?.stop()
     }
 }

@@ -41,6 +41,10 @@ class L1W1ViewController: UIViewController {
 
 
 extension L1W1ViewController: SceneManagerDelegate {
+    func presentW2L1Scene() {
+        //func presentW1L1Scene()
+    }
+    
     
     func presentW1L1Scene() {
         let scene = GameSceneL1W1(size: view.bounds.size, sceneManagerDelegate: self)

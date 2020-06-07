@@ -8,11 +8,11 @@
 
 import SpriteKit
 
-enum GameState {
+enum HalloweenGameState {
     case ready, ongoing, paused, finished
 }
 
-class GameSceneL1W1: SKScene {
+class GameSceneL1W2: SKScene {
     
     var worldLayer: Layer!
     
@@ -46,10 +46,9 @@ class GameSceneL1W1: SKScene {
     var player: Player!
     
     var touch = false
-    // help the double jump
+    
     var brake = false
     
-    // count collected fruit
     var fruits = 0
     
     var superFruits = 0
@@ -58,24 +57,18 @@ class GameSceneL1W1: SKScene {
     
     let soundPlayer = SoundPlayer()
     
-    /////////////
+   
     var levelKey: String
-    //////////////
+ 
     
     var hudDelegate: HUDDelegate?
     
+    var sceneManagerDelegateHalloween: SceneManagerDelegateHalloween?
     
-    
-    // TESTING OUT THE BELOW !
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
-    var sceneManagerDelegate: SceneManagerDelegate?
-    
-    init(size: CGSize, sceneManagerDelegate: SceneManagerDelegate) {
-        //             self.world = world
-        //             self.level = level
-        self.levelKey = "Level_0-1"
-        self.sceneManagerDelegate = sceneManagerDelegate
+    init(size: CGSize, sceneManagerDelegateHalloween: SceneManagerDelegateHalloween) {
+     
+        self.levelKey = "Level_1-1"
+        self.sceneManagerDelegateHalloween = sceneManagerDelegateHalloween
         super.init(size: size)
     }
     
@@ -83,21 +76,19 @@ class GameSceneL1W1: SKScene {
         fatalError("init(coder:) has not been implemented")
     }
     
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
     override func didMove(to view: SKView) {
         
         physicsWorld.contactDelegate = self
-        // x is 0 as gravity isnt needed left and right, just downwards aka y axis
+        
         physicsWorld.gravity = CGVector(dx: 0.0, dy: -6.0)
         
-        // Supports the chinchilla dying when not on a ledge
         physicsBody = SKPhysicsBody(edgeFrom: CGPoint(x: frame.minX, y: frame.minY), to: CGPoint(x: frame.maxX, y: frame.minY))
         physicsBody!.categoryBitMask = GameConstants.PhysicsCategories.frameCategory
         physicsBody!.contactTestBitMask = GameConstants.PhysicsCategories.playerCategory
         
         createLayers()
         
-        // ADDED TO FIX A BUG ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         isPaused = true
         isPaused = false
         
@@ -107,53 +98,50 @@ class GameSceneL1W1: SKScene {
     func createLayers() {
         worldLayer = Layer()
         
-        // Gets the info from the GameConstants file in Template Folder
         worldLayer.zPosition = GameConstants.ZPositions.worldZ
         
         addChild(worldLayer)
-        // only move x as player moves right not up
+        
         worldLayer.layerVelocity = CGPoint(x: -200, y: 0.0)
         
         backgroundLayer = RepeatingLayer()
         
-        // Gets the info from the GameConstants file in Template Folder
+        
         backgroundLayer.zPosition = GameConstants.ZPositions.farBGZ
         
         addChild(backgroundLayer)
         
-        // this will run twice for the background so it can repeat
         for i in 0...1 {
-            let backgroundImage = SKSpriteNode(imageNamed: GameConstants.StringConstants.world1BackgroundName)
+            let backgroundImage = SKSpriteNode(imageNamed: GameConstants.StringConstants.world2BackgroundName)
             backgroundImage.name = String(i)
-            // scale the background image
             backgroundImage.scale(to: frame.size, width: false, multiplier: 1.0)
             backgroundImage.anchorPoint = CGPoint.zero
             backgroundImage.position = CGPoint(x: 0.0 + CGFloat(i) * backgroundImage.size.width, y: 0.0)
             backgroundLayer.addChild(backgroundImage)
         }
         
-        // half the speed of the world layer, more realistic, dimentional
+        
         backgroundLayer.layerVelocity = CGPoint(x: -100, y: 0.0)
         
-        load(level: "Level_0-1")
+        load(level: "Level_1-1")
     }
     
     func load(level: String) {
         if let levelNode = SKNode.unarchiveFromFile(file: level) {
             mapNode = levelNode
-            // enable mapnode to move with the layer aka level moves
+            
             worldLayer.addChild(mapNode)
             loadTileMap()
         }
     }
     
     func loadTileMap() {
-        // if theres a value for ground tiles it will be SKTileMapNode
+        
         if let groundTiles = mapNode.childNode(withName: GameConstants.StringConstants.groundTilesName) as? SKTileMapNode {
             tileMap = groundTiles
-            // set to entire size of the frame, width is false because it is ongoing
+            
             tileMap.scale(to: frame.size, width: false, multiplier: 1.0)
-            // from physics helper file, ground is named on the tileSet file for ground tiles
+            
             PhysicsHelper.addPhysicsBody(to: tileMap, and: "ground")
             
             for child in groundTiles.children {
@@ -169,22 +157,22 @@ class GameSceneL1W1: SKScene {
         addHUD()
     }
     
-    // called above in loadTileMap
+    
     func addPlayer() {
-        // Getting this from the Game Constants file
+        
         player = Player(imageNamed: GameConstants.StringConstants.playerImageName)
-        // 0.1 is a tenth of the screen for the size of the chinchilla
+        
         player.scale(to: frame.size, width: false, multiplier: 0.1)
         player.name = GameConstants.StringConstants.playerName
-        // add physics body properties to chinchilla
+        
         PhysicsHelper.addPhysicsBody(to: player, with: player.name!)
-        // Position for the chinchilla is in first quarter of screen, and middle of y axis
+        
         player.position = CGPoint(x: frame.midX/2.0, y: frame.midY)
         player.zPosition = GameConstants.ZPositions.playerZ
-        // load frames
+        
         player.loadTextures()
         player.state = .idle
-        // add the chinchilla to the game
+        
         addChild(player)
         
         addPlayerActions()
@@ -192,16 +180,16 @@ class GameSceneL1W1: SKScene {
     }
     
     func addPlayerActions() {
-        // y is dependant on screen height, quaeter of screen size
+    
         let up = SKAction.moveBy(x: 0.0, y: frame.size.height/4, duration: 0.4)
-        // slows down action at the end like after jumping
+        
         up.timingMode = .easeOut
         
         player.createUserData(entry: up, forKey: GameConstants.StringConstants.jumpUpActionKey)
-        // for the double jump
+        
         let move = SKAction.moveBy(x: 0.0, y: player.size.height, duration: 0.4)
         
-        // IF THIS LOOKS BAD ADD resize: <#T##Bool#>, restore: <#T##Bool#> at the end of the bracket below
+        
         let jump = SKAction.animate(with: player.jumpFrames, timePerFrame: 0.4/Double(player.jumpFrames.count))
         let group = SKAction.group([move,jump])
         
@@ -212,15 +200,15 @@ class GameSceneL1W1: SKScene {
     
     
     func jump() {
-        // stops double jump issue
+        
         player.airborne = true
-        // turn off gravity when chinchilla jumps
+        
         player.turnGravity(on: false)
         player.run(player.userData?.value(forKey: GameConstants.StringConstants.jumpUpActionKey) as! SKAction) {
             
             if self.touch {
                 self.player.run(self.player.userData?.value(forKey: GameConstants.StringConstants.jumpUpActionKey) as! SKAction) {
-                    // chinchilla gravity back on
+                    
                     self.player.turnGravity(on: true)
                 }
             }
@@ -229,10 +217,10 @@ class GameSceneL1W1: SKScene {
     
     func brakeDecend() {
         brake = true
-        // speed in y direction for braking
+        
         player.physicsBody!.velocity.dy = 0.0
         
-        // spark animation
+        
         if let sparky = ParticleHelper.addParticleEffect(name: GameConstants.StringConstants.brakeSparkEmitterKey, particlePositionRange: CGVector(dx: 30.0, dy: 30.0), position: CGPoint(x: player.position.x, y: player.position.y - player.size.height/2)) {
             sparky.zPosition = GameConstants.ZPositions.objectZ
             addChild(sparky)
@@ -240,7 +228,7 @@ class GameSceneL1W1: SKScene {
         
         player.run(player.userData?.value(forKey: GameConstants.StringConstants.brakeDescendActionKey) as! SKAction) {
             
-            // remove particle affect
+            
             ParticleHelper.removeParticleEffect(name: GameConstants.StringConstants.brakeSparkEmitterKey, from: self)
         }
     }
@@ -255,7 +243,7 @@ class GameSceneL1W1: SKScene {
         }
     }
     
-    // FOR ALL COLLETABLES
+    
     func handleCollectable(sprite: SKSpriteNode) {
         switch sprite.name! {
         case GameConstants.StringConstants.fruitName,
@@ -268,10 +256,10 @@ class GameSceneL1W1: SKScene {
         
     }
     
-    // FOR FRUIT ONLY
+    
     func collectFruit(sprite: SKSpriteNode) {
         
-        // tell the difference between SuperFruit and Fruit
+        
         if GameConstants.StringConstants.superFruitNames.contains(sprite.name!) {
             superFruits += 1
             for index in 0..<3 {
@@ -281,7 +269,7 @@ class GameSceneL1W1: SKScene {
             }
         } else {
             fruits += 1
-            // update
+            
             hudDelegate?.updateFruitLabel(fruits: fruits)
         }
         
@@ -290,7 +278,7 @@ class GameSceneL1W1: SKScene {
             fruitDust.zPosition = GameConstants.ZPositions.objectZ
             sprite.addChild(fruitDust)
             sprite.run(SKAction.fadeOut(withDuration: 0.4), completion: {
-                // remove effect and the fruit
+                
                 fruitDust.removeFromParent()
                 sprite.removeFromParent()
             })
@@ -325,14 +313,14 @@ class GameSceneL1W1: SKScene {
         switch type {
         case 0:
             
-            // PAUSED
+            
             popup = PopupNode(withTitle: title, and: SKTexture(imageNamed: GameConstants.StringConstants.smallPopup), buttonHandlerDelegate: self)
             popup!.add(buttons: [0,3,2])
             
         default:
             
-            // FAILED, COMPLETED
-            popup = ScorePopupNode(buttonHandlerDelegate: self, title: title, level: "Level_0-1", texture: SKTexture(imageNamed: GameConstants.StringConstants.largePopup), score: fruits, fruits: superFruits, animated: true)
+            
+            popup = ScorePopupNode(buttonHandlerDelegate: self, title: title, level: "Level_1-1", texture: SKTexture(imageNamed: GameConstants.StringConstants.largePopup), score: fruits, fruits: superFruits, animated: true)
             popup!.add(buttons: [2,0])
         }
         
@@ -344,7 +332,7 @@ class GameSceneL1W1: SKScene {
     }
     
     
-    // two ways player can die - obstacle or falling off the edge
+    
     func die(reason: Int) {
         run(soundPlayer.dieSound)
         gameState = .finished
@@ -352,26 +340,26 @@ class GameSceneL1W1: SKScene {
         
         let deathAnimation: SKAction!
         
-        // Case 0 is contact with a still enemy, case 2 is falling off the level
+        
         switch reason {
         case 0:
             deathAnimation = SKAction.animate(with: player.dieFrames, timePerFrame: 0.1, resize: true, restore: true)
         case 1:
-            // when falling off a ledge chinchilla will move a bit upwards for die animation
+            
             let up = SKAction.moveTo(y: frame.midY, duration: 0.25)
             let wait = SKAction.wait(forDuration: 0.1)
             let down = SKAction.moveTo(y: -player.size.height, duration: 0.2)
-            // combine the above for the death animation when falling off a ledge
+            
             deathAnimation = SKAction.sequence([up, wait, down])
         default:
             deathAnimation = SKAction.animate(with: player.dieFrames, timePerFrame: 0.1, resize: true, restore: true)
         }
         
         player.run(deathAnimation) {
-            // remove player sprite from screen when dead
+            
             self.player.removeFromParent()
             
-            // pop up
+            
             self.createAndShowPopup(type: 1, title: GameConstants.StringConstants.failedKey)
         }
     }
@@ -398,11 +386,11 @@ class GameSceneL1W1: SKScene {
             
         ]
         
-        ScoreManager.compare(scores: [scores], in: "Level_0-1")
+        ScoreManager.compare(scores: [scores], in: "Level_1-1")
         createAndShowPopup(type: 1, title: GameConstants.StringConstants.completedKey)
     }
     
-    // User controls player starting, jumping, moving etc by touch therefore these override functions are needed
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         switch gameState {
@@ -448,17 +436,17 @@ class GameSceneL1W1: SKScene {
         
     }
     
-    // physics of ground nodes. override didsimulatephysics
+    
     
     override func didSimulatePhysics() {
         for node in tileMap[GameConstants.StringConstants.groundNodeName] {
             if let groundNode = node as? GroundNode {
-                // top edge of ground node
+                
                 let groundY = (groundNode.position.y + groundNode.size.height) * tileMap.yScale
                 
                 let playerY = player.position.y - player.size.height/3
                 
-                // if y position of chinchilla is bigger or higher than y position of ground node, physics body is activated aka can stand on it
+                
                 groundNode.isBodyActivated = playerY > groundY
             }
         }
@@ -468,31 +456,30 @@ class GameSceneL1W1: SKScene {
     
 }
 
-// Added when physics bodies come into contact
-extension GameSceneL1W1: SKPhysicsContactDelegate {
+
+extension GameSceneL1W2: SKPhysicsContactDelegate {
     
     func didBegin(_ contact: SKPhysicsContact) {
         let contactMask = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
         
         switch contactMask {
-        // contact between chinchilla and ground aka chinchilla landed on the ground
+            
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.groundCategory:
             player.airborne = false
             brake = false
             
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.finishCategory:
-            // gameState = .finished
+            
             finishGame()
             
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.enemyCategory:
             handleEnemyContact()
             
-        // Falling off the ledge
+            
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.frameCategory:
             physicsBody = nil
             die(reason: 1)
             
-        // Collectables
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.collectibleCategory:
             let collectible = contact.bodyA.node?.name == player.name ? contact.bodyB.node as! SKSpriteNode : contact.bodyA.node as! SKSpriteNode
             handleCollectable(sprite: collectible)
@@ -506,7 +493,7 @@ extension GameSceneL1W1: SKPhysicsContactDelegate {
         let contactMask = contact.bodyA.categoryBitMask | contact.bodyB.categoryBitMask
         
         switch contactMask {
-        // contact between chinchilla and ground aka chinchilla fell off the edge
+            
         case GameConstants.PhysicsCategories.playerCategory | GameConstants.PhysicsCategories.groundCategory:
             player.airborne = true
         default:
@@ -516,43 +503,39 @@ extension GameSceneL1W1: SKPhysicsContactDelegate {
     
 }
 
-extension GameSceneL1W1: PopupButtonHandlerDelegate {
+extension GameSceneL1W2: PopupButtonHandlerDelegate {
     
     func popupButtonHandler(index: Int) {
         
         switch index {
-        // Menu
+            
         case 0:
             popup!.run(SKAction.fadeOut(withDuration: 0.2)) {
                 self.popup!.removeFromParent()
                 
-                self.sceneManagerDelegate?.presentMenuViewController()
+                self.sceneManagerDelegateHalloween?.presentMenuViewController()
                 
             }
             
             
-            // // // // // // // // // // // // //
             
-            // Play
-        // Only needed on the Level Selection
         case 1:
             break
             
-            // // // // // // // // // // // // //
             
             
-        // Retry
+            
+            
         case 2:
             
             popup!.run(SKAction.fadeOut(withDuration: 0.2)) {
                 self.popup!.removeFromParent()
                 
-                self.sceneManagerDelegate?.presentW1L1Scene()
-                // just an idea below
-                // self.presentGameSceneL1W1()
+                self.sceneManagerDelegateHalloween?.presentW2L1Scene()
+                
                 
             }
-        // Cancel
+            
         case 3:
             popup!.run(SKAction.fadeOut(withDuration: 0.2)) {
                 self.popup!.removeFromParent()

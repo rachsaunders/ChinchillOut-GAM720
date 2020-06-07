@@ -12,6 +12,6 @@ class World1Controller: UIViewController {
 
     override func viewDidLoad() {
         // fixes error of level music playing on the level selection on worlds view controller
-         backgroundMusicPlayer.stop()
+         backgroundMusicPlayer!.stop()
     }
 }

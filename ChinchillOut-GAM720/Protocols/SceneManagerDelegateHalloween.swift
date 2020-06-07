@@ -1,5 +1,5 @@
 //
-//  SceneManagerDelegate.swift
+//  SceneManagerDelegateHalloween.swift
 //  ChinchillOut-GAM720
 //
 //  Created by Rachel Saunders on 18/05/2020.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol SceneManagerDelegate {
+protocol SceneManagerDelegateHalloween {
     
-    func presentW1L1Scene()
+    func presentW2L1Scene()
   
     func presentMenuViewController()
 

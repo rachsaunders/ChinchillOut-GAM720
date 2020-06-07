@@ -334,7 +334,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1503" y="838"/>
+            <point key="canvasLocation" x="-1638" y="914"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Lg-CI-oI0">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="yKQ-c8-EeL" customClass="L1W2ViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7VB-7b-8h9" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Szw-YN-XjD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kzc-5L-6BO"/>
+                    <connections>
+                        <segue destination="c63-qX-G9W" kind="show" identifier="backToMenuHalloween" animates="NO" id="jaT-vP-gTP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Whe-wB-Bvs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="937"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XqW-8w-hf2">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="GP8-Il-Gjz" customClass="L1W3ViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eD5-P6-Sf7" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="91g-Ja-zLF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PQu-ll-Oex"/>
+                    <connections>
+                        <segue destination="wmC-Pn-gwb" kind="show" identifier="backToMenuXmas" animates="NO" id="gkc-xV-583"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mjd-G9-Cx6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="913"/>
         </scene>
         <!--Third Cutscene View Controller-->
         <scene sceneID="ugC-A2-7Nd">
@@ -448,6 +486,9 @@
                                 <state key="normal" title="1" backgroundImage="EmptyButton">
                                     <color key="titleColor" red="0.15000000599999999" green="0.15000000599999999" blue="0.15000000599999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yKQ-c8-EeL" kind="show" animates="NO" id="WUr-1T-JQZ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halloweenWorldButton" translatesAutoresizingMaskIntoConstraints="NO" id="W93-4q-bRL">
                                 <rect key="frame" x="25" y="75" width="225" height="81"/>
@@ -562,6 +603,9 @@
                                 <state key="normal" title="1" backgroundImage="EmptyButtonBlue">
                                     <color key="titleColor" red="0.15000000599999999" green="0.15000000599999999" blue="0.15000000599999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="GP8-Il-Gjz" kind="show" animates="NO" id="Whb-xB-wrJ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmasWorldButton" translatesAutoresizingMaskIntoConstraints="NO" id="Cbk-KL-Xzh">
                                 <rect key="frame" x="25" y="75" width="225" height="81"/>
@@ -654,8 +698,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qMq-1w-I0W"/>
-        <segue reference="hjV-0L-WPf"/>
+        <segue reference="gkc-xV-583"/>
+        <segue reference="jaT-vP-gTP"/>
+        <segue reference="edO-Gm-Y2a"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="EmptyButton" width="400" height="400"/>

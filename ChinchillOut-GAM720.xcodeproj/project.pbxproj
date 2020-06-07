@@ -30,6 +30,14 @@
 		182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF242481411E009C95A8 /* chinchilla1.mp3 */; };
 		182EBF272481471B009C95A8 /* forestBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF262481471A009C95A8 /* forestBackground.mp3 */; };
 		182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */; };
+		18648964248D094E00CEEA29 /* Level_1-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18648963248D094E00CEEA29 /* Level_1-1.sks */; };
+		18648966248D0AEB00CEEA29 /* L1W2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18648965248D0AEB00CEEA29 /* L1W2ViewController.swift */; };
+		18648968248D0BA200CEEA29 /* GameSceneL1W2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18648967248D0BA200CEEA29 /* GameSceneL1W2.swift */; };
+		1864896A248D11EC00CEEA29 /* SceneManagerDelegateHalloween.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18648969248D11EC00CEEA29 /* SceneManagerDelegateHalloween.swift */; };
+		186983B4248D6D7A00727B13 /* SceneManagerDelegateXmas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186983B3248D6D7A00727B13 /* SceneManagerDelegateXmas.swift */; };
+		186983B6248D6D9A00727B13 /* L1W3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186983B5248D6D9A00727B13 /* L1W3ViewController.swift */; };
+		186983B8248D6E2800727B13 /* GameSceneL1W3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186983B7248D6E2800727B13 /* GameSceneL1W3.swift */; };
+		186983BA248D6EEC00727B13 /* Level_2-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 186983B9248D6EEC00727B13 /* Level_2-1.sks */; };
 		1875DF9B2486CA2000D1AB69 /* Level_0-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1875DF9A2486CA2000D1AB69 /* Level_0-1.sks */; };
 		18902BCB2468312D0053771E /* PhysicsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCA2468312D0053771E /* PhysicsHelper.swift */; };
 		18902BCD2468373F0053771E /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCC2468373F0053771E /* GroundNode.swift */; };
@@ -87,6 +95,14 @@
 		182EBF242481411E009C95A8 /* chinchilla1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chinchilla1.mp3; sourceTree = "<group>"; };
 		182EBF262481471A009C95A8 /* forestBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forestBackground.mp3; sourceTree = "<group>"; };
 		182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fruitCollection.mp3; sourceTree = "<group>"; };
+		18648963248D094E00CEEA29 /* Level_1-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = "Level_1-1.sks"; path = "../../../../../../Downloads/ChinchillOut-GAM720-master/ChinchillOut-GAM720/Scene Editor Files/Levels/Level_1-1.sks"; sourceTree = "<group>"; };
+		18648965248D0AEB00CEEA29 /* L1W2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1W2ViewController.swift; sourceTree = "<group>"; };
+		18648967248D0BA200CEEA29 /* GameSceneL1W2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneL1W2.swift; sourceTree = "<group>"; };
+		18648969248D11EC00CEEA29 /* SceneManagerDelegateHalloween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneManagerDelegateHalloween.swift; sourceTree = "<group>"; };
+		186983B3248D6D7A00727B13 /* SceneManagerDelegateXmas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneManagerDelegateXmas.swift; sourceTree = "<group>"; };
+		186983B5248D6D9A00727B13 /* L1W3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1W3ViewController.swift; sourceTree = "<group>"; };
+		186983B7248D6E2800727B13 /* GameSceneL1W3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneL1W3.swift; sourceTree = "<group>"; };
+		186983B9248D6EEC00727B13 /* Level_2-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = "Level_2-1.sks"; path = "../../../../../../Downloads/ChinchillOut-GAM720-master/ChinchillOut-GAM720/Scene Editor Files/Levels/Level_2-1.sks"; sourceTree = "<group>"; };
 		1875DF9A2486CA2000D1AB69 /* Level_0-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = "Level_0-1.sks"; path = "../../../../../../Downloads/ChinchillOut-GAM720-master/ChinchillOut-GAM720/Scene Editor Files/Levels/Level_0-1.sks"; sourceTree = "<group>"; };
 		18902BCA2468312D0053771E /* PhysicsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsHelper.swift; sourceTree = "<group>"; };
 		18902BCC2468373F0053771E /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
@@ -135,6 +151,8 @@
 				18029747246ECA4F00371085 /* HUDDelegate.swift */,
 				18C6150124702601009A1554 /* PopupButtonHandlerDelegate.swift */,
 				18EC529F2472B184008D7E16 /* SceneManagerDelegate.swift */,
+				18648969248D11EC00CEEA29 /* SceneManagerDelegateHalloween.swift */,
+				186983B3248D6D7A00727B13 /* SceneManagerDelegateXmas.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -291,6 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				1875DF9A2486CA2000D1AB69 /* Level_0-1.sks */,
+				18648963248D094E00CEEA29 /* Level_1-1.sks */,
+				186983B9248D6EEC00727B13 /* Level_2-1.sks */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -308,6 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				1821E9A3246584FA006BA465 /* GameSceneL1W1.swift */,
+				18648967248D0BA200CEEA29 /* GameSceneL1W2.swift */,
+				186983B7248D6E2800727B13 /* GameSceneL1W3.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -316,6 +338,8 @@
 			isa = PBXGroup;
 			children = (
 				1821E9A5246584FA006BA465 /* L1W1ViewController.swift */,
+				18648965248D0AEB00CEEA29 /* L1W2ViewController.swift */,
+				186983B5248D6D9A00727B13 /* L1W3ViewController.swift */,
 				18EC529D2472B015008D7E16 /* MenuViewController.swift */,
 				18EC52A32472BBC0008D7E16 /* World1Controller.swift */,
 				18EC52A12472BBAF008D7E16 /* CutsceneViewController.swift */,
@@ -412,6 +436,7 @@
 				1875DF9B2486CA2000D1AB69 /* Level_0-1.sks in Resources */,
 				182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */,
 				180E6DAA248BD00F000F8F21 /* halloweenBackground.mp3 in Resources */,
+				186983BA248D6EEC00727B13 /* Level_2-1.sks in Resources */,
 				18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */,
 				1821E9A9246584FA006BA465 /* Main.storyboard in Resources */,
 				182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */,
@@ -421,6 +446,7 @@
 				1821E9AB246584FB006BA465 /* Assets.xcassets in Resources */,
 				182EBF2124813517009C95A8 /* completedSound.mp3 in Resources */,
 				18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */,
+				18648964248D094E00CEEA29 /* Level_1-1.sks in Resources */,
 				1821E9AE246584FB006BA465 /* LaunchScreen.storyboard in Resources */,
 				180E6DA8248BCCF7000F8F21 /* xmasBackground.mp3 in Resources */,
 			);
@@ -442,9 +468,12 @@
 				18C614FC24702533009A1554 /* PopupNode.swift in Sources */,
 				1802974A246ECAA200371085 /* GameHUD.swift in Sources */,
 				18C615062470430E009A1554 /* ScoreManager.swift in Sources */,
+				18648966248D0AEB00CEEA29 /* L1W2ViewController.swift in Sources */,
+				1864896A248D11EC00CEEA29 /* SceneManagerDelegateHalloween.swift in Sources */,
 				18EC52AC2472D03D008D7E16 /* ThirdCutsceneViewController.swift in Sources */,
 				1821E9A6246584FA006BA465 /* L1W1ViewController.swift in Sources */,
 				18902BD1246887880053771E /* ObjectHelper.swift in Sources */,
+				186983B4248D6D7A00727B13 /* SceneManagerDelegateXmas.swift in Sources */,
 				18EC52B62472D0E8008D7E16 /* EighthCutsceneViewController.swift in Sources */,
 				18EC52A02472B184008D7E16 /* SceneManagerDelegate.swift in Sources */,
 				18C6150224702601009A1554 /* PopupButtonHandlerDelegate.swift in Sources */,
@@ -456,6 +485,7 @@
 				18A1D431246D7CFD005425C1 /* ParticleHelper.swift in Sources */,
 				180E6DA6248BC090000F8F21 /* WorldXmasController.swift in Sources */,
 				18EC52B42472D084008D7E16 /* SeventhCutsceneViewController.swift in Sources */,
+				18648968248D0BA200CEEA29 /* GameSceneL1W2.swift in Sources */,
 				18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */,
 				18EC52A42472BBC0008D7E16 /* World1Controller.swift in Sources */,
 				1821E99E246584FA006BA465 /* AppDelegate.swift in Sources */,
@@ -465,8 +495,10 @@
 				181D60762466EA4B0058E984 /* RepeatingLayer.swift in Sources */,
 				18902BCD2468373F0053771E /* GroundNode.swift in Sources */,
 				180E6DA4248BC05E000F8F21 /* WorldHalloweenController.swift in Sources */,
+				186983B6248D6D9A00727B13 /* L1W3ViewController.swift in Sources */,
 				18C61500247025C7009A1554 /* BannerLabel.swift in Sources */,
 				18902BCB2468312D0053771E /* PhysicsHelper.swift in Sources */,
+				186983B8248D6E2800727B13 /* GameSceneL1W3.swift in Sources */,
 				18F1FB2224801E8F00DD71FB /* SoundPlayer.swift in Sources */,
 				18EC529E2472B015008D7E16 /* MenuViewController.swift in Sources */,
 			);
