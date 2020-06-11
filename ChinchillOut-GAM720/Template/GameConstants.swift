@@ -91,7 +91,7 @@ struct GameConstants {
         static let scoreStarsKey = "stars"
        
         static let pausedKey = "Paused"
-        static let completedKey = "Completed"
+        static let completedKey = "Yay!"
         static let failedKey = "Failed"
         
         static let playerIdleAtlas = "Player Idle Atlas"

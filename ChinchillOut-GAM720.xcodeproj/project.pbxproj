@@ -25,6 +25,7 @@
 		1821E9A9246584FA006BA465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821E9A7246584FA006BA465 /* Main.storyboard */; };
 		1821E9AB246584FB006BA465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1821E9AA246584FB006BA465 /* Assets.xcassets */; };
 		1821E9AE246584FB006BA465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1821E9AC246584FB006BA465 /* LaunchScreen.storyboard */; };
+		182456332492642200EB129C /* ChinchillaARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182456322492642200EB129C /* ChinchillaARViewController.swift */; };
 		182EBF2024813517009C95A8 /* dieSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF1E24813517009C95A8 /* dieSound.mp3 */; };
 		182EBF2124813517009C95A8 /* completedSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF1F24813517009C95A8 /* completedSound.mp3 */; };
 		182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF242481411E009C95A8 /* chinchilla1.mp3 */; };
@@ -90,6 +91,7 @@
 		1821E9AA246584FB006BA465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1821E9AD246584FB006BA465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1821E9AF246584FB006BA465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182456322492642200EB129C /* ChinchillaARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinchillaARViewController.swift; sourceTree = "<group>"; };
 		182EBF1E24813517009C95A8 /* dieSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dieSound.mp3; sourceTree = "<group>"; };
 		182EBF1F24813517009C95A8 /* completedSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = completedSound.mp3; sourceTree = "<group>"; };
 		182EBF242481411E009C95A8 /* chinchilla1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chinchilla1.mp3; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				18A1D432246D7E40005425C1 /* Particle Emitters */,
 				18DDC8DB24658AD000503A6B /* Template */,
 				18DDC8DA24658ACB00503A6B /* Controller */,
+				18245631249263E200EB129C /* Controller AR Scenes */,
 				1821E9B524658510006BA465 /* Controller Cutscene */,
 				18DDC8D924658AC300503A6B /* Scenes */,
 				18DDC8D824658AB400503A6B /* UI */,
@@ -233,6 +236,14 @@
 			children = (
 			);
 			path = "Other Files";
+			sourceTree = "<group>";
+		};
+		18245631249263E200EB129C /* Controller AR Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				182456322492642200EB129C /* ChinchillaARViewController.swift */,
+			);
+			path = "Controller AR Scenes";
 			sourceTree = "<group>";
 		};
 		18A1D432246D7E40005425C1 /* Particle Emitters */ = {
@@ -500,6 +511,7 @@
 				18902BCB2468312D0053771E /* PhysicsHelper.swift in Sources */,
 				186983B8248D6E2800727B13 /* GameSceneL1W3.swift in Sources */,
 				18F1FB2224801E8F00DD71FB /* SoundPlayer.swift in Sources */,
+				182456332492642200EB129C /* ChinchillaARViewController.swift in Sources */,
 				18EC529E2472B015008D7E16 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
