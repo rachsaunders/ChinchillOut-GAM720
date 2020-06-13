@@ -26,18 +26,18 @@
                                 <rect key="frame" x="87.5" y="325" width="200" height="242"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JZa-fw-I0W">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="PLAY" backgroundImage="EmptyLongYellow">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ARf-d3-U04" kind="show" animates="NO" id="doG-js-oHK"/>
+                                            <segue destination="6Mg-cT-o1x" kind="show" animates="NO" id="bzL-zi-sgJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViL-ks-VxH">
-                                        <rect key="frame" x="0.0" y="66" width="200" height="44"/>
+                                        <rect key="frame" x="0.0" y="88" width="200" height="66"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="ABOUT" backgroundImage="EmptyLongOrange">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -47,23 +47,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qw-T9-Zq9">
-                                        <rect key="frame" x="0.0" y="132" width="200" height="44"/>
+                                        <rect key="frame" x="0.0" y="176" width="200" height="66"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="HELP" backgroundImage="EmptyLongRed">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="qxY-PX-6nb" kind="show" id="zHg-Un-wEc"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-NC-li7">
-                                        <rect key="frame" x="0.0" y="198" width="200" height="44"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <state key="normal" title="AR" backgroundImage="EmptyLongRed">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="I6M-fB-hap" kind="show" identifier="goToARScene" animates="NO" id="ONE-Jl-0Sb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -88,37 +78,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF6-b7-hA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3826.0869565217395" y="113.83928571428571"/>
+            <point key="canvasLocation" x="-5945" y="24"/>
         </scene>
         <!--ChinchillaAR View Controller-->
-        <scene sceneID="4rP-72-9Vm">
+        <scene sceneID="P2f-OZ-slr">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="I6M-fB-hap" customClass="ChinchillaARViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="o7J-L3-mlP">
+                <viewController modalPresentationStyle="fullScreen" id="6Mg-cT-o1x" customClass="ChinchillaARViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ATe-UD-CvW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLk-VI-WPE">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-jx-Gao">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m58-f6-7Uo">
+                                <rect key="frame" x="313" y="607" width="32" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ARf-d3-U04" kind="show" animates="NO" id="ecm-Sv-Gmh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="9oO-QR-wTL" firstAttribute="bottom" secondItem="yLk-VI-WPE" secondAttribute="bottom" id="9sI-ym-0Ua"/>
-                            <constraint firstItem="yLk-VI-WPE" firstAttribute="top" secondItem="9oO-QR-wTL" secondAttribute="top" id="EFQ-Mu-e0X"/>
-                            <constraint firstItem="9oO-QR-wTL" firstAttribute="trailing" secondItem="yLk-VI-WPE" secondAttribute="trailing" id="jk4-A0-nw9"/>
-                            <constraint firstItem="yLk-VI-WPE" firstAttribute="leading" secondItem="9oO-QR-wTL" secondAttribute="leading" id="l5W-HS-KC1"/>
+                            <constraint firstItem="zcj-CT-9pG" firstAttribute="trailing" secondItem="4fB-jx-Gao" secondAttribute="trailing" id="6HC-47-0eC"/>
+                            <constraint firstItem="4fB-jx-Gao" firstAttribute="leading" secondItem="zcj-CT-9pG" secondAttribute="leading" id="CD8-jS-ndK"/>
+                            <constraint firstItem="4fB-jx-Gao" firstAttribute="top" secondItem="zcj-CT-9pG" secondAttribute="top" id="HrQ-ty-3hL"/>
+                            <constraint firstItem="zcj-CT-9pG" firstAttribute="bottom" secondItem="4fB-jx-Gao" secondAttribute="bottom" id="PAt-UF-PKK"/>
+                            <constraint firstItem="zcj-CT-9pG" firstAttribute="trailing" secondItem="m58-f6-7Uo" secondAttribute="trailing" constant="30" id="gXI-qi-duk"/>
+                            <constraint firstItem="zcj-CT-9pG" firstAttribute="bottom" secondItem="m58-f6-7Uo" secondAttribute="bottom" constant="30" id="vap-ir-8NN"/>
+                            <constraint firstItem="m58-f6-7Uo" firstAttribute="leading" secondItem="zcj-CT-9pG" secondAttribute="leading" constant="313" id="wOd-If-yi2"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="9oO-QR-wTL"/>
+                        <viewLayoutGuide key="safeArea" id="zcj-CT-9pG"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Sqh-Nc-uKC"/>
+                    <navigationItem key="navigationItem" id="0CO-7N-ISR"/>
                     <connections>
-                        <outlet property="sceneView" destination="yLk-VI-WPE" id="OiG-lm-sgR"/>
+                        <outlet property="sceneView" destination="4fB-jx-Gao" id="Qlb-BE-dok"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h6C-zQ-EyL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82m-La-wqR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4701" y="545"/>
+            <point key="canvasLocation" x="-4930" y="-940"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="L2r-fV-fd5">
@@ -134,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0M-Yk-q6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3826" y="838"/>
+            <point key="canvasLocation" x="-5945" y="861"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="j2z-0X-n1J">
@@ -150,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Djl-7Q-Gos" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3114" y="838"/>
+            <point key="canvasLocation" x="-5164" y="860"/>
         </scene>
         <!--Cutscene View Controller-->
         <scene sceneID="rko-S5-hyc">
@@ -360,7 +362,6 @@
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="fullScreen" id="BV1-FR-VrT" customClass="L1W1ViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -373,6 +374,7 @@
                         <segue destination="Edi-gb-zKV" kind="show" identifier="backToMenu" animates="NO" id="edO-Gm-Y2a"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1638" y="914"/>
         </scene>

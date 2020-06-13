@@ -31,6 +31,8 @@
 		182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF242481411E009C95A8 /* chinchilla1.mp3 */; };
 		182EBF272481471B009C95A8 /* forestBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF262481471A009C95A8 /* forestBackground.mp3 */; };
 		182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */; };
+		184C5DD72493D22E003D8ED7 /* ChinchillaARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C5DD62493D22E003D8ED7 /* ChinchillaARModel.swift */; };
+		184C5DD92493D312003D8ED7 /* Chinchilla.scn in Resources */ = {isa = PBXBuildFile; fileRef = 184C5DD82493D312003D8ED7 /* Chinchilla.scn */; };
 		18648964248D094E00CEEA29 /* Level_1-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18648963248D094E00CEEA29 /* Level_1-1.sks */; };
 		18648966248D0AEB00CEEA29 /* L1W2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18648965248D0AEB00CEEA29 /* L1W2ViewController.swift */; };
 		18648968248D0BA200CEEA29 /* GameSceneL1W2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18648967248D0BA200CEEA29 /* GameSceneL1W2.swift */; };
@@ -53,6 +55,9 @@
 		18C6150224702601009A1554 /* PopupButtonHandlerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6150124702601009A1554 /* PopupButtonHandlerDelegate.swift */; };
 		18C6150424702669009A1554 /* SpriteKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6150324702669009A1554 /* SpriteKitButton.swift */; };
 		18C615062470430E009A1554 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C615052470430E009A1554 /* ScoreManager.swift */; };
+		18D224B82493B30000E37FE5 /* walking.dae in Resources */ = {isa = PBXBuildFile; fileRef = 18D224B72493B30000E37FE5 /* walking.dae */; };
+		18D224BB2493B33E00E37FE5 /* ChinTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D224BA2493B33E00E37FE5 /* ChinTexture.png */; };
+		18D224BD2493BAAD00E37FE5 /* WalkingFixed.dae in Resources */ = {isa = PBXBuildFile; fileRef = 18D224BC2493BAAD00E37FE5 /* WalkingFixed.dae */; };
 		18D894B72465AA180003EE8C /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D894B62465AA180003EE8C /* SKNode+Extensions.swift */; };
 		18DDC8E02465936B00503A6B /* TileSets.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18DDC8DF2465936B00503A6B /* TileSets.sks */; };
 		18EC529E2472B015008D7E16 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC529D2472B015008D7E16 /* MenuViewController.swift */; };
@@ -97,6 +102,8 @@
 		182EBF242481411E009C95A8 /* chinchilla1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chinchilla1.mp3; sourceTree = "<group>"; };
 		182EBF262481471A009C95A8 /* forestBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forestBackground.mp3; sourceTree = "<group>"; };
 		182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fruitCollection.mp3; sourceTree = "<group>"; };
+		184C5DD62493D22E003D8ED7 /* ChinchillaARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinchillaARModel.swift; sourceTree = "<group>"; };
+		184C5DD82493D312003D8ED7 /* Chinchilla.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Chinchilla.scn; sourceTree = "<group>"; };
 		18648963248D094E00CEEA29 /* Level_1-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = "Level_1-1.sks"; path = "../../../../../../Downloads/ChinchillOut-GAM720-master/ChinchillOut-GAM720/Scene Editor Files/Levels/Level_1-1.sks"; sourceTree = "<group>"; };
 		18648965248D0AEB00CEEA29 /* L1W2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1W2ViewController.swift; sourceTree = "<group>"; };
 		18648967248D0BA200CEEA29 /* GameSceneL1W2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneL1W2.swift; sourceTree = "<group>"; };
@@ -119,6 +126,9 @@
 		18C6150124702601009A1554 /* PopupButtonHandlerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupButtonHandlerDelegate.swift; sourceTree = "<group>"; };
 		18C6150324702669009A1554 /* SpriteKitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitButton.swift; sourceTree = "<group>"; };
 		18C615052470430E009A1554 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		18D224B72493B30000E37FE5 /* walking.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = walking.dae; sourceTree = "<group>"; };
+		18D224BA2493B33E00E37FE5 /* ChinTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChinTexture.png; sourceTree = "<group>"; };
+		18D224BC2493BAAD00E37FE5 /* WalkingFixed.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = WalkingFixed.dae; sourceTree = "<group>"; };
 		18D894B62465AA180003EE8C /* SKNode+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
 		18DDC8DF2465936B00503A6B /* TileSets.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSets.sks; sourceTree = "<group>"; };
 		18EC529D2472B015008D7E16 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +205,7 @@
 		1821E99C246584FA006BA465 /* ChinchillOut-GAM720 */ = {
 			isa = PBXGroup;
 			children = (
+				18D224B62493B1F900E37FE5 /* art.scnassets */,
 				1821E9AA246584FB006BA465 /* Assets.xcassets */,
 				1802974B246ECAE100371085 /* Resources */,
 				18029746246ECA2500371085 /* Protocols */,
@@ -242,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				182456322492642200EB129C /* ChinchillaARViewController.swift */,
+				184C5DD62493D22E003D8ED7 /* ChinchillaARModel.swift */,
 			);
 			path = "Controller AR Scenes";
 			sourceTree = "<group>";
@@ -254,6 +266,25 @@
 				18029744246EB88400371085 /* BrakeSparkEmitter.sks */,
 			);
 			path = "Particle Emitters";
+			sourceTree = "<group>";
+		};
+		18D224B62493B1F900E37FE5 /* art.scnassets */ = {
+			isa = PBXGroup;
+			children = (
+				18D224BC2493BAAD00E37FE5 /* WalkingFixed.dae */,
+				184C5DD82493D312003D8ED7 /* Chinchilla.scn */,
+				18D224B92493B31A00E37FE5 /* Textures */,
+				18D224B72493B30000E37FE5 /* walking.dae */,
+			);
+			path = art.scnassets;
+			sourceTree = "<group>";
+		};
+		18D224B92493B31A00E37FE5 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				18D224BA2493B33E00E37FE5 /* ChinTexture.png */,
+			);
+			path = Textures;
 			sourceTree = "<group>";
 		};
 		18DDC8CF24658A3A00503A6B /* Helper Files */ = {
@@ -446,18 +477,22 @@
 				182EBF272481471B009C95A8 /* forestBackground.mp3 in Resources */,
 				1875DF9B2486CA2000D1AB69 /* Level_0-1.sks in Resources */,
 				182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */,
+				18D224B82493B30000E37FE5 /* walking.dae in Resources */,
 				180E6DAA248BD00F000F8F21 /* halloweenBackground.mp3 in Resources */,
 				186983BA248D6EEC00727B13 /* Level_2-1.sks in Resources */,
 				18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */,
 				1821E9A9246584FA006BA465 /* Main.storyboard in Resources */,
+				184C5DD92493D312003D8ED7 /* Chinchilla.scn in Resources */,
 				182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */,
 				18DDC8E02465936B00503A6B /* TileSets.sks in Resources */,
 				182EBF2024813517009C95A8 /* dieSound.mp3 in Resources */,
 				18029745246EB88400371085 /* BrakeSparkEmitter.sks in Resources */,
 				1821E9AB246584FB006BA465 /* Assets.xcassets in Resources */,
+				18D224BD2493BAAD00E37FE5 /* WalkingFixed.dae in Resources */,
 				182EBF2124813517009C95A8 /* completedSound.mp3 in Resources */,
 				18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */,
 				18648964248D094E00CEEA29 /* Level_1-1.sks in Resources */,
+				18D224BB2493B33E00E37FE5 /* ChinTexture.png in Resources */,
 				1821E9AE246584FB006BA465 /* LaunchScreen.storyboard in Resources */,
 				180E6DA8248BCCF7000F8F21 /* xmasBackground.mp3 in Resources */,
 			);
@@ -507,6 +542,7 @@
 				18902BCD2468373F0053771E /* GroundNode.swift in Sources */,
 				180E6DA4248BC05E000F8F21 /* WorldHalloweenController.swift in Sources */,
 				186983B6248D6D9A00727B13 /* L1W3ViewController.swift in Sources */,
+				184C5DD72493D22E003D8ED7 /* ChinchillaARModel.swift in Sources */,
 				18C61500247025C7009A1554 /* BannerLabel.swift in Sources */,
 				18902BCB2468312D0053771E /* PhysicsHelper.swift in Sources */,
 				186983B8248D6E2800727B13 /* GameSceneL1W3.swift in Sources */,
