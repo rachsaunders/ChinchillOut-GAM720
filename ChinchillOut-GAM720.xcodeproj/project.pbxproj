@@ -33,6 +33,8 @@
 		182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */; };
 		184C5DD72493D22E003D8ED7 /* ChinchillaARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C5DD62493D22E003D8ED7 /* ChinchillaARModel.swift */; };
 		184C5DD92493D312003D8ED7 /* Chinchilla.scn in Resources */ = {isa = PBXBuildFile; fileRef = 184C5DD82493D312003D8ED7 /* Chinchilla.scn */; };
+		1853FBB5249A4F230040ED4F /* headbopandsniffFixed.dae in Resources */ = {isa = PBXBuildFile; fileRef = 1853FBB4249A4F230040ED4F /* headbopandsniffFixed.dae */; };
+		1853FBB7249A4F5E0040ED4F /* ChinchillaUpdate.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1853FBB6249A4F5E0040ED4F /* ChinchillaUpdate.scn */; };
 		18648964248D094E00CEEA29 /* Level_1-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18648963248D094E00CEEA29 /* Level_1-1.sks */; };
 		18648966248D0AEB00CEEA29 /* L1W2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18648965248D0AEB00CEEA29 /* L1W2ViewController.swift */; };
 		18648968248D0BA200CEEA29 /* GameSceneL1W2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18648967248D0BA200CEEA29 /* GameSceneL1W2.swift */; };
@@ -49,6 +51,7 @@
 		18A1D431246D7CFD005425C1 /* ParticleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1D430246D7CFD005425C1 /* ParticleHelper.swift */; };
 		18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A1D434246D7EA5005425C1 /* Assets.xcassets */; };
 		18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18A1D437246D8185005425C1 /* FruitDustEmitter.sks */; };
+		18B8866E249A4BAF00EDBDDE /* headbopandsniff.dae in Resources */ = {isa = PBXBuildFile; fileRef = 18B8866D249A4BAF00EDBDDE /* headbopandsniff.dae */; };
 		18C614FC24702533009A1554 /* PopupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C614FB24702533009A1554 /* PopupNode.swift */; };
 		18C614FE24702564009A1554 /* ScorePopupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C614FD24702564009A1554 /* ScorePopupNode.swift */; };
 		18C61500247025C7009A1554 /* BannerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C614FF247025C7009A1554 /* BannerLabel.swift */; };
@@ -104,6 +107,8 @@
 		182EBF2824814F6B009C95A8 /* fruitCollection.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fruitCollection.mp3; sourceTree = "<group>"; };
 		184C5DD62493D22E003D8ED7 /* ChinchillaARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinchillaARModel.swift; sourceTree = "<group>"; };
 		184C5DD82493D312003D8ED7 /* Chinchilla.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Chinchilla.scn; sourceTree = "<group>"; };
+		1853FBB4249A4F230040ED4F /* headbopandsniffFixed.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = headbopandsniffFixed.dae; sourceTree = "<group>"; };
+		1853FBB6249A4F5E0040ED4F /* ChinchillaUpdate.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ChinchillaUpdate.scn; sourceTree = "<group>"; };
 		18648963248D094E00CEEA29 /* Level_1-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = "Level_1-1.sks"; path = "../../../../../../Downloads/ChinchillOut-GAM720-master/ChinchillOut-GAM720/Scene Editor Files/Levels/Level_1-1.sks"; sourceTree = "<group>"; };
 		18648965248D0AEB00CEEA29 /* L1W2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1W2ViewController.swift; sourceTree = "<group>"; };
 		18648967248D0BA200CEEA29 /* GameSceneL1W2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneL1W2.swift; sourceTree = "<group>"; };
@@ -120,6 +125,7 @@
 		18A1D430246D7CFD005425C1 /* ParticleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleHelper.swift; sourceTree = "<group>"; };
 		18A1D434246D7EA5005425C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A1D437246D8185005425C1 /* FruitDustEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FruitDustEmitter.sks; sourceTree = "<group>"; };
+		18B8866D249A4BAF00EDBDDE /* headbopandsniff.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = headbopandsniff.dae; sourceTree = "<group>"; };
 		18C614FB24702533009A1554 /* PopupNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupNode.swift; sourceTree = "<group>"; };
 		18C614FD24702564009A1554 /* ScorePopupNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePopupNode.swift; sourceTree = "<group>"; };
 		18C614FF247025C7009A1554 /* BannerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerLabel.swift; sourceTree = "<group>"; };
@@ -273,6 +279,9 @@
 			children = (
 				18D224BC2493BAAD00E37FE5 /* WalkingFixed.dae */,
 				184C5DD82493D312003D8ED7 /* Chinchilla.scn */,
+				1853FBB4249A4F230040ED4F /* headbopandsniffFixed.dae */,
+				1853FBB6249A4F5E0040ED4F /* ChinchillaUpdate.scn */,
+				18B8866D249A4BAF00EDBDDE /* headbopandsniff.dae */,
 				18D224B92493B31A00E37FE5 /* Textures */,
 				18D224B72493B30000E37FE5 /* walking.dae */,
 			);
@@ -493,8 +502,11 @@
 				18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */,
 				18648964248D094E00CEEA29 /* Level_1-1.sks in Resources */,
 				18D224BB2493B33E00E37FE5 /* ChinTexture.png in Resources */,
+				1853FBB5249A4F230040ED4F /* headbopandsniffFixed.dae in Resources */,
 				1821E9AE246584FB006BA465 /* LaunchScreen.storyboard in Resources */,
+				1853FBB7249A4F5E0040ED4F /* ChinchillaUpdate.scn in Resources */,
 				180E6DA8248BCCF7000F8F21 /* xmasBackground.mp3 in Resources */,
+				18B8866E249A4BAF00EDBDDE /* headbopandsniff.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

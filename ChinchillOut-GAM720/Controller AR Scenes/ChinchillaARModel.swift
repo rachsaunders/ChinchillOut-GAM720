@@ -10,7 +10,7 @@ import ARKit
 
 class ChinchillaARModel: SCNNode {
     func loadModel() {
-        guard let virtualObjectScene = SCNScene(named: "Chinchilla.scn") else { return }
+        guard let virtualObjectScene = SCNScene(named: "ChinchillaUpdate.scn") else { return }
         let wrapperNode = SCNNode()
         for child in virtualObjectScene.rootNode.childNodes {
             wrapperNode.addChildNode(child)
