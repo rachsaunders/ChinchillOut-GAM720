@@ -22,22 +22,11 @@ class SecondCutsceneViewController: UIViewController {
     }
     
     func startbackgroundSoundEffect2() {
-        let path = Bundle.main.path(forResource: "chinchilla1", ofType: "mp3")
+        let path = Bundle.main.path(forResource: "chirp1", ofType: "mp3")
         let url = URL(fileURLWithPath: path!)
         backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
        
         backgroundMusicPlayer.play()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -791,10 +791,10 @@
             </objects>
             <point key="canvasLocation" x="126" y="81"/>
         </scene>
-        <!--View Controller-->
+        <!--Ninth Cutscene View Controller-->
         <scene sceneID="dBG-aE-mAu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="l2m-Vt-ii2" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="l2m-Vt-ii2" customClass="NinthCutsceneViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DyY-G6-N1g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -839,10 +839,10 @@
             </objects>
             <point key="canvasLocation" x="1847" y="-940"/>
         </scene>
-        <!--View Controller-->
+        <!--Seventh Cutscene View Controller-->
         <scene sceneID="MgX-jv-GyQ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Ju9-3w-4JK" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Ju9-3w-4JK" customClass="SeventhCutsceneViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oEm-iJ-poH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -887,10 +887,10 @@
             </objects>
             <point key="canvasLocation" x="369" y="-940"/>
         </scene>
-        <!--View Controller-->
+        <!--Fifth Cutscene View Controller-->
         <scene sceneID="lmZ-sR-vNJ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="L5a-6O-bXb" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="L5a-6O-bXb" customClass="FifthCutsceneViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KZL-Et-rwn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -926,10 +926,10 @@
             </objects>
             <point key="canvasLocation" x="-1199" y="-939"/>
         </scene>
-        <!--View Controller-->
+        <!--Eighth Cutscene View Controller-->
         <scene sceneID="dQ5-BF-rEp">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="K6K-nJ-Y7e" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="K6K-nJ-Y7e" customClass="EighthCutsceneViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nQ9-BB-wC3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -965,10 +965,10 @@
             </objects>
             <point key="canvasLocation" x="1122" y="-940"/>
         </scene>
-        <!--View Controller-->
+        <!--Sixth Cutscene View Controller-->
         <scene sceneID="9ye-kV-4Fu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="u9C-g7-Tog" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="u9C-g7-Tog" customClass="SixthCutsceneViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ki1-pF-V0x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1129,7 +1129,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="gkc-xV-583"/>
         <segue reference="oDu-m2-H2L"/>
-        <segue reference="edO-Gm-Y2a"/>
+        <segue reference="jUG-Z3-FPV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ChinchillaCartoon" width="600" height="340"/>

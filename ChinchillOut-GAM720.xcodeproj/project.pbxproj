@@ -13,7 +13,6 @@
 		18029750246ECE4300371085 /* chinchillOut-Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1802974F246ECE3C00371085 /* chinchillOut-Font.ttf */; };
 		180E6DA4248BC05E000F8F21 /* WorldHalloweenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6DA3248BC05E000F8F21 /* WorldHalloweenController.swift */; };
 		180E6DA6248BC090000F8F21 /* WorldXmasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E6DA5248BC090000F8F21 /* WorldXmasController.swift */; };
-		180E6DA8248BCCF7000F8F21 /* xmasBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180E6DA7248BCCF7000F8F21 /* xmasBackground.mp3 */; };
 		180E6DAA248BD00F000F8F21 /* halloweenBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180E6DA9248BD00F000F8F21 /* halloweenBackground.mp3 */; };
 		181D60742466E14A0058E984 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60732466E14A0058E984 /* Layer.swift */; };
 		181D60762466EA4B0058E984 /* RepeatingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D60752466EA4B0058E984 /* RepeatingLayer.swift */; };
@@ -48,6 +47,15 @@
 		18902BCD2468373F0053771E /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCC2468373F0053771E /* GroundNode.swift */; };
 		18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCE24683E1E0053771E /* AnimationHelper.swift */; };
 		18902BD1246887880053771E /* ObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BD0246887880053771E /* ObjectHelper.swift */; };
+		189532F7249B9C160083291D /* headbopandsniffFixed.scn in Resources */ = {isa = PBXBuildFile; fileRef = 189532F6249B9C160083291D /* headbopandsniffFixed.scn */; };
+		189633CE249E33A500A11B79 /* xmasBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633CD249E33A500A11B79 /* xmasBackground.mp3 */; };
+		189633D0249E33AC00A11B79 /* washingmachine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633CF249E33AB00A11B79 /* washingmachine.mp3 */; };
+		189633D2249E33B400A11B79 /* BirdsSwearing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D1249E33B400A11B79 /* BirdsSwearing.mp3 */; };
+		189633D4249E3F3C00A11B79 /* chinchillaAR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D3249E3F3B00A11B79 /* chinchillaAR.mp3 */; };
+		189633D6249E42BF00A11B79 /* BirdsSwearingLong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D5249E42BF00A11B79 /* BirdsSwearingLong.mp3 */; };
+		189633D8249E442E00A11B79 /* chirp1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D7249E442E00A11B79 /* chirp1.mp3 */; };
+		189633DA249E450D00A11B79 /* chirp2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D9249E450C00A11B79 /* chirp2.mp3 */; };
+		189633DC249E455500A11B79 /* chirp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633DB249E455500A11B79 /* chirp3.mp3 */; };
 		18A1D431246D7CFD005425C1 /* ParticleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1D430246D7CFD005425C1 /* ParticleHelper.swift */; };
 		18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A1D434246D7EA5005425C1 /* Assets.xcassets */; };
 		18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 18A1D437246D8185005425C1 /* FruitDustEmitter.sks */; };
@@ -85,7 +93,6 @@
 		1802974F246ECE3C00371085 /* chinchillOut-Font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chinchillOut-Font.ttf"; sourceTree = "<group>"; };
 		180E6DA3248BC05E000F8F21 /* WorldHalloweenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldHalloweenController.swift; sourceTree = "<group>"; };
 		180E6DA5248BC090000F8F21 /* WorldXmasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldXmasController.swift; sourceTree = "<group>"; };
-		180E6DA7248BCCF7000F8F21 /* xmasBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xmasBackground.mp3; sourceTree = "<group>"; };
 		180E6DA9248BD00F000F8F21 /* halloweenBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = halloweenBackground.mp3; sourceTree = "<group>"; };
 		181D60732466E14A0058E984 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		181D60752466EA4B0058E984 /* RepeatingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingLayer.swift; sourceTree = "<group>"; };
@@ -122,6 +129,15 @@
 		18902BCC2468373F0053771E /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
 		18902BCE24683E1E0053771E /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		18902BD0246887880053771E /* ObjectHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectHelper.swift; sourceTree = "<group>"; };
+		189532F6249B9C160083291D /* headbopandsniffFixed.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = headbopandsniffFixed.scn; sourceTree = "<group>"; };
+		189633CD249E33A500A11B79 /* xmasBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xmasBackground.mp3; sourceTree = "<group>"; };
+		189633CF249E33AB00A11B79 /* washingmachine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = washingmachine.mp3; sourceTree = "<group>"; };
+		189633D1249E33B400A11B79 /* BirdsSwearing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BirdsSwearing.mp3; sourceTree = "<group>"; };
+		189633D3249E3F3B00A11B79 /* chinchillaAR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chinchillaAR.mp3; sourceTree = "<group>"; };
+		189633D5249E42BF00A11B79 /* BirdsSwearingLong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BirdsSwearingLong.mp3; sourceTree = "<group>"; };
+		189633D7249E442E00A11B79 /* chirp1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chirp1.mp3; sourceTree = "<group>"; };
+		189633D9249E450C00A11B79 /* chirp2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chirp2.mp3; sourceTree = "<group>"; };
+		189633DB249E455500A11B79 /* chirp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chirp3.mp3; sourceTree = "<group>"; };
 		18A1D430246D7CFD005425C1 /* ParticleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleHelper.swift; sourceTree = "<group>"; };
 		18A1D434246D7EA5005425C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A1D437246D8185005425C1 /* FruitDustEmitter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FruitDustEmitter.sks; sourceTree = "<group>"; };
@@ -280,6 +296,7 @@
 				18D224BC2493BAAD00E37FE5 /* WalkingFixed.dae */,
 				184C5DD82493D312003D8ED7 /* Chinchilla.scn */,
 				1853FBB4249A4F230040ED4F /* headbopandsniffFixed.dae */,
+				189532F6249B9C160083291D /* headbopandsniffFixed.scn */,
 				1853FBB6249A4F5E0040ED4F /* ChinchillaUpdate.scn */,
 				18B8866D249A4BAF00EDBDDE /* headbopandsniff.dae */,
 				18D224B92493B31A00E37FE5 /* Textures */,
@@ -413,8 +430,15 @@
 		18F1FB2024801CE700DD71FB /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				189633D7249E442E00A11B79 /* chirp1.mp3 */,
+				189633D9249E450C00A11B79 /* chirp2.mp3 */,
+				189633DB249E455500A11B79 /* chirp3.mp3 */,
 				180E6DA9248BD00F000F8F21 /* halloweenBackground.mp3 */,
-				180E6DA7248BCCF7000F8F21 /* xmasBackground.mp3 */,
+				189633D1249E33B400A11B79 /* BirdsSwearing.mp3 */,
+				189633D5249E42BF00A11B79 /* BirdsSwearingLong.mp3 */,
+				189633CF249E33AB00A11B79 /* washingmachine.mp3 */,
+				189633D3249E3F3B00A11B79 /* chinchillaAR.mp3 */,
+				189633CD249E33A500A11B79 /* xmasBackground.mp3 */,
 				182EBF262481471A009C95A8 /* forestBackground.mp3 */,
 				182EBF1F24813517009C95A8 /* completedSound.mp3 */,
 				182EBF1E24813517009C95A8 /* dieSound.mp3 */,
@@ -484,20 +508,29 @@
 			files = (
 				18029750246ECE4300371085 /* chinchillOut-Font.ttf in Resources */,
 				182EBF272481471B009C95A8 /* forestBackground.mp3 in Resources */,
+				189532F7249B9C160083291D /* headbopandsniffFixed.scn in Resources */,
+				189633D2249E33B400A11B79 /* BirdsSwearing.mp3 in Resources */,
 				1875DF9B2486CA2000D1AB69 /* Level_0-1.sks in Resources */,
+				189633DC249E455500A11B79 /* chirp3.mp3 in Resources */,
+				189633D8249E442E00A11B79 /* chirp1.mp3 in Resources */,
 				182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */,
 				18D224B82493B30000E37FE5 /* walking.dae in Resources */,
+				189633D0249E33AC00A11B79 /* washingmachine.mp3 in Resources */,
 				180E6DAA248BD00F000F8F21 /* halloweenBackground.mp3 in Resources */,
 				186983BA248D6EEC00727B13 /* Level_2-1.sks in Resources */,
 				18A1D438246D8185005425C1 /* FruitDustEmitter.sks in Resources */,
 				1821E9A9246584FA006BA465 /* Main.storyboard in Resources */,
 				184C5DD92493D312003D8ED7 /* Chinchilla.scn in Resources */,
 				182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */,
+				189633CE249E33A500A11B79 /* xmasBackground.mp3 in Resources */,
+				189633DA249E450D00A11B79 /* chirp2.mp3 in Resources */,
 				18DDC8E02465936B00503A6B /* TileSets.sks in Resources */,
 				182EBF2024813517009C95A8 /* dieSound.mp3 in Resources */,
+				189633D4249E3F3C00A11B79 /* chinchillaAR.mp3 in Resources */,
 				18029745246EB88400371085 /* BrakeSparkEmitter.sks in Resources */,
 				1821E9AB246584FB006BA465 /* Assets.xcassets in Resources */,
 				18D224BD2493BAAD00E37FE5 /* WalkingFixed.dae in Resources */,
+				189633D6249E42BF00A11B79 /* BirdsSwearingLong.mp3 in Resources */,
 				182EBF2124813517009C95A8 /* completedSound.mp3 in Resources */,
 				18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */,
 				18648964248D094E00CEEA29 /* Level_1-1.sks in Resources */,
@@ -505,7 +538,6 @@
 				1853FBB5249A4F230040ED4F /* headbopandsniffFixed.dae in Resources */,
 				1821E9AE246584FB006BA465 /* LaunchScreen.storyboard in Resources */,
 				1853FBB7249A4F5E0040ED4F /* ChinchillaUpdate.scn in Resources */,
-				180E6DA8248BCCF7000F8F21 /* xmasBackground.mp3 in Resources */,
 				18B8866E249A4BAF00EDBDDE /* headbopandsniff.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,24 +7,26 @@
 //
 
 import UIKit
+import AVFoundation
+
+var backgroundSoundEffect3: AVAudioPlayer!
 
 class ThirdCutsceneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+          startbackgroundSoundEffect3()
 
-        // Do any additional setup after loading the view.
+       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func startbackgroundSoundEffect3() {
+        let path = Bundle.main.path(forResource: "chirp2", ofType: "mp3")
+        let url = URL(fileURLWithPath: path!)
+        backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
+       
+        backgroundMusicPlayer.play()
     }
-    */
 
 }

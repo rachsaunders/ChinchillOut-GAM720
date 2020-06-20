@@ -7,24 +7,25 @@
 //
 
 import UIKit
+import AVFoundation
+
+var backgroundSoundEffect5: AVAudioPlayer!
 
 class FifthCutsceneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+         startbackgroundSoundEffect5()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    func startbackgroundSoundEffect5() {
+          let path = Bundle.main.path(forResource: "chirp3", ofType: "mp3")
+          let url = URL(fileURLWithPath: path!)
+          backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
+         
+          backgroundMusicPlayer.play()
+      }
 
 }

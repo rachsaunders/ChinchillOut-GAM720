@@ -7,24 +7,33 @@
 //
 
 import UIKit
+import AVFoundation
+
+var backgroundSoundEffect6: AVAudioPlayer!
 
 class SixthCutsceneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        startbackgroundSoundEffect6()
+        
     }
+
+    
+       func startbackgroundSoundEffect6() {
+           let path = Bundle.main.path(forResource: "BirdsSwearing", ofType: "mp3")
+           let url = URL(fileURLWithPath: path!)
+           backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
+        backgroundMusicPlayer.setVolume(0.1, fadeDuration: 0)
+     //   backgroundMusicPlayer.numberOfLoops = -1
+           backgroundMusicPlayer.play()
+       }
+    
+   
+
+    
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }
