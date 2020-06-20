@@ -22,7 +22,7 @@ class SixthCutsceneViewController: UIViewController {
 
     
        func startbackgroundSoundEffect6() {
-           let path = Bundle.main.path(forResource: "BirdsSwearing", ofType: "mp3")
+           let path = Bundle.main.path(forResource: "birdsswearing", ofType: "mp3")
            let url = URL(fileURLWithPath: path!)
            backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
         backgroundMusicPlayer.setVolume(0.1, fadeDuration: 0)

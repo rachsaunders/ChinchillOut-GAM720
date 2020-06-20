@@ -22,7 +22,7 @@ class NinthCutsceneViewController: UIViewController {
     }
     
     func startbackgroundSoundEffect9() {
-        let path = Bundle.main.path(forResource: "BirdsSwearingLong", ofType: "mp3")
+        let path = Bundle.main.path(forResource: "birdsswearinglong", ofType: "mp3")
         let url = URL(fileURLWithPath: path!)
         backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
        

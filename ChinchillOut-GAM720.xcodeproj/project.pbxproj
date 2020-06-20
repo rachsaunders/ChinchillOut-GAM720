@@ -50,9 +50,9 @@
 		189532F7249B9C160083291D /* headbopandsniffFixed.scn in Resources */ = {isa = PBXBuildFile; fileRef = 189532F6249B9C160083291D /* headbopandsniffFixed.scn */; };
 		189633CE249E33A500A11B79 /* xmasBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633CD249E33A500A11B79 /* xmasBackground.mp3 */; };
 		189633D0249E33AC00A11B79 /* washingmachine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633CF249E33AB00A11B79 /* washingmachine.mp3 */; };
-		189633D2249E33B400A11B79 /* BirdsSwearing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D1249E33B400A11B79 /* BirdsSwearing.mp3 */; };
+		189633D2249E33B400A11B79 /* birdsswearing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D1249E33B400A11B79 /* birdsswearing.mp3 */; };
 		189633D4249E3F3C00A11B79 /* chinchillaAR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D3249E3F3B00A11B79 /* chinchillaAR.mp3 */; };
-		189633D6249E42BF00A11B79 /* BirdsSwearingLong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D5249E42BF00A11B79 /* BirdsSwearingLong.mp3 */; };
+		189633D6249E42BF00A11B79 /* birdsswearinglong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D5249E42BF00A11B79 /* birdsswearinglong.mp3 */; };
 		189633D8249E442E00A11B79 /* chirp1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D7249E442E00A11B79 /* chirp1.mp3 */; };
 		189633DA249E450D00A11B79 /* chirp2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633D9249E450C00A11B79 /* chirp2.mp3 */; };
 		189633DC249E455500A11B79 /* chirp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633DB249E455500A11B79 /* chirp3.mp3 */; };
@@ -132,9 +132,9 @@
 		189532F6249B9C160083291D /* headbopandsniffFixed.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = headbopandsniffFixed.scn; sourceTree = "<group>"; };
 		189633CD249E33A500A11B79 /* xmasBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xmasBackground.mp3; sourceTree = "<group>"; };
 		189633CF249E33AB00A11B79 /* washingmachine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = washingmachine.mp3; sourceTree = "<group>"; };
-		189633D1249E33B400A11B79 /* BirdsSwearing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BirdsSwearing.mp3; sourceTree = "<group>"; };
+		189633D1249E33B400A11B79 /* birdsswearing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birdsswearing.mp3; sourceTree = "<group>"; };
 		189633D3249E3F3B00A11B79 /* chinchillaAR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chinchillaAR.mp3; sourceTree = "<group>"; };
-		189633D5249E42BF00A11B79 /* BirdsSwearingLong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BirdsSwearingLong.mp3; sourceTree = "<group>"; };
+		189633D5249E42BF00A11B79 /* birdsswearinglong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birdsswearinglong.mp3; sourceTree = "<group>"; };
 		189633D7249E442E00A11B79 /* chirp1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chirp1.mp3; sourceTree = "<group>"; };
 		189633D9249E450C00A11B79 /* chirp2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chirp2.mp3; sourceTree = "<group>"; };
 		189633DB249E455500A11B79 /* chirp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chirp3.mp3; sourceTree = "<group>"; };
@@ -434,8 +434,8 @@
 				189633D9249E450C00A11B79 /* chirp2.mp3 */,
 				189633DB249E455500A11B79 /* chirp3.mp3 */,
 				180E6DA9248BD00F000F8F21 /* halloweenBackground.mp3 */,
-				189633D1249E33B400A11B79 /* BirdsSwearing.mp3 */,
-				189633D5249E42BF00A11B79 /* BirdsSwearingLong.mp3 */,
+				189633D1249E33B400A11B79 /* birdsswearing.mp3 */,
+				189633D5249E42BF00A11B79 /* birdsswearinglong.mp3 */,
 				189633CF249E33AB00A11B79 /* washingmachine.mp3 */,
 				189633D3249E3F3B00A11B79 /* chinchillaAR.mp3 */,
 				189633CD249E33A500A11B79 /* xmasBackground.mp3 */,
@@ -509,7 +509,7 @@
 				18029750246ECE4300371085 /* chinchillOut-Font.ttf in Resources */,
 				182EBF272481471B009C95A8 /* forestBackground.mp3 in Resources */,
 				189532F7249B9C160083291D /* headbopandsniffFixed.scn in Resources */,
-				189633D2249E33B400A11B79 /* BirdsSwearing.mp3 in Resources */,
+				189633D2249E33B400A11B79 /* birdsswearing.mp3 in Resources */,
 				1875DF9B2486CA2000D1AB69 /* Level_0-1.sks in Resources */,
 				189633DC249E455500A11B79 /* chirp3.mp3 in Resources */,
 				189633D8249E442E00A11B79 /* chirp1.mp3 in Resources */,
@@ -530,7 +530,7 @@
 				18029745246EB88400371085 /* BrakeSparkEmitter.sks in Resources */,
 				1821E9AB246584FB006BA465 /* Assets.xcassets in Resources */,
 				18D224BD2493BAAD00E37FE5 /* WalkingFixed.dae in Resources */,
-				189633D6249E42BF00A11B79 /* BirdsSwearingLong.mp3 in Resources */,
+				189633D6249E42BF00A11B79 /* birdsswearinglong.mp3 in Resources */,
 				182EBF2124813517009C95A8 /* completedSound.mp3 in Resources */,
 				18A1D436246D7EA5005425C1 /* Assets.xcassets in Resources */,
 				18648964248D094E00CEEA29 /* Level_1-1.sks in Resources */,
