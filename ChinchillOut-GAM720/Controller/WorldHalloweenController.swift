@@ -13,5 +13,6 @@ class WorldHalloweenController: UIViewController {
    override func viewDidLoad() {
         // fixes error of level music playing on the level selection on worlds view controller
          halloweenMusicPlayer?.stop()
+     
     }
 }
