@@ -57,6 +57,7 @@
 		18902BCD2468373F0053771E /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCC2468373F0053771E /* GroundNode.swift */; };
 		18902BCF24683E1E0053771E /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BCE24683E1E0053771E /* AnimationHelper.swift */; };
 		18902BD1246887880053771E /* ObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902BD0246887880053771E /* ObjectHelper.swift */; };
+		18952BAC249FF83F0095258A /* washingmachine_02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18952BAB249FF83F0095258A /* washingmachine_02.mp3 */; };
 		189532F7249B9C160083291D /* headbopandsniffFixed.scn in Resources */ = {isa = PBXBuildFile; fileRef = 189532F6249B9C160083291D /* headbopandsniffFixed.scn */; };
 		189633CE249E33A500A11B79 /* xmasBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633CD249E33A500A11B79 /* xmasBackground.mp3 */; };
 		189633D0249E33AC00A11B79 /* washingmachine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 189633CF249E33AB00A11B79 /* washingmachine.mp3 */; };
@@ -161,6 +162,7 @@
 		18902BCC2468373F0053771E /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
 		18902BCE24683E1E0053771E /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		18902BD0246887880053771E /* ObjectHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectHelper.swift; sourceTree = "<group>"; };
+		18952BAB249FF83F0095258A /* washingmachine_02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = washingmachine_02.mp3; sourceTree = "<group>"; };
 		189532F6249B9C160083291D /* headbopandsniffFixed.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = headbopandsniffFixed.scn; sourceTree = "<group>"; };
 		189633CD249E33A500A11B79 /* xmasBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xmasBackground.mp3; sourceTree = "<group>"; };
 		189633CF249E33AB00A11B79 /* washingmachine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = washingmachine.mp3; sourceTree = "<group>"; };
@@ -505,6 +507,7 @@
 			isa = PBXGroup;
 			children = (
 				189633D7249E442E00A11B79 /* chirp1.mp3 */,
+				18952BAB249FF83F0095258A /* washingmachine_02.mp3 */,
 				189633D9249E450C00A11B79 /* chirp2.mp3 */,
 				189633DB249E455500A11B79 /* chirp3.mp3 */,
 				180E6DA9248BD00F000F8F21 /* halloweenBackground.mp3 */,
@@ -599,6 +602,7 @@
 				1821E9A9246584FA006BA465 /* Main.storyboard in Resources */,
 				182A0E1E249F918E00C570D4 /* Level_0-4.sks in Resources */,
 				184C5DD92493D312003D8ED7 /* Chinchilla.scn in Resources */,
+				18952BAC249FF83F0095258A /* washingmachine_02.mp3 in Resources */,
 				182EBF2924814F6B009C95A8 /* fruitCollection.mp3 in Resources */,
 				189633CE249E33A500A11B79 /* xmasBackground.mp3 in Resources */,
 				189633DA249E450D00A11B79 /* chirp2.mp3 in Resources */,

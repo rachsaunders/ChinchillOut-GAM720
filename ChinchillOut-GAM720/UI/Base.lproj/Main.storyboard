@@ -249,6 +249,16 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_1" translatesAutoresizingMaskIntoConstraints="NO" id="VTl-4p-xpv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloudForSpeech2" translatesAutoresizingMaskIntoConstraints="NO" id="dDe-Td-lyq">
+                                <rect key="frame" x="109" y="112" width="152" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh no!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPa-b4-9zU">
+                                <rect key="frame" x="144" y="150" width="87" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swp-ln-yvH">
                                 <rect key="frame" x="313" y="607" width="32" height="30"/>
                                 <state key="normal" title="Next">
@@ -258,13 +268,6 @@
                                     <segue destination="nAA-te-gWO" kind="show" animates="NO" id="MOz-6s-txA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh no!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPa-b4-9zU">
-                                <rect key="frame" x="144" y="150" width="87" height="36"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -284,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufg-tA-sUk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3321" y="-938"/>
+            <point key="canvasLocation" x="-3322.4000000000001" y="-938.68065967016503"/>
         </scene>
         <!--World1 Controller-->
         <scene sceneID="e1g-JC-tco">
@@ -496,9 +499,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_2" translatesAutoresizingMaskIntoConstraints="NO" id="msY-u3-C38">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It appears your chinchilla is stuck in the game!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-Vg-WCO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It appears I'm stuck in the game..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-Vg-WCO">
                                 <rect key="frame" x="50" y="100" width="275" height="137.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Z8N-Vg-WCO" secondAttribute="height" multiplier="28:14" id="UIF-Yc-AtP"/>
                                 </constraints>
@@ -515,6 +517,10 @@
                                     <segue destination="hmo-sF-PF2" kind="show" animates="NO" id="fNu-iw-h6r"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloudForSpeech3" translatesAutoresizingMaskIntoConstraints="NO" id="a7B-BC-ucv">
+                                <rect key="frame" x="16" y="26" width="332" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -535,7 +541,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTu-ap-gYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2641" y="-938"/>
+            <point key="canvasLocation" x="-2642.4000000000001" y="-938.68065967016503"/>
         </scene>
         <!--Forth Cutscene View Controller-->
         <scene sceneID="f17-0d-eCf">
@@ -547,6 +553,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_3" translatesAutoresizingMaskIntoConstraints="NO" id="UmN-Fo-d1a">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloudForSpeech" translatesAutoresizingMaskIntoConstraints="NO" id="Tvq-5o-9qI">
+                                <rect key="frame" x="67" y="104" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orM-zC-9Fp">
                                 <rect key="frame" x="179.5" y="150" width="16" height="36"/>
@@ -915,6 +925,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_6" translatesAutoresizingMaskIntoConstraints="NO" id="wGX-OC-lDC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloudForSpeech" translatesAutoresizingMaskIntoConstraints="NO" id="9xZ-iK-D7f">
+                                <rect key="frame" x="67" y="254" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAG-Xe-sl8">
                                 <rect key="frame" x="175.5" y="300" width="24" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1256,6 +1270,9 @@
         <image name="beginning_4" width="1242" height="2208"/>
         <image name="beginning_6" width="1242" height="2208"/>
         <image name="beginning_8" width="1242" height="2208"/>
+        <image name="cloudForSpeech" width="200" height="181"/>
+        <image name="cloudForSpeech2" width="200" height="271"/>
+        <image name="cloudForSpeech3" width="400" height="244"/>
         <image name="halloweenLevelBackground" width="1248" height="2208"/>
         <image name="halloweenWorldButton" width="400" height="164"/>
         <image name="nextButton" width="128" height="116"/>

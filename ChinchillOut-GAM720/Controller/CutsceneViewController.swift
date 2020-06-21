@@ -23,7 +23,7 @@ class CutsceneViewController: UIViewController {
     }
     
     func startbackgroundSoundEffect1() {
-        let path = Bundle.main.path(forResource: "washingmachine", ofType: "mp3")
+        let path = Bundle.main.path(forResource: "washingmachine_02", ofType: "mp3")
         let url = URL(fileURLWithPath: path!)
         backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
        
