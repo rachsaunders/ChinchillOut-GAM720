@@ -307,6 +307,9 @@
                                 <state key="normal" title="4" backgroundImage="EmptyButtonBlue">
                                     <color key="titleColor" red="0.15000000599999999" green="0.15000000599999999" blue="0.15000000599999999" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="y57-2C-Aac" kind="show" identifier="goToL4W1" animates="NO" id="ZYj-27-OR2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgh-bI-XWO">
                                 <rect key="frame" x="60" y="507" width="50" height="50"/>
@@ -867,6 +870,37 @@
             </objects>
             <point key="canvasLocation" x="1847" y="-940"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gpM-Ra-T3l">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="y57-2C-Aac" customClass="L4W1ViewController" customModule="ChinchillOut_GAM720" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XSv-fI-lza">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arskView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Epw-LZ-DDO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arskView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uQ4-1z-HQy" firstAttribute="bottom" secondItem="Epw-LZ-DDO" secondAttribute="bottom" id="DQX-DV-XP2"/>
+                            <constraint firstItem="Epw-LZ-DDO" firstAttribute="leading" secondItem="uQ4-1z-HQy" secondAttribute="leading" id="QOk-dh-1gZ"/>
+                            <constraint firstItem="Epw-LZ-DDO" firstAttribute="top" secondItem="uQ4-1z-HQy" secondAttribute="top" id="cI4-Rt-ODv"/>
+                            <constraint firstItem="uQ4-1z-HQy" firstAttribute="trailing" secondItem="Epw-LZ-DDO" secondAttribute="trailing" id="vsg-HT-wb2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uQ4-1z-HQy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D3A-rT-wxt"/>
+                    <connections>
+                        <outlet property="sceneView" destination="Epw-LZ-DDO" id="kfm-dX-hWG"/>
+                        <segue destination="Edi-gb-zKV" kind="show" identifier="L4W1backToMenu" animates="NO" id="dd1-R3-Ln4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CLe-Qo-pum" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522" y="227"/>
+        </scene>
         <!--Seventh Cutscene View Controller-->
         <scene sceneID="MgX-jv-GyQ">
             <objects>
@@ -1193,10 +1227,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WUr-1T-JQZ"/>
         <segue reference="Xz4-YR-YBR"/>
-        <segue reference="jaT-vP-gTP"/>
-        <segue reference="edO-Gm-Y2a"/>
+        <segue reference="qMq-1w-I0W"/>
+        <segue reference="dd1-R3-Ln4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ChinchillaCartoon" width="600" height="340"/>
