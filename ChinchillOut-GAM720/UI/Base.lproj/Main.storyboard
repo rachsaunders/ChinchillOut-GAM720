@@ -703,7 +703,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ac-0S-b6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5543" y="1467"/>
+            <point key="canvasLocation" x="-6111" y="1585"/>
         </scene>
         <!--World Xmas Controller-->
         <scene sceneID="NpK-7X-xAP">
@@ -833,6 +833,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_8" translatesAutoresizingMaskIntoConstraints="NO" id="8Xa-gF-hMd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speechbubble" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-K0-sic">
+                                <rect key="frame" x="67" y="64" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£$%!$£%!$!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAn-o3-ooK">
                                 <rect key="frame" x="100.5" y="100" width="174" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -894,12 +898,11 @@
                     <navigationItem key="navigationItem" id="D3A-rT-wxt"/>
                     <connections>
                         <outlet property="sceneView" destination="Epw-LZ-DDO" id="kfm-dX-hWG"/>
-                        <segue destination="Edi-gb-zKV" kind="show" identifier="L4W1backToMenu" animates="NO" id="dd1-R3-Ln4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLe-Qo-pum" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-522" y="227"/>
+            <point key="canvasLocation" x="-8182" y="1980"/>
         </scene>
         <!--Seventh Cutscene View Controller-->
         <scene sceneID="MgX-jv-GyQ">
@@ -913,7 +916,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAG-Xe-sl8">
-                                <rect key="frame" x="175.5" y="150" width="24" height="36"/>
+                                <rect key="frame" x="175.5" y="300" width="24" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -934,7 +937,7 @@
                             <constraint firstItem="dAG-Xe-sl8" firstAttribute="centerX" secondItem="oEm-iJ-poH" secondAttribute="centerX" id="1uG-Si-xzu"/>
                             <constraint firstItem="wGX-OC-lDC" firstAttribute="top" secondItem="mLZ-Ll-a7C" secondAttribute="top" id="5A0-VH-gDa"/>
                             <constraint firstItem="mLZ-Ll-a7C" firstAttribute="trailing" secondItem="wGX-OC-lDC" secondAttribute="trailing" id="8s9-U2-NoV"/>
-                            <constraint firstItem="dAG-Xe-sl8" firstAttribute="top" secondItem="mLZ-Ll-a7C" secondAttribute="top" constant="150" id="JPJ-CE-VGM"/>
+                            <constraint firstItem="dAG-Xe-sl8" firstAttribute="top" secondItem="mLZ-Ll-a7C" secondAttribute="top" constant="300" id="JPJ-CE-VGM"/>
                             <constraint firstItem="AyB-sN-bof" firstAttribute="leading" secondItem="mLZ-Ll-a7C" secondAttribute="leading" constant="313" id="OwG-j8-WYo"/>
                             <constraint firstItem="wGX-OC-lDC" firstAttribute="leading" secondItem="mLZ-Ll-a7C" secondAttribute="leading" id="d9R-QN-O4g"/>
                             <constraint firstItem="mLZ-Ll-a7C" firstAttribute="bottom" secondItem="wGX-OC-lDC" secondAttribute="bottom" id="evE-Cd-UMa"/>
@@ -1038,6 +1041,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_3" translatesAutoresizingMaskIntoConstraints="NO" id="1or-lV-xh5">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speechbubble2" translatesAutoresizingMaskIntoConstraints="NO" id="b3d-LS-pLy">
+                                <rect key="frame" x="67" y="104" width="278" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="£$%!$£%!$!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0v-Z7-JS7">
                                 <rect key="frame" x="100.5" y="150" width="174" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1073,7 +1080,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78w-IN-RB8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-401" y="-940"/>
+            <point key="canvasLocation" x="-402.39999999999998" y="-940.47976011994012"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Bh1-7i-oou">
@@ -1229,7 +1236,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="Xz4-YR-YBR"/>
         <segue reference="qMq-1w-I0W"/>
-        <segue reference="dd1-R3-Ln4"/>
+        <segue reference="hAD-ZJ-OaF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ChinchillaCartoon" width="600" height="340"/>
@@ -1252,6 +1259,8 @@
         <image name="halloweenLevelBackground" width="1248" height="2208"/>
         <image name="halloweenWorldButton" width="400" height="164"/>
         <image name="nextButton" width="128" height="116"/>
+        <image name="speechbubble" width="500" height="240"/>
+        <image name="speechbubble2" width="500" height="178"/>
         <image name="xmasLevelBackground" width="1248" height="2208"/>
         <image name="xmasWorldButton" width="400" height="164"/>
     </resources>

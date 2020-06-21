@@ -25,9 +25,9 @@ class L4W1ViewController: UIViewController {
         sceneView.delegate = self
         
         // Show statistics such as fps and node count
-        sceneView.showsFPS = true
-        sceneView.showsNodeCount = true
-        
+//        sceneView.showsFPS = true
+//        sceneView.showsNodeCount = true
+       
         // Load the SKScene from 'Scene.sks'
         if let scene = MainMenuScene(fileNamed: "L4MenuScene") {
             sceneView.presentScene(scene)

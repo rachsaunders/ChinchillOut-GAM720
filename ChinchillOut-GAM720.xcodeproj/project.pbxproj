@@ -32,6 +32,9 @@
 		182A0E19249F8F0200C570D4 /* FlyingARbird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A0E18249F8F0200C570D4 /* FlyingARbird.swift */; };
 		182A0E1C249F916F00C570D4 /* L4MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 182A0E1B249F916F00C570D4 /* L4MenuScene.sks */; };
 		182A0E1E249F918E00C570D4 /* Level_0-4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 182A0E1D249F918E00C570D4 /* Level_0-4.sks */; };
+		182A0E37249FA39800C570D4 /* L4FinishScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 182A0E36249FA39800C570D4 /* L4FinishScene.sks */; };
+		182A0E39249FA6A900C570D4 /* FinishSceneL4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A0E38249FA6A900C570D4 /* FinishSceneL4.swift */; };
+		182A0E3D249FAA1B00C570D4 /* SceneManagerDelegateL4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A0E3C249FAA1B00C570D4 /* SceneManagerDelegateL4.swift */; };
 		182EBF2024813517009C95A8 /* dieSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF1E24813517009C95A8 /* dieSound.mp3 */; };
 		182EBF2124813517009C95A8 /* completedSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF1F24813517009C95A8 /* completedSound.mp3 */; };
 		182EBF252481411E009C95A8 /* chinchilla1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 182EBF242481411E009C95A8 /* chinchilla1.mp3 */; };
@@ -133,6 +136,9 @@
 		182A0E18249F8F0200C570D4 /* FlyingARbird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingARbird.swift; sourceTree = "<group>"; };
 		182A0E1B249F916F00C570D4 /* L4MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = L4MenuScene.sks; sourceTree = "<group>"; };
 		182A0E1D249F918E00C570D4 /* Level_0-4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level_0-4.sks"; sourceTree = "<group>"; };
+		182A0E36249FA39800C570D4 /* L4FinishScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = L4FinishScene.sks; sourceTree = "<group>"; };
+		182A0E38249FA6A900C570D4 /* FinishSceneL4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishSceneL4.swift; sourceTree = "<group>"; };
+		182A0E3C249FAA1B00C570D4 /* SceneManagerDelegateL4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManagerDelegateL4.swift; sourceTree = "<group>"; };
 		182EBF1E24813517009C95A8 /* dieSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dieSound.mp3; sourceTree = "<group>"; };
 		182EBF1F24813517009C95A8 /* completedSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = completedSound.mp3; sourceTree = "<group>"; };
 		182EBF242481411E009C95A8 /* chinchilla1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chinchilla1.mp3; sourceTree = "<group>"; };
@@ -228,6 +234,7 @@
 				18C18DA0249EB0F800D479D0 /* SceneManagerDelegateL2.swift */,
 				18C18DA8249EBFBE00D479D0 /* SceneManagerDelegateHalloweenL2.swift */,
 				18C18DAA249EC31900D479D0 /* SceneManagerDelegateXmasL2.swift */,
+				182A0E3C249FAA1B00C570D4 /* SceneManagerDelegateL4.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -328,6 +335,7 @@
 			children = (
 				182A0E1B249F916F00C570D4 /* L4MenuScene.sks */,
 				182A0E1D249F918E00C570D4 /* Level_0-4.sks */,
+				182A0E36249FA39800C570D4 /* L4FinishScene.sks */,
 			);
 			path = ARScenesL4;
 			sourceTree = "<group>";
@@ -459,6 +467,7 @@
 				18C18DB4249EC40E00D479D0 /* GameSceneL2W3.swift */,
 				182A0E14249F8E9C00C570D4 /* W1L4MenuScene.swift */,
 				182A0E16249F8EC000C570D4 /* GameSceneL4W1.swift */,
+				182A0E38249FA6A900C570D4 /* FinishSceneL4.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -572,6 +581,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C18DB7249EC74300D479D0 /* Level_1-2.sks in Resources */,
+				182A0E37249FA39800C570D4 /* L4FinishScene.sks in Resources */,
 				18029750246ECE4300371085 /* chinchillOut-Font.ttf in Resources */,
 				182EBF272481471B009C95A8 /* forestBackground.mp3 in Resources */,
 				189532F7249B9C160083291D /* headbopandsniffFixed.scn in Resources */,
@@ -630,7 +640,9 @@
 				18C18DA5249EB23B00D479D0 /* gameSceneL2W1.swift in Sources */,
 				181D60742466E14A0058E984 /* Layer.swift in Sources */,
 				18C614FC24702533009A1554 /* PopupNode.swift in Sources */,
+				182A0E3D249FAA1B00C570D4 /* SceneManagerDelegateL4.swift in Sources */,
 				1802974A246ECAA200371085 /* GameHUD.swift in Sources */,
+				182A0E39249FA6A900C570D4 /* FinishSceneL4.swift in Sources */,
 				18C615062470430E009A1554 /* ScoreManager.swift in Sources */,
 				182A0E17249F8EC000C570D4 /* GameSceneL4W1.swift in Sources */,
 				18648966248D0AEB00CEEA29 /* L1W2ViewController.swift in Sources */,

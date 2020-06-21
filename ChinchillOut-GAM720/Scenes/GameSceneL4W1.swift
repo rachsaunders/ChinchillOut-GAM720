@@ -56,7 +56,7 @@ class GameScene: SKScene {
             return
         }
         
-        if let mainMenu = MainMenuScene(fileNamed: "L4MenuScene") {
+        if let mainMenu = FinishSceneL4(fileNamed: "L4FinishScene") {
             
             sceneView.presentScene(mainMenu,
                                    transition: reveal)
