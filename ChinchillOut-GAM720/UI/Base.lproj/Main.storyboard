@@ -499,15 +499,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginning_2" translatesAutoresizingMaskIntoConstraints="NO" id="msY-u3-C38">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It appears I'm stuck in the game..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-Vg-WCO">
-                                <rect key="frame" x="50" y="100" width="275" height="137.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Z8N-Vg-WCO" secondAttribute="height" multiplier="28:14" id="UIF-Yc-AtP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l20-gK-bSs">
                                 <rect key="frame" x="313" y="607" width="32" height="30"/>
                                 <state key="normal" title="Next">
@@ -521,6 +512,15 @@
                                 <rect key="frame" x="16" y="26" width="332" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="It appears I'm stuck in the game..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8N-Vg-WCO">
+                                <rect key="frame" x="50" y="104" width="275" height="137.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z8N-Vg-WCO" secondAttribute="height" multiplier="28:14" id="UIF-Yc-AtP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
